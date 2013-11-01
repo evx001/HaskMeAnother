@@ -10,17 +10,18 @@ module Dada123 where
 
    	dada5 x y 	= x + y
 
-{- the rule (as near as I can tell), 
- - is when there is a type variable 
- - such as x or y to the left of the =  
- - then the type gets infered more broadly -- 
- - as in: 
- - :: Num a => a -> a -> a
- - if there are no args 
- - on the left side of the = 
- - then the type will be infered more narrowy.
- - as in: 
- - :: (Integer, Integer) -> Integer  
- 
+{- the rule is known as the "monomorphic restriction
+
+ - so when there is a type variable such as x or y 
+ - to the left of the = sign   
+ - then the type gets infered broadly --
+ -
+		  		dada5 :: Num a => a -> a -> a
+ - 
+ - if there are no args on the left side of the = sign 
+ - then the type will be infered more narrowy -- 
+ - 
+ - 				dada4 :: Integer -> Integer -> Integer
+-} 
 
 

@@ -24,8 +24,10 @@ module Dada123 where
  - 
  - 				dada4 :: Integer -> Integer -> Integer 
  -
- - However if you desire you can turn it off as noted above.
--} 
+ - If you need to you can turn it off either:
+ - at the ghci prompt >  :set -XNoMonomorphismRestriction  
+ - or use this in the header of your file/module  {-# LANGUAGE NoMonomorphismRestriction #-}
+
 
 
 
