@@ -1,4 +1,5 @@
 {-# LANGUAGE NoMonomorphismRestriction #-}
+
 module Dada123 where 
 
    	dada1 (x,y) 	= x + y
@@ -27,7 +28,5 @@ module Dada123 where
  - If you need to you can turn it off either:
  - at the ghci prompt >  :set -XNoMonomorphismRestriction  
  - or use this in the header of your file/module  {-# LANGUAGE NoMonomorphismRestriction #-}
-
-
-
+-}
 
