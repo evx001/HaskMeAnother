@@ -1,15 +1,38 @@
-{- :set expandtab :set ts=2 -} 
+{- :set expandtab 
+ - :set ts=2 -} 
 
 module PrImEs where 
-factors n = [x| x <- [1..n], n `mod` x == 0]
-prime   n = factors n == [1,n] 
-primes  n = [x | x <- [2..n], prime x] 
+
+    factorial n     = product [1 .. n ]
+    factors   n     = [x| x  <- [1..n], n `mod` x == 0]
+    prime     n     = factors n == [1,n] 
+    primes    n     = [x | x <- [2..n], prime x] 
+    average   ns    = sum ns `div`  length ns
+    avPrime   n     = prime (average (primes n)) 
+    find      k t   = [v | (k', v) <- t, k == k']
+    odds      n     = map (\x -> x * 2 + 1) [0..n -1] 
+    primeTups n     = zip (odds n) [prime x | x <- odds n]
+
+
+    find'     k t   = reverse [v | (k', v) <- t, k == k']
+    primetups n     = zip (odds n) [prime x | x <- odds n]
+--    oddList  (x:xs)     | odd x           = x : oddList xs 
+--                        | otherwise       = oddList xs 
+--    oddList   _                         = [] 
+    swap' [(a,b)]   = [(b,a)]
+
+--    swavPrime n     = swap(prime(average(primes n)))
+--    
+--    pair      x y   = (x,y)
+--    pDrome    xs    = reverse xs == xs
+--    pairs     xs    = zip xs (tail xs)
+--    sorted    xs    = and[x<=y | (x,y) <- pairs xs]
 
 -- find k t = [v | (k', v) <- t, k == k'] 
 
 -- aZ_alt = (zip ['a'..'z'] (reverse ['A'..'Z']))
 
--- pairs xs = zip xs (tail xs)
+
 -- sorted xs = and[x<=y | (x,y) <- pairs xs]
 {-     
 let     aToZ  = ['A'..'Z'] 
@@ -29,8 +52,11 @@ let  prime_az = reverse (zip zTOa (primes 101))
 
 ('a',101), ('e',79),('i',61),('o',37),('u',13)
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 133ac7d8a88a488df7544b240e95e7222e4bf81a
 -}
 
 
