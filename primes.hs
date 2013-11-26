@@ -52,6 +52,11 @@ let  prime_az = reverse (zip zTOa (primes 101))
 
 ('a',101), ('e',79),('i',61),('o',37),('u',13)
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 133ac7d8a88a488df7544b240e95e7222e4bf81a
 -}
 
 
