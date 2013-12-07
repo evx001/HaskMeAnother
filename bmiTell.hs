@@ -6,6 +6,6 @@ bmiTell weight height
     | bmi <= fat    = "OverWeight"
     | otherwise     = "congrats"
     where bmi = weight / height ^ 2 
-	  skinny = 18.5 
-     	  normal = 25.0
-	  fat    = 30.0  
+          skinny = 18.5 
+          normal = 25.0
+          fat    = 30.0  

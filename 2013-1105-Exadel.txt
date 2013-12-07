@@ -1,0 +1,31 @@
+Exadel 
+	appery.io
+	js html css
+	cloud data mongo 
+	custom app logic on the server 
+	api 
+	mobile apps html5 -> JQueryMobile -> phonegap	-> 
+		restXpress	
+		security 
+		drag and drop 
+		
+	use tinyurl.com to shorten app location	
+
+	geocoding
+	curl for service from command line 
+	Business App. 
+	backend mobile database 
+		mongo
+			user collects 
+			files data 
+			devices 
+				custom 
+	
+	cloud console to register apps google play
+		app needs register via database. 
+	 
+	Free 
+	Standard	$
+		apperyiofall13 
+		3 apps
+		

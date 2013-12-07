@@ -3,6 +3,8 @@
 
 module PrImEs where 
 
+    
+
     factorial n     = product [1 .. n ]
     factors   n     = [x| x  <- [1..n], n `mod` x == 0]
     prime     n     = factors n == [1,n] 
@@ -19,6 +21,8 @@ module PrImEs where
 --    oddList  (x:xs)     | odd x           = x : oddList xs 
 --                        | otherwise       = oddList xs 
 --    oddList   _                         = [] 
+    second (_,y) = y 
+
     swap' [(a,b)]   = [(b,a)]
 
 --    swavPrime n     = swap(prime(average(primes n)))
@@ -52,11 +56,6 @@ let  prime_az = reverse (zip zTOa (primes 101))
 
 ('a',101), ('e',79),('i',61),('o',37),('u',13)
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 133ac7d8a88a488df7544b240e95e7222e4bf81a
 -}
 
 

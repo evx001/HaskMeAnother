@@ -1,0 +1,78 @@
+7 languages 
+SmallTalk
+
+Redline SmallTalk for the JVM.
+
+Sean T. Allen 
+
+xerox Parc 
+
+1980 release 
+
+an early Vm 
+  
+SmallTalk-80 Krasner 
+
+Strong Talk varient
+amber-lang.net  SmallTalk for the browser
+
+true 
+false 
+nil 
+self (this) 
+super 
+thisContext (stack as it exists at that time) 
+  stack as object 
+  Debugger driven dev.
+
+Extreme Programming Explained 
+
+T.D.D. (writing the tests before the code) 
+
+method_missing = "does not understand" in SmallTalk
+
+  byte compiler 
+
+string literal
+$A 
+$B
+$Z
+
+'Hello World' 
+
+#aSymbol
+  one instance 
+
+#(123456)
+#($A $B $C) 
+
+[] -- Blocks  
+[Transscript: 'Hellow World'.] 
+[:paramA :paramB | paramA + paramB] 
+
+|| vars go 
+|foo| 
+|foo bar| 
+
+presenter := 'Sean T Allen' 
+where := '137 Varick Stret' 
+
+unary Message
+42 factorial 
+ 
+keyword Message 
+2 raisedTo: 8 
+
+reciever/selector <- gets message 
+  smalltalk is single dispatch 
+
+ 'proceed for truth' 
+
+image like the entie stack burned to disk. 
+  predates the runtime concept 
+
+Single chain inheritence 
+
+open classes in smalltalk 
+
+
