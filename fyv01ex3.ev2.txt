@@ -1,0 +1,10 @@
+﻿module Dec9Where where 
+factorial           :: (show (Double -> Double)
+factorial           = product [1..n]
+                    where 
+                        n = 5 
+{-
+average     ns      = sum ns `div` length ns 
+                    where 
+                        ns  = factorial 
+ -}
