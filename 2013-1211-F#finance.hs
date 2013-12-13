@@ -258,4 +258,7 @@ Frame
 ------------------------------
 machine learning and F# 
     RosenBlatt's Scheme     
+    RosenBlatt's Perception (1958) 
+    
+    
         
