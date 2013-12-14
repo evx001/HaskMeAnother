@@ -1,31 +1,38 @@
 module Dec12 where
--- import ListSort
+import ListSort
+import PrImEs
+import Data.Set
+pair    a           = \b-> (a,b)
+swap (a,b)          = (b,a) 
+dada1               = [zip   ["fz"] [fz]|fz <-[3,6..99]]
+dada2               = [zip   ["bz"] [bz]|bz <-[5,10..100]]
+dada3               = [zip   ["fbz"] [fbz]|fbz <-[15,30..90]]
+dada4               = concat(dada1 ++ dada2 ++ dada3)
+dada5               = [pair x y| x <-[0..100], y <-["o"]]
+dada6               = [pair x y| x <-[0..100], y <-["o"]]
+
+firsts ps           = [x| (x,_)<- ps]
+
+seconds ps          = [y| (_,y)<-ps]
+
+fbzList             = listSort (seconds dada4)   
+
+find k t            = [v|(k', v) <- t, k == k'] 
+
+{----------------------------------------------------------------
 
 abs'    n = if n >= 0 then n else -n
 
 abs''   n | n >= 0      = n 
           | otherwise   = -n  
 
-{----------------------------------------------------------------
 fbz    x         = if x `mod` 15 then "fbz" else x
                     where 
                         x = [1..100]
-Prelude> [x `mod` 15 == 0 | x <- [15,30..90]]
+
 [True,True,True,True,True,True]
 
 
-swap (a,b) = (b,a) 
-dada1           = [zip   ["fz"] [fz]|fz <-[3,6..99]]
-dada2           = [zip   ["bz"] [bz]|bz <-[5,10..100]]
-dada3           = [zip   ["fbz"] [fbz]|fbz <-[15,30..90]]
-dada4           = concat(dada1 ++ dada2 ++ dada3)  
-
-firsts ps       = [x| (x,_)<- ps]
-
-seconds ps      = [y| (_,y)<-ps]
-
-
-find k t        = [v|(k', v) <- t, k == k'] 
 
 find' k t       = head[v|(k',v) <- t, k == k']
   
@@ -35,7 +42,7 @@ positions x xs  = [i|(x',i)<- zip xs [0..n], x == x']
 factors     n   = [x|x <- [1..n],n `mod` x == 0]
 factrList   n   = zip [1..n][factors n | n  <-[1..n]]
 --let 
-fbzList = listSort (seconds dada4)   
+
 --
 [product  [y,x,z,u] |x <-odds' 11,y <- primes 101, z <-[0..3], u <- [1..9]]
 fbz n           = if (n `mod` 15) == 0 then "fbz" else [1..100] 
