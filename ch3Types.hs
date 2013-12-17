@@ -40,8 +40,19 @@ partial application                                 23:30
        function application 
           associates left                           25:00
 
+generics a.k.a polymorphic                          26:30
+  calling length from another function 
+    will subject that function to conform to
+      the Int type. 
 
-	
+(Num a)=> [a] -> a                                  35:27 
+  interfaces v.  typeClasses                            
+    summing floats aswell  
+
+(+)                                                 36:30
+  ask the compiler to infer what my function is 
+    and modify as needbe   
+
 
 
 -}
