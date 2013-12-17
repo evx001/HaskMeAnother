@@ -1,5 +1,8 @@
 module CH3types where 
 import Dada123
+
+mult x y z      = x * y * z 
+
 {-                                                  1:00
  - Types as a collections of values 
  - :: has type
@@ -23,4 +26,25 @@ tuple is a list of hetrogeneous types who's length is known
 
 :load 
 dada123 example                                     16:45                                     
--} 
+
+lambda's 
+
+curring 					                                  18:00
+
+mult x y z    = x * y * z
+       functions being right associative            22:03
+
+partial application                                 23:30
+       type application 
+          associates to the right 
+       function application 
+          associates left                           25:00
+
+
+	
+
+
+-}
+
+
+ 
