@@ -1,5 +1,5 @@
 module Dec17 where 
--- import ListSot
+import ListSort
 -- import PrImEs
 find'   k t   = [v | (k', v) <- t, k == k']
 swap' (x,y)   = (y,x)
@@ -11,22 +11,11 @@ rzzzsr        = reverse zzzsr
 firsts ps           = [x| (x,_)<- ps]
 seconds ps          = [y| (_,y)<-ps]
 oTups = [ (y,x) | (x,y)  <-zzzs, x =="o"]
+
+strTups :: [([Char],[Char])]
 strTups = zip (firsts zzzs)  [show x|x <-(seconds zzzs)] -- strTups :: [([Char], String)] need to change [Char] -> String so that the Tup is [(String),(String)] or I should change String so that it reads [([Char],[Char])].
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- [swap'(strTups!!x) | x <-[0..99]]  
 
 
 {-
