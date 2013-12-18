@@ -10,23 +10,25 @@ rzzzs         = reverse zzzs
 rzzzsr        = reverse zzzsr
 firsts ps           = [x| (x,_)<- ps]
 seconds ps          = [y| (_,y)<-ps]
-oTups = [ (y,x) | (x,y)  <-zzzs, x =="o"]
-
 strTups :: [([Char],[Char])]
 strTups = zip (firsts zzzs)  [show x|x <-(seconds zzzs)] -- strTups :: [([Char], String)] need to change [Char] -> String so that the Tup is [(String),(String)] or I should change String so that it reads [([Char],[Char])].
+oTups = [ (y,x) | (x,y)  <-strTups, x =="o"]
 
--- [swap'(strTups!!x) | x <-[0..99]]  
+
+
+
+
 
 
 {-
 
 let strTups = zip (firsts zzzs)  [show x|x <-(seconds zzzs)]
  
-let oTups = [ (y,x) | (x,y)  <-zzzs, x =="o"]
+oTups = [ (y,x) | (x,y)  <-zzzs, x =="o"]
 
 [ (y,x) | (x,y)  <-zzzs, x =="o"]
 
-
+-- [swap'(strTups!!x)|x <-[0..99]]  
 an if clause that returns identitiy and a branch that returns "fbz"? 
 
 [ x | x <- [10..20], x /= 13, x /= 15, x /= 19] 
