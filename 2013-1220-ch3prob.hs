@@ -9,11 +9,12 @@ module Ch3Prob where
 
 ---------------2---------------}
 
-second xs 		= head(tail xs)
-swap  (x,y)		= (y,x)
-pair x y 		= (x,y)
+second xs 		= head(tail xs) 	-- :: [a] -> a 
+swap :: (a,b) -> (b,a)
+swap  (x,y)		= (y,x)				-- :: (a,b) -> (b,a)  
+pair x y 		= (x,y) 			-- :: a -> b -> (a,b)
 double x 		= x * 2 
-palindrome xs 	= reverse xs == xs 
+palindrome xs 	= reverse xs == xs  -- :: 
 twice f x 		= f (f x) 
 
 -- note class constraints 
