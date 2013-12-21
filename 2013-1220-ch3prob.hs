@@ -18,3 +18,8 @@ twice f x 		= f (f x)
 
 -- note class constraints 
 
+{----------------4----------------
+Functions equivalence and the equality type class 
+
+-} 
+ 
