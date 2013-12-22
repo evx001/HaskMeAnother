@@ -10,11 +10,15 @@ module Ch3Prob where
 ---------------2---------------}
 
 second xs 		= head(tail xs) 	-- :: [a] -> a 
-swap :: (a,b) -> (b,a)
+swap 			:: (a,b) -> (b,a)
 swap  (x,y)		= (y,x)				-- :: (a,b) -> (b,a)  
+pair 			:: a -> b -> (a,b)
 pair x y 		= (x,y) 			-- :: a -> b -> (a,b)
+double 			:: Num a => a -> a  
 double x 		= x * 2 
-palindrome xs 	= reverse xs == xs  -- :: 
+palindrome		:: Eq a => [a] -> Bool
+palindrome xs 	= reverse xs == xs  
+twice 			:: (a -> a) -> a -> a
 twice f x 		= f (f x) 
 
 -- note class constraints 
@@ -23,6 +27,10 @@ twice f x 		= f (f x)
 Functions equivalence and the equality type class 
 
 [[5,4,3,2,1,0]!!x|x <-[(length [5,4,3,2,1,0])-1]]
+
+let blah b = 2.0 * b
+let lah a  = 8 / a  
+blah 2 == lah 2 
 
 
 ----------------------------------} 
