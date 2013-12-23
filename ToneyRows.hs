@@ -8,7 +8,7 @@ Tonal2 = (0,5)
 Tonal3 = (0,4)
 tonal4 = (0,9)
 Tonal5 = (0,3)
--} 
+ 
 
 
 make mozArtSong interesting by applying 
@@ -17,4 +17,4 @@ to mozart melodies
 [[1],[1,2],[1,2,3],[1,2,3,4],[1,2,3,4,5]] 
 
 the Sowhat Chord 
-
+-}
