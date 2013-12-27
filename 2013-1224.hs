@@ -17,6 +17,7 @@ sIgnum n    | n < 0                 = -1
             | otherwise             = 1  
 -- another guard example -- 
 
+nList ::  (Num a, Integral b) => [a] -> [Char]
 
 nList x  | x `mod` 15   == 0        = "fbz" 
          | x `mod` 5    == 0        = "bz" 
@@ -25,3 +26,12 @@ nList x  | x `mod` 15   == 0        = "fbz"
 -- 4.4 -- Pattern Matchting ----
 
 
+
+
+
+
+
+{-
+ b&&c  | b == c     = b 
+       | otherwise  = False 
+-}
