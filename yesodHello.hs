@@ -1,5 +1,7 @@
--- !! to run this ---> runhaskell helloworld.hs
-{-# LANGUAGE TypeFamilies, QuasiQuotes, MultiParamTypeClasses, TemplateHaskell, OverloadedStrings #-}
+module YesodHi where
+-- !! to run this ---> runhaskell filename.hs
+{-# LANGUAGE TypeFamilies, QuasiQuotes, MultiParamTypeClasses, TemplateHaskell, OverloadedStrings #-} 
+
 import Yesod
 data Links = Links
 mkYesod "Links" [parseRoutes| / HomeR GET
