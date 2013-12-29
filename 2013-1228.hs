@@ -1,8 +1,27 @@
 module Dec28 where
--- haskellforcats@gmail.com
-
+{------------------- haskellforcats@gmail.com -------------
 -- Haskell: because proofs are proof!
 -- Haskell: for when your test-base exceeds your code-base.
+
+
+99.9% have failed to solve this.
+
+if 
+3 = 18 
+4 = 32
+5 = 50 
+6 = 72
+7 = 98
+
+then 
+
+10 = x ------------------------}
+ 
+product [(snd(last(zip[3..10](take 8[18`div`3,32`div`4..])))),(fst(last(zip[3..10](take 8[18`div`3,32`div`4..]))))]
+
+
+
+{-
 th3to10 = [3..10] -- the entire sequence through 10, we want to find values for 8,9,10
 dada7  = ((length th3to10)-1) -- the n of addresses starting from zero (0-7)
 a = (3,18) 
@@ -20,7 +39,7 @@ dada1 = [(div (fst(swap n)) (snd(swap n)))|n <-[a,b,c,d,e]] -- [6,8,10,12,14] ou
 
 
 
-{- 
+ 
 99.9% have failed to solve this.
 
 if 
@@ -90,6 +109,6 @@ Prelude> [(3*6),(4*8)..(10*20)]
 
 *Dec28> [(snd(last(zip[3..10](take 8[18`div`3,32`div`4..]))))]
 [20]
-
+product [(snd(last(zip[3..10](take 8[18`div`3,32`div`4..])))),(fst(last(zip[3..10](take 8[18`div`3,32`div`4..]))))]
 -}
 
