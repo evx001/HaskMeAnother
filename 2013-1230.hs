@@ -10,7 +10,7 @@ c -- pattern matched
 -- safetail :: [a] -> [a] 
 -- safetail :: (Eq t, Num t) => [t] -> [t]
 -- safetail [xs] = if null [xs] then [] else [1]
-safetail xs = if xs==[] then [] else 1       -- if xs==xs then[1] else 0
+safetail xs = if xs==[] then []  else [xs]       -- if xs==xs then[1] else 0
 
 
 
