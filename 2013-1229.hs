@@ -1,6 +1,7 @@
-module Dec29 where
+module Halve where 
 -- 4.8.1 -- 
--- halve :: [a]->([a],[a]) 
--- halve xs = if ((length xs) `div` 2 == 0) then 0 else ((length xs)`div` 2
+halve :: [a] -> ([a], [a])
+halve   x       = splitAt dee x 
+                where 
+                        dee             = (length x) `div` 2 
 
-splItAt x =   
