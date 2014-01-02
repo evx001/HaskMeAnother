@@ -1,4 +1,5 @@
 module Dec30 where 
+-- http://vimeo.com/72870631
 -- 4.8.2.a 
 {- -------------------------------
 -- safetail  as prelude-last except don't choke on [] empty set.
@@ -10,7 +11,7 @@ c -- pattern matched
 -- safetail :: [a] -> [a] 
 -- safetail :: (Eq t, Num t) => [t] -> [t]
 -- safetail [xs] = if null [xs] then [] else [1]
-safetail xs = if xs==[] then []  else [xs]       -- if xs==xs then[1] else 0
+safetail xs = if xs==[] then []  else if [x] then [x] else if (_:xs) then safetail xs else xs        
 
 
 
