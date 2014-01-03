@@ -20,7 +20,7 @@ safetail xs = if xs==[] then []  else if [x] then [x] else if (_:xs) then safeta
  - safetail as pattern matching 
 safetail :: [a] -> [a]
 safetail    []          = [] 
-safetail    [x]         = [x]
+-- safetail    [x]         = [x]
 safetail    (_:xs)      = safetail xs
 
 -- note that the type signature borrowed from last which I first used was too restrictive because it prevented the [] set from being an acceptable value. 
