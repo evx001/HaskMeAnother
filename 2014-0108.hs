@@ -61,7 +61,8 @@ fReqs   xs                  = [percent (count x xs') n | x <- ['a'..'z']]
                                 where 
                                     xs' = map toLower xs 
                                     n   = letters xs
- 
+-- perc2nt n m =(fromInteger n / fromInteger m) * 100
+
 low2int                     :: Char -> Int 
 low2int c                   =  ord c - ord 'a' 
 
@@ -75,7 +76,9 @@ int2upp                     :: Int -> Char
 int2upp n                   = chr (ord 'A' + n) 
 
 -- letters                     :: String -> Int 
-letters xs                  = length [x|x <- xs, isAlpha x] 
+letters xs                  = genericLength [x|x <- xs, isAlpha x] 
+
+
 
 isAlphaNum c= isAlpha c || isDigit c
 isDigit c= c >= '0'&& c <= '9'
