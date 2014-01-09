@@ -31,3 +31,6 @@ fact4rial   (n+1)   =  (n + 1) * fact4rial n
 m5lti  0            = 0 * m5lti 
 m5lti (*(n+1))      = m5lti + (m5lti * n)
 -}
+
+
+
