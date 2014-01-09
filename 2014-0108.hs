@@ -1,21 +1,13 @@
 module Jan8 where 
-import GHC.Base
-import GHC.Char
-import Data.List
--- working getting the exercises from chap 5 to compile
--- currently there are many name collisions 
--- loaded Data.List so I could have GenericLength
--- [1 of 1] Compiling Ch5examp2        ( ch5examp2.hs, interpreted )
-
-{-5examp2.hs:203:54: -- this one still vexes me 
-    Couldn't match expected type `Integer' with actual type `Int'
-    In the second argument of `percent', namely `n'
-    In the expression: percent (count x xs') n
-    In the expression: [percent (count x xs') n | x <- ['a' .. 'z']]-}
-
--- so plan is pull out the parts of the longer program that are choking it
-
--- percent has an integer in it, I could make another named percent specifically for the Int requirement in the piece.
+import GHC.Base -- for ord, for chr  
+import GHC.Char -- for char
+import Data.List -- for genericLength 
+-- working getting the exercises from chap 5 to compile 
+-- which they now do. 
+-- I could could create a branch and then try hugs 
+-- two ways to do that, look for an earlier commit -- maybe convoluted -- also not so clean 
+-- or re-enter from scratch -- which is tedious but straight forward 
+-- this feels like coding don't it =) 
 table :: [ Float ] 
 
 table = [ 8.2, 1.5, 2.8, 4.3, 12.7, 2.2, 2.0, 6.1, 7.0, 0.2, 0.8, 4.0, 2.4,6.7, 7.5, 1.9, 0.1, 6.0, 6.3, 9.1, 2.8, 1.0, 2.4, 0.2, 2.0, 0.1 ]
@@ -76,6 +68,8 @@ int2upp                     :: Int -> Char
 int2upp n                   = chr (ord 'A' + n) 
 
 -- letters                     :: String -> Int 
+-- letters xs                  = length [x|x <- xs, isAlpha x]  
+letters :: Num i => [Char] -> i
 letters xs                  = genericLength [x|x <- xs, isAlpha x] 
 
 
@@ -86,3 +80,5 @@ isDigit c= c >= '0'&& c <= '9'
 isAlpha c = isLower c || isUpper c
 isUpper c= c >= 'A'||c<='Z'
 isSpace c= elem c "\t\n"
+
+
