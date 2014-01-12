@@ -1,5 +1,7 @@
 module Jan11 where 
+
 import Data.Char 
+import Data.List
 -- ---------------------------- 5.1 -- Generators ---------
 -- ghci>[x^2|x<-[1..5]]
 -- [1,4,9,16,25]
@@ -73,12 +75,15 @@ positions x xs  = [i|(x',i) <-zip xs [0..n], x==x']
 -- zip  [1..12] "Call me Ishmael"
 -- [(1,'C'),(2,'a'),(3,'l'),(4,'l'),(5,' '),(6,'m'),(7,'e'),(8,' '),(9,'I'),(10,'s'),(11,'h'),(12,'m')]
 
-lowers          :: String -> Int 
+-- lowers          :: String -> Int 
 lowers xs       = length [x|x<-xs,isLower x]
 -- lowers  "Call me Ishmael"
 -- 11
-count           :: Char -> String -> Int 
-count x xs      = length [x'|x'<-xs,x==x']
+
+-- count           :: Char -> String -> Int 
+-- count x xs      = length [x'|x'<-xs,x==x']
+
+count x xs      = genericLength [x'|x' <- xs, x == x'] 
 -- count 'a'  "Call me Ishmael"
 -- 2
 -------------------------------------------5.5 -- Caesar cipher ----  
@@ -122,8 +127,12 @@ table = [ 8.2, 1.5, 2.8, 4.3, 12.7, 2.2, 2.0, 6.1, 7.0, 0.2, 0.8, 4.0, 2.4,6.7, 
 -- percent         :: Int -> Int -> Float 
 -- percent n m     = (fromInt n / fromInt m) * 100  
 percent :: Fractional a => Integer -> Integer -> a
-percent n m     = (fromInteger n / fromInteger m) * 100 
+percent n m         = (fromInteger n / fromInteger m) * 100 
 
+{-
+freqs xs        = [percent (count x xs) n | x <- ['a'..'z']] 
+                    where n = lowers xs
+-}
 
 
 
