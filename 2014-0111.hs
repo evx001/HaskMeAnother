@@ -129,11 +129,9 @@ table = [ 8.2, 1.5, 2.8, 4.3, 12.7, 2.2, 2.0, 6.1, 7.0, 0.2, 0.8, 4.0, 2.4,6.7, 
 percent :: Fractional a => Integer -> Integer -> a
 percent n m         = (fromInteger n / fromInteger m) * 100 
 
-{-
-freqs xs        = [percent (count x xs) n | x <- ['a'..'z']] 
-                    where n = lowers xs
--}
 
+-- freqs xs        = [percent (count x xs) n | x <- ['a'..'z']] 
+--                    where n = lowers xs
 
 
 
