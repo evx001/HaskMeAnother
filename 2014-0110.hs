@@ -66,3 +66,11 @@ ev2ns       []          = []
 ev2ns       (x:xs)      = x:oDds xs 
 oDds        []          = [] 
 oDds        (_:xs)      = ev2ns xs  
+
+{- 
+ -
+ - 
+ - let f 0 = 0 ; f (n+5) = n
+ -
+ - let f 0 = 0 ; f n | n >= 5 = n' where n' = n - 5 
+ -}
