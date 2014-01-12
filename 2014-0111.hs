@@ -99,7 +99,9 @@ int2let n       = chr (ord 'a'+ n)
 
 shift           :: Int -> Char -> Char -------------------- almost a functor?
 shift n c   | isLower c   = int2let((let2int c + n) `mod` 26)  
-            | otherwise   = c
+            | otherwise   = c ------------------------------ without this line
+------------------------------------------------------------ non-exhaustive 
+------------------------------------------------------------ warning!
 -- shift 11 'e'
 -- 'p'
 
@@ -111,10 +113,23 @@ shift n c   | isLower c   = int2let((let2int c + n) `mod` 26)
 
 encode          :: Int -> String -> String 
 encode n xs     = [shift n x | x <- xs] 
-
+-- encode (-1) "Call me Ishmael"
+-- "Czkk ld Irglzdk"
 
 table :: [ Float ] 
 table = [ 8.2, 1.5, 2.8, 4.3, 12.7, 2.2, 2.0, 6.1, 7.0, 0.2, 0.8, 4.0, 2.4,6.7, 7.5, 1.9, 0.1, 6.0, 6.3, 9.1, 2.8, 1.0, 2.4, 0.2, 2.0, 0.1 ]
+
+-- percent         :: Int -> Int -> Float 
+-- percent n m     = (fromInt n / fromInt m) * 100  
+percent :: Fractional a => Integer -> Integer -> a
+percent n m     = (fromInteger n / fromInteger m) * 100 
+
+
+
+
+
+
+
 
 ----------------------------------------------------------------
 ----------           EXERCISES 
@@ -130,4 +145,6 @@ d2 :: Integer -> Integer -> Integer -> Integer
 d2 n m p =(div(product(concat(dada2(10101+1)[x^2|x<-[1..n]])))(product[m+11^11-1]))^p
 -- (5.73 secs, 3833070184 bytes)
 -- (1.34 secs, 259655336 bytes) 
-
+-------------------------------------------------------------------
+--                  ETCETERA 
+---------------------------------------------------------------------
