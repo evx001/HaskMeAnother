@@ -130,8 +130,8 @@ percent :: Fractional a => Integer -> Integer -> a
 percent n m         = (fromInteger n / fromInteger m) * 100 
 
 
--- freqs xs        = [percent (count x xs) n | x <- ['a'..'z']] 
---                    where n = lowers xs
+freqs xs        = [percent (count x xs) n | x <- ['a'..'z']] 
+                    where n = lowers xs
 
 
 
