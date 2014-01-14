@@ -88,25 +88,4 @@ Then you would have to want to screw up.
 In all the technologies of the middle, 
 
 
-{-
-pYths n           = [(x,y,z)|   x <- [1..n],
-                                y <- [1..n],
-                                z <- [1..n],
-                                x ^ 2 + y^2 == z^2]
-
-
--- nested guards 
-concat [[(x,y) | y <- [4,5,6]]|x <- [1,2,3]]
-
-sHift                       :: Int -> Char -> Char 
-sHift   n c | isLower c     = int2low ((low2int c + n) `mod`26)
-            | isUpper c     = int2upp ((upp2int c + n) `mod`26)
-            | otherwise     = c 
-
-fReqs                       :: String -> [Float] 
-fReqs   xs                  = [percent (count x xs') n | x <- ['a'..'z']]
-                                where 
-                                    xs' = map toLower xs 
-                                    n   = letters xs
-------------------------------------------------------} 
 
