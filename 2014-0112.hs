@@ -168,8 +168,10 @@ crack xs = encode (-factor) xs
 > crack (encode 3 "boxing wizards jump quickly")
 "wjsdib rduvmyn ephk lpdxfgt"
 -}
+----------------------------------------------------------------
+-- 		           EXERCISES 
+----------------------------------------------------------5.8.1-- 
 
-{----------------------------------------------------------}
 -- 5.7.1 -- list comprehension an expression that calculates the sum 1^2+2^2+...100^2 of the first one hundred integer squares.
 
 sumTo100Sq = [sum[x^2] | x <- [1..100]]
@@ -281,9 +283,7 @@ int2upp n                   = chr (ord 'A' + n)
 letters xs                  = genericLength [x|x <- xs, isAlpha x] 
 
 
-----------------------------------------------------------------
-----------           EXERCISES 
-----------------------------------------------------------5.8.1-- 
+
 -- sum of first hundred squares
 
 -- Prelude> sum [y^2|y<-[1..100]]
