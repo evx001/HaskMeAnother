@@ -1,5 +1,5 @@
 {-# LANGUAGE NPlusKPatterns #-}
-module Ch6examp where
+module Ch6probs where
 -- ghci -XNPlusKPatterns
 import qualified Data.List as D 
 -- 6.8.1 -- 
@@ -10,13 +10,71 @@ m `mult` 0 		= 0
 m `mult`(n+1)		= m+(m`mult`n)
 
 
-
-
-
-
-
-
+our type def. 
+(^) :: (Num a, Integral b) => a -> b -> a       -- Defined in `GHC.Real'
 -}
+eXpo :: (Integral a, Num a1) => a1 -> a -> a1
+m `eXpo`  0 = 1
+m `eXpo` (n+1) = m * m `eXpo` n
+-- > eXpo 5 2
+-- 25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -----------------------------------------------------------------------
 --			CHAPTER EXAMPLES
 -- --------------------------------------------------------------------
