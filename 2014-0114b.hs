@@ -16,17 +16,31 @@ our type def.
 eXpo :: (Integral a, Num a1) => a1 -> a -> a1
 m `eXpo`  0 = 1
 m `eXpo` (n+1) = m * m `eXpo` n
--- > eXpo 5 2
--- 25
+-- > 2 `eXpo` 3
+-- 8
 
-
-
-
-
-
-
-
-
+2 `eXpo` 3
+= {applying `eXpo` } 
+2 * (2 `eXpo` 2)
+= {applying `eXpo` } 
+2*(2*(2 `eXpo` 1))
+= {applying `eXpo` }
+2*(2*(2*(2  `eXpo` 0)))
+= {applying `eXpo` }
+2*(2*(2*1)) 
+= {applying * }
+8
+ 
+{- 6.8.2.1 --
+length [1,2,3] 
+= {applying length}
+1+ length [2,3] 
+= {applying length}
+1+(1 + length [3])
+= {applying length}
+1 +(1+(1(1 + 0)))
+= {applying +}
+3
 
 
 
