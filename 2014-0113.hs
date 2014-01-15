@@ -2,7 +2,10 @@ module Jan13 where
 
 Haskell: For A Faster, Safer and Stronger web. 
 Currently we are building with Bamboo where we should be using steel.
-Bamboo is flexible, plentiful, perfectly useful shelters are built with both.  
+Bamboo is flexible, plentiful, and is perfectly useful for building shelters. 
+
+[slide of a typical bamboo structure] 
+  
 But when it comes to scaling up, 
 
 [picture to a bamboo skyscraper]
@@ -14,10 +17,9 @@ you best have extra-ordinary skill
 plus a resolute determination 
 and a vice-like control over your crew.
 You must in effect defy the odds. 
-Php, NodeJs, Rails, Wordpress, Druple, Django, Joomla, etc.  
-all require skill, effort, and focus to do well. 
-Yet unintentionally they allow less credible practitioners to code it poorly, and it will sort of work. 
-Usually if you want to build something that scales, steel, is a better choice. 
+Php, NodeJs, Rails, Wordpress, Druple, Joomla, etc.  
+All require skill, effort, and focus to do well. 
+Yet unintentionally they allow less credible practitioners to code poorly, and it sort of works.  
 I propose letting Haskell watch your back. 
 
 I can point to four companies that I know of personally, 
@@ -60,12 +62,13 @@ We've all done it. Pushed code to production, we shouldn't have.
 But if the language you are using doesn't allow you to screw up; 
 doesn't allow you to leave loose ends, and messes. 
 
-And from the get go you have to think through your problem;
-it might be harder to get going but but once you get there, 
-you've actually arrived.  
+From the get go, with Haskell you have to think through your task;
+it can be harder to get going but but once you get there, you have actually arrived.
+Generally if it compiles it usually works. 
+We've all heard of the 80/20 rule; the last 20% is where the pain lives. 
+What Haskell does different is redistribute that 20% forward, so that the hard parts aren't all bundled at the end. 
 
-I came to Haskell on my own after exploring the other 
-choices and finding that each had too many trade offs. 
+I came to Haskell on my own after exploring the other choices and finding that each had too many trade offs.
 
 A robust Static Typing, and 
 
