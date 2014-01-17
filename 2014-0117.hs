@@ -117,4 +117,57 @@ fancySeven' = 2 * a +1
 -- 7
 -- WHERE IS ASSCOCIATED WITH FUNCTION DEF ALWAYS.
 
-  
+-- WHERE IS TOP DOWN 
+-- LET IS BOTTOM UP 
+
+-- SPACES OVER TABS ALWAYS !
+-- LAZY EVALUATION, HASKELL WON'T EVALUATE ANYTHING UNTIL IT HAS TO. 
+
+
+-- DEF NEW OPERATORS 
+(a,b) .+ (c,d) = (a + c, b + d) -- .+
+-- *Jan17> (3,4) .+ (5,9)
+-- (8,13)
+
+
+-- MAP FUNCTION 
+-- map :: (a -> b) -> [a] -> [b] 	-- Defined in `GHC.Base'
+-- map length ["hello","it's","me"] -- map takes two inputs.  
+-- [5,4,2]
+-- *Jan17> map (/2) [1..11] 
+-- [0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5]
+
+double'' = map (2*) 
+half 	 = map (/2) 
+-- *Jan17> half  [1..11]
+-- [0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5]
+
+-- FILTER filters out what doesn't pass def 
+
+isEven' x 	= x `mod` 2 == 0 
+removeOdd' 	= filter isEven'
+-- *Jan17> removeOdd' [1..13]  
+-- [2,4,6,8,10,12]
+
+MAP WITH FILTER 
+
+-- *Jan17> map snd (filter fst [(True,1),(False,7),(True,11)]) 
+-- [1,11]
+
+-- FOLD combines all values in a list into one value
+-- *Jan17> foldl (+) 0 [1,2,3,4] 
+-- 10
+
+-- ZIPWITH 
+-- *Jan17> zipWith (+) [1..5] [2..6] 
+-- [3,5,7,9,11]
+
+
+-- *Jan17> let plus3 x y z = x + y + z 
+-- *Jan17> zipWith3 plus3 [1, 3, 5] [2, 4, 6] [3, 5, 7]
+-- [6,12,18]
+
+-- . Function Composition 
+-- $ Function Application 
+
+
