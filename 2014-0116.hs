@@ -7,11 +7,5 @@ import qualified Data.List as D -- for genericLength etc. to be used as D.generi
 
 {- thirty first day of continuous Haskell -} 
 
-{-
-divBy10 :: Double -> Double
-divBy10 = (/10)
-divBy10i :: Integer -> Integer
-divBy10i  = (div 10)  
--} 
 
-main = putStrLn "Hello World."  
+
