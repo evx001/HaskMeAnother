@@ -102,6 +102,11 @@ hierarchy = StringTree "C:"
                 , StringTree "Cats" []
                 ]
 
+-- MULTIPLE CONSTRUCTORS
+-- single constructors are containers and behave something like a Class or Struct 
+-- this is where things get interesting 
+-- ALGIBRAIC DATA TYPES WITH MULTIPLE CONSTRUCTORS are unique to Haskell. 
+
 
 
 
