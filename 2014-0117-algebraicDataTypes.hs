@@ -1,5 +1,5 @@
 module Algebraic where 
-
+-- :  set expandtab ts=4 ruler number  
 {- Type Alias 
 
 type MyChar = Char
@@ -103,9 +103,12 @@ hierarchy = StringTree "C:"
                 ]
 
 -- MULTIPLE CONSTRUCTORS
--- single constructors are containers and behave something like a Class or Struct 
+-- single constructors are just containers and behave something like a Class or Struct 
 -- this is where things get interesting 
--- ALGIBRAIC DATA TYPES WITH MULTIPLE CONSTRUCTORS are unique to Haskell. 
+-- ALGIBRAIC DATA TYPES WITH MULTIPLE CONSTRUCTORS aren't available in mainstream oop languages 
+
+-- enum
+data DialogResponse = Yes|No|Help|Quit
 
 
 
