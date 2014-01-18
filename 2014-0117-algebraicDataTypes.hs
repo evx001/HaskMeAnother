@@ -125,9 +125,16 @@ defaultInt defaultValue NoInt = defaultValue
 -- the _ is standing in for the default value because if MaybeInt has something for us that's all we care about. 
 
 defaultInt _ (JustInt x) = x 
--- this resembles the standard lib definitions 
-data StringList = EmptyStringList 
-                | ConsStringList String StringList 
+-- this resembles the standard lib definitions but just works on StringList 
+data StringList = EmptyStringList                 -- EmptyStringList is just that and empty list
+                | ConsStringList String StringList -- ConsStringList is the 2nd constructor 
+----------------------------------------------------- and is made up of a String 
+----------------------------------------------------- which is the head of the list 
+----------------------------------------------------- and the tail of the list, StringList. 
+
+lengthStringList :: StringList -> Int
+lengthStringList EmptyStringList            = 0 
+lengthStringList (ConsStringList _ xs)      = 1 + lengthStringList xs  
 
 
 
