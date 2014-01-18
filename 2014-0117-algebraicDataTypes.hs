@@ -107,9 +107,10 @@ hierarchy = StringTree "C:"
 -- this is where things get interesting 
 -- ALGIBRAIC DATA TYPES WITH MULTIPLE CONSTRUCTORS aren't available in mainstream oop languages 
 
--- enum
+-- enum like, because none of the theses have args.
 data DialogResponse = Yes|No|Help|Quit
 
+data MaybeInt = NoInt | JustInt Int 
 
 
 
