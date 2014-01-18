@@ -132,9 +132,13 @@ data StringList = EmptyStringList                 -- EmptyStringList is just tha
 ----------------------------------------------------- which is the head of the list 
 ----------------------------------------------------- and the tail of the list, StringList. 
 
-lengthStringList :: StringList -> Int
+lengthStringList                            :: StringList -> Int
 lengthStringList EmptyStringList            = 0 
 lengthStringList (ConsStringList _ xs)      = 1 + lengthStringList xs  
 
+-- comapre to length in standard lib. 
+-- length :: [a] -> Int 
+-- length [] = 0 
+-- length (_ : xs) = 1 + length xs 
 
-
+-- Parameterized Types
