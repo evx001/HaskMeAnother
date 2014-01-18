@@ -110,13 +110,15 @@ hierarchy = StringTree "C:"
 -- enum like, because none of the theses have args.
 data DialogResponse = Yes|No|Help|Quit
 
-data MaybeInt = NoInt | JustInt Int 
-
-
-
-
-
- 
+-- this corresponds to a Nullable value seen in other languages
+-- Maybe gets us what we would otherwise get from a null pointer 
+-- Null pointers are abused for error purposes in Languages like Java
+-- Haskell is Null pointer free!
+data MaybeInt = NoInt | JustInt Int
+-- with pattern matching we can find out if there is a value and retreve it to. 
+defaultInt :: Int -> MaybeInt -> Int 
+defaultInt defaultValue NoInt = defaultValue
+defaultInt _ (JustInt x) = x 
 
 
 
