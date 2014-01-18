@@ -1,6 +1,13 @@
 module Algebraic where 
 
-{-      NEWTYPES --
+{- Type Alias 
+
+type MyChar = Char
+
+it adds some readability but the type-checker doesn't care if you use it consistently or not.
+
+
+--      NEWTYPES --
 
 *Jan17> type ListOChars = [Char]
 *Jan17> :i ListOChars
@@ -9,9 +16,10 @@ now we can refer to our type ListOChars and it will mean [Char]
 
 A type synonym is a new name for an existing type. Values of different synonyms of the same type are entirely compatible. In Haskell you can define a type synonym using type:
 
-type MyChar = Char
 
-it adds some readability and the compiler doesn't care if you use it consistently or not.
+BUT THEY ONLY TAKE ONE ARGUMENT
+
+
 
 A newtype declaration creates a new type. 
  types declared with the data keyword are lifted - 
@@ -76,6 +84,24 @@ customerToInt (CustomerId i) = i
 data     Customer = Customer CustomerId String Int 
 alice :: Customer 
 alice =  Customer (CustomerId 13) "Alice" 42 
+
+getCustomerId :: Customer -> CustomerId
+-- getCustomerId (Customer cust_id name luckyNumber) = cust_id
+getCustomerId (Customer cust_id _ _ ) = cust_id -- so we can search easier / wider 
+
+-- This was something like the newtype but we can add more arguments / attributes
+
+-- tuples are sometimes used but usually they aren't descriptive enough 
+
+data StringTree = StringTree String [StringTree] 
+
+hierarchy = StringTree "C:" 
+                [ StringTree "Program Files" [] 
+                , StringTree "Users"
+                    [StringTree "Alice" [] ] 
+                , StringTree "Cats" []
+                ]
+
 
 
 
