@@ -116,9 +116,18 @@ data DialogResponse = Yes|No|Help|Quit
 -- Haskell is Null pointer free!
 data MaybeInt = NoInt | JustInt Int
 -- with pattern matching we can find out if there is a value and retreve it to. 
+-- the first Int in the def., is for the default value 
+-- assuming an actual value isn't returned inside MaybeInt.
 defaultInt :: Int -> MaybeInt -> Int 
 defaultInt defaultValue NoInt = defaultValue
+-- if MaybeInt contains a value this pattern is picked.
+-- x is the value to return; 
+-- the _ is standing in for the default value because if MaybeInt has something for us that's all we care about. 
+
 defaultInt _ (JustInt x) = x 
+-- this resembles the standard lib definitions 
+data StringList = EmptyStringList 
+                | ConsStringList String StringList 
 
 
 
