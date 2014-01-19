@@ -1,5 +1,5 @@
 module Jan18 where 
--- :   set expandtab ts=4 ruler number
+-- :   set expandtab ts=4 ruler number spell
 {---------------------------------------------------
 data Person = Person { firstName :: String
 , lastName :: String
