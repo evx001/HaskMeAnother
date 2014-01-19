@@ -58,4 +58,3 @@ lengthStringList :: StringList -> Int
 lengthStringList EmptyStringList = 0 
 lengthStringList (ConsStringList _ xs) = 1 + lengthStringList xs  
 
-
