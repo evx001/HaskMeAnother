@@ -1,9 +1,8 @@
 module Jan19 where 
+-- : set expandtab ts=4 ruler number spell
 
--- time calculator 
-
--- seconds=sec
--- minutes=(sec*60) 
--- hour = (min*60)
-
-
+import System.Environment
+import System.Directory
+import System.IO
+import Control.Exception
+import qualified Data.ByteString.Lazy as B
