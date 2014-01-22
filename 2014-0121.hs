@@ -65,7 +65,36 @@ oddsRec' (x:xs)  | odd x     = x : oddsRec xs
 {-  oddsRec' [1,2,3] 
 = 
     oddsRec' (1:(2:(3:[])))
-=   { x = 1, xs = (2:(3:[])), odd 1 = True }  
-    1: oddsRec' (2:(3:[]))
-=   
-    oddsRec'
+=   { x = 1, xs = (2:(3:[])), odd 1 = True } -- 1 is True so it gets saved.  
+    1: oddsRec' (2:(3:[])) 
+=   { x = 2, xs = (3:[])), odd 2 = False } -- 2 is thrown away
+    1: oddsRec' (3:[])
+=   { x = 3, xs = (3:[])), odd 3 = True } --  3 is kept because it's True.
+    1:(3: oddsRec' [] )
+=   { x = []} -- and that equals [] 
+    1 : (3:[]) -- this is just notation for [1,3] 
+=   { we cons the remaining } 
+    [1,3] 
+-- this is all that is happening, without any need to address state. 
+-------------------------------------------------------------------}
+--                      SUMMING A LIST 
+--------------------------------------------------------------------
+-- summing doesn't lend it self so neatly to recusion.  
+sum' :: Num a => [a] -> a
+sum' []     = 0
+sum' (x:xs)  = x + sum xs
+{- 
+    sum' [1,2,3] 
+= {is really} 
+    sum'(1:(2:(3:[])))
+= {pulling apart the list via head and tail} 
+    1 + sum' (2:(3:[]))
+= {taking the next item} 
+    1+(2+ sum' (3:[]))
+= {applying + operator again } 
+    1 + (2 + (3 + sum' []))
+= {arriving at the empty list [] we use 0 because it's identity for addition}
+    1 + (2 + (3 + 0))
+= 
+    6
+
