@@ -49,10 +49,10 @@ Loading package QuickCheck-2.6 ... linking ... done.
 -- (x*x)*x) vs (x*(x*x) 
 --
 -- SEQUENTIAL takes 7 steps which mean m lists it takes m - 1 steps
---      xs1 ++  (xs2 ++ (xs3 ++ (xs4 ++ (xs5 ++ (xs6 ++ (xs7 ++ xs8))))))
+--      xs1 +  (xs2 + (xs3 + (xs4 + (xs5 + (xs6 + (xs7 + xs8))))))
 --
 -- PARALLEL  takes 3 steps  
---      ((xs1 ++ xs2) ++ (xs3 ++ xs4)) ++  ((xs5 ++ xs6) ++ (xs7 ++ xs8))
+--      ((xs1 + xs2) + (xs3 + xs4)) +  ((xs5 + xs6) + (xs7 + xs8))
 -- 
 -- if we have m lists it takes log2m steps 
 -- when m = 1000 sequential  takes a hundred times longer than parallel 
