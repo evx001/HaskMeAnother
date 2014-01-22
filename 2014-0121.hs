@@ -97,4 +97,47 @@ sum' (x:xs)  = x + sum xs
     1 + (2 + (3 + 0))
 = 
     6
+-----------------------------------
+product'    [] = 1 
+product' (x:xs) = x * product xs 
 
+    product [1,2,3] 
+=
+    product (1:(2:(3 : [])))
+=
+    1 * (product (2:(3: []))
+=
+    1 * (2 * (product (3 :[])))
+=
+    1 * (2 *(3 * (product [])))
+=
+    1 * (2 * (3 * 1 ))
+=
+    6 
+
+[] = list is the identity ---------------}
+
+-- Comprehension 
+sumSqOdd xs = sum [x*x| x <- xs, odd x] 
+
+-- Recursively 
+sumSqOddRec     []              = 0
+sumSqOddRec (x:xs)  | odd x     = x * x + sumSqOddRec xs 
+                    | otherwise = sumSqOddRec xs 
+{-
+    sumSqOddRec [1,2,3] 
+= 
+    sumSqOddRec (1:(2:(3: [])))
+= 
+    1*1 + sumSqOddRec (2:(3: []))
+= 
+    1*1 + sumSqOddRec (3: [] ) -- 2 is even so it gets dropped 
+= 
+    1 * 1 + 3 * 3 + sumSqOddRec [] 
+= 
+    1*1 + 3*3 + 0 
+= 
+    1 + 9 + 0 
+= 
+    10 
+-}    
