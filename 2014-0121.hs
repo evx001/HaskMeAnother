@@ -1,4 +1,4 @@
-module Ch1ListsRecur where 
+module Jan21ListRec where 
 -- import Data.Char
 -- : set expandtab ts=4 ruler number spell
 import Test.QuickCheck 
@@ -56,3 +56,16 @@ Loading package QuickCheck-2.6 ... linking ... done.
 +++ OK, passed 100 tests.
 -}
 
+-- unpacking oddsRec 
+
+oddsRec' :: Integral a => [a] -> [a]
+oddsRec' []                  = []
+oddsRec' (x:xs)  | odd x     = x : oddsRec xs 
+                 | otherwise = oddsRec xs 
+{-  oddsRec' [1,2,3] 
+= 
+    oddsRec' (1:(2:(3:[])))
+=   { x = 1, xs = (2:(3:[])), odd 1 = True }  
+    1: oddsRec' (2:(3:[]))
+=   
+    oddsRec'
