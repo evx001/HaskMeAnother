@@ -2,7 +2,7 @@ module Jan22MoreRec where
 -- import Data.Char
 -- : set expandtab ts=4 ruler number spell
 import Test.QuickCheck 
-{- Most everything in Haskell is functions.
+{- Most everything in Haskell is a function. If it isn't data. 
 
  Church of Recursion
 Recursion gets you everything you would want just as well as a Turing Machine 
@@ -19,7 +19,7 @@ FIRST IS CLEAR AND UNDERSTANDABLE
 THEN AND ONLY THEN SHOULD IT BE FASTER
 
 Conditionals are required if wet want to do interesting stuff.
-The more Conditionals means each branch requires testing.
+More Conditionals means, each branch requires testing in itself.
 
 operator properties that matter: 
 associativity If a binary operation is associative, repeated application of the operation produces the same result regardless how valid pairs of parenthesis are inserted in the expression 
@@ -83,5 +83,14 @@ factorialRec n = fact 1 n
         fact m n    | m > n     = 1 
                     | m <= n    = m * fact (m+1) n 
                     
-prop_fac n = factorial n == factorialRec n 
+-- prop_fac n = factorial n == factorialRec n 
 
+-- Counting 
+-- enumFrom 0 == [0..] 
+en5mFrom m  = m : enumFrom (m+1) 
+
+z3p [] _            = [] 
+z3p _ []            = [] 
+z3p (x:xs) (y:ys)   = (x,y) : z3p xs ys 
+
+-- 
