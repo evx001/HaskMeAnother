@@ -2,9 +2,9 @@ module Jan22MoreRec where
 -- import Data.Char
 -- : set expandtab ts=4 ruler number spell
 import Test.QuickCheck 
+{- Most everything in Haskell is functions.
 
-
-{- Church of Recursion
+ Church of Recursion
 Recursion gets you everything you would want just as well as a Turing Machine 
 
 a recursive definition of a list
@@ -57,4 +57,31 @@ Loading package QuickCheck-2.6 ... linking ... done.
 -- if we have m lists it takes log2m steps 
 -- when m = 1000 sequential  takes a hundred times longer than parallel 
 --}
+
+en5nFromTo m n  | m > n     = [] 
+                | m <= n    = m : en5nFromTo (m+1) n 
+
+{- the recursion call moves toward the smaller, reducing the distance between start point and end point.
+
+    en5nFromTo 1 3 
+=
+    1: en5nFromTo 2 3 
+=
+    1 : (2 : en5nFromTo 3 3) 
+= 
+    1: (2 : (3 : en5nFromTo 4 3)
+= 
+    1 : (2 : (3 [])) 
+= 
+    [1,2,3] 
+-}
+factorial n = product [1..]  
+
+factorialRec n = fact 1 n 
+    where 
+        -- :fact :: Int -> Int -> Int 
+        fact m n    | m > n     = 1 
+                    | m <= n    = m * fact (m+1) n 
+                    
+prop_fac n = factorial n == factorialRec n 
 

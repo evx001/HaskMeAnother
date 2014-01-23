@@ -141,3 +141,4 @@ sumSqOddRec (x:xs)  | odd x     = x * x + sumSqOddRec xs
 = 
     10 
 -}    
+
