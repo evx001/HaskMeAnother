@@ -30,3 +30,23 @@ note that i connects and continues in the second list generator.
   []      ++ []      ++ [(3,3)]
 =
 [(1,1),(1,2),(1,3),(2,2),(2,3),(3,3)]
+
+------------------------------------------
+-- FORMAL DEFINITION FOR LIST COMPREHENSION
+------------------------------------------
+  q ::= x <- l, q | b, q | * 
+
+[e | * ] -- empty
+  = [e]  
+[e | x <- [l1,...,ln],q] 
+  = (let x = l1 in [e | q ]) ++ ... ++ (let x = ln in [e | q ]) 
+
+[e | b, q ] 
+  = if b then [ e | q ] else []
+
+-----------------------------------------
+-- HERE IT IS AS A PROGRAM
+-----------------------------------------
+in the lists comprhension they are either drawn from or filters 
+
+[(i,j) | i <- [1..3], j <- [1..3], i <= j, * ]
