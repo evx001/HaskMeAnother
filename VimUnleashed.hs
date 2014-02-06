@@ -47,4 +47,13 @@ module VimFun where
 	-- g -- Search for all occurances 
 	-- c -- ask for comfirmation of each match 
 	-- . -- note that the . means all characters 
- 
+-- V -- for visual mode -- takes a whole line 
+	-- which can then be 
+-- y -- yank - to copy
+-- d -- deletes the visual contents 
+-- v -- character Visual mode -- selecting characters.  
+-- c -- deletes block and enters insert mode.
+-- / -- for -- /searchterm -- for adding a search term to highlight
+-- d2w -- would delete next 2 words 
+-- . -- would repete the action 
+
