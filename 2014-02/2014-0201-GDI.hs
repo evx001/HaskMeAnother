@@ -24,7 +24,7 @@ The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs 
         -- Paul Graham, OOP and The SmallTalk Murder Mystery? 
             Help my procedure is toooo complicated 
                 oops!
-            Abstraction hirarchy 
+            Abstraction hierarchy 
             the right idea is worth 80 IQ points. 
         -- The bloated middle   
             Let Me interpret that for you         
@@ -53,7 +53,7 @@ The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs 
                 declarative 
                 F.R.P.? 
         
-    II. The Church of Lamda Calc and all the math you'll ever need
+    II. The Church of Lambda Calc and all the math you'll ever need
         assoc-dest-commut-etc.
 	    Haskell math
             ghci 2 + 2  
@@ -72,9 +72,9 @@ The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs 
                         then x 
                         else x*2 
             fn003 x = (if x > 100 then x else x^2) +1 
-            fn004 x = "Call Me Ishmall" 
-            fn005 y = ["Call Me Ishmall"] 
-            fn006 z = ["Call","Me","Ishmall"] 
+            fn004 x = "Call Me Ishmael" 
+            fn005 y = ["Call Me Ishmael"] 
+            fn006 z = ["Call","Me","Ishmael"] 
             fn007   = [1..101] 
             fn008   = [10,20..1000]
             fn009 = fn007 ++ fn008 
@@ -111,7 +111,7 @@ The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs 
             fst snd zip  
         Int Integer Float Double Bool Char
         a t x xs f () 
-        Eq Ord Show Read Enum Bounded Num Itegral Floating  
+        Eq Ord Show Read Enum Bounded Num Integral Floating  
         Pattern Matching 
         Guards 
         Case -- Switching 
@@ -122,7 +122,7 @@ The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs 
         the Value of a Function 
         some work and then some more (partial eval)
         (+)
-        Map     -- google 
+        Map     -- Google 
         Filter 
         Fold    -- reduce
         zip 
@@ -136,11 +136,11 @@ The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs 
         oops let me clean that up NOT! 
         TDD
         Fragility 
-        the Four Horsemen of the Parallel Apocolypse 
+        the Four Horsemen of the Parallel Apocalypse 
         GHCI -> lets play   
-        The Hell of Dante's infering 
+        The Hell of Dante's inferring 
             Explicit typing  
-        Polymorphing 
+        Polymorphic 
         Class Constraints & Interfaces 
             no kaka in no kaka out 
         Customer Types 
