@@ -1,9 +1,9 @@
 {- 
 SkedgeMe  
-Api into Sephora Website 
-41-k.l.o.c. 
+API into Sephora Website 
+41-K.L.O.C. 
 Major Intractable Bugs 
-TimeZones 
+Timezones 
 Recurring Events 
 Notifications 
 ***Double-Bookings 
@@ -28,7 +28,24 @@ This Raw-DB layer gives concurrent guarantees in our cluster.
 A Second Monad, a DB-monad over the Raw SQL, an IO ref, can use any Haskell Algebraic Data Types you want to use. & CRUD caching validation  
 
 A Security Monad -- who is performing the action -- it makes sure that the person is legally allowed to perform the given transaction.   
-    
+   
+Business layer -- so as not to double book, staff booked close to a local office.  
+    so each piece of business logic cuts through the stack to a certain level.
+    Time is coupled to a spacial index and is written at the raw-DB layer, otherwise where possible we abstract up. 
+
+Tasks-General 
+  Appointments    Biz <-M-M-M-M-> Raw-DB
+  people          Biz <-M-M-M-M-> Raw-DB
+  Notification    Biz <-M-M-M-M-M-> IO 
+  -               Biz <-M-M-M-M-M-> IO 
+Client Specific 
+  Buy-and-Large   Biz <-M-M-M-M-> Raw-DB
+  Client-B        Biz <-M-M-M-> DB
+  -               Biz <-M-M-M-M-> Raw-DB 
+
+Security ?? 
+
+
 
 
 -}
