@@ -2,9 +2,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import           Web.Scotty
--- import           Control.Monad.Trans
--- import           Data.Time
--- import           Data.Text.Lazy         as LT
+import           Control.Monad.Trans
+import           Data.Time
+import           Data.Text.Lazy         as LT
 
 main :: IO ()
 main = scotty 3000 $ do
