@@ -11,7 +11,7 @@ main = scotty 3000 $ do
     get "/" getHome
     -- get "/time" getTime
     -- get "/add/?/?" [getAddNum, getAddText]
-    -- get "/search" getSearch
+    get "/search" getSearch
 
 getHome :: ActionM ()
 getHome = html "<h1>Hello World!</h1>"
@@ -25,7 +25,7 @@ getAddNum :: Integer -> Integer -> ActionM ()
 getAddNum n1 n2 = html $ LT.pack $ show (n1 + n2)
 
 getAddText (w1::Text) (w2::Text) = html $ LT.concat [w1, w2]
-
+-}
 getSearch :: ActionM ()
 getSearch = do
         contact <- (param "contactId") `rescue` (\x -> return "Not Found")
@@ -35,4 +35,3 @@ getSearch = do
                          , "<li>Company ID: ", (company::Text), "</li>"
                          , "</ul>"
                          ] 
--}
