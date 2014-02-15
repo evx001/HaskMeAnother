@@ -1,61 +1,71 @@
 module Feb01 where 
 -- : set spell ts=4 number expandtab
 {-
-The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs to know.  
-    first 7200 seconds 
-            ON/OFF & a cyanide apple      
-            Turing Machine Heads 
-            Reading and Writing is Fundamental
-            Erase  
-            How do I turn this damn thing off?
-        50s Fortran - Algol - John McCarthy and LISP  
-        60s - 70s - 80s - 90s - 00s - Today and Tomorrow
-                TIOBE Index 
+The 420 minute CS Degree, for the Absolute Noob
+    (4 X 105 min) sessions -- we start exactly at 2:05 we end exactly at 3:50 class is for 10
 
-            Why you owe everything to a guy you never heard of (DR)
-                    programing Languages Benchmark game. 
+	first 7200 seconds 
+ 		ON/OFF & a cyanide apple      
+			Turing Machine Heads 
+			Reading and Writing is Fundamental
+			Erase  
+			Jane how do stop this crazy thing?
+		50s Fortran - Algol - John McCarthy and LISP  
+		60s - 70s - 80s - 90s - 00s - Today and Tomorrow
+	TIOBE Index 
+		programing Languages Benchmark game. 
 
-                UNIX, BSD and LINUX and everything else. 
-                 C -> C++ -> Java -> C# 
-                / \           \        \
-             (Go) |           (Scala)   F#
-                  | 
-                   Obj-C & "what the @#$% was Jobs thinking?" just blame it all on Smalltalk    
-        -- Paul Graham, OOP and The SmallTalk Murder Mystery? 
-            Help my procedure is toooo complicated 
-                oops!
-            Abstraction hierarchy 
-            the right idea is worth 80 IQ points. 
-        -- The bloated middle   
-            Let Me interpret that for you         
-                Perl 
-                Php 
-                    wordpress drupal 
-                JS (CSS - HTML) 
-                Web Frameworks ShootOut
-                NodeJs 
-                Ruby 
-                    rails 
-                Python 
-                    flask django
-                LAMP everywhere 
-                M V C
-                SQL my and others
-                mongoDB and others  
-        -- Church of Lambda Calc (LISP) and friends  
-                Interpreting 
-                expressivity  
-                Idiosyncratic incomprehensibility
-                    teams of 3 or smaller 
-                emacs 
-        -- Prolog or couldn't I just ask? 
-                the third way 
-                declarative 
-                F.R.P.? 
-        
-    II. The Church of Lambda Calc and all the math you'll ever need
+Why we owe everything to a guy you never heard of (Dennis R)
+				UNIX, BSD and LINUX and everything else. 
+				 C -> C++ -> Java -> C# 
+				/ \           \        \
+		 (Go) |           (Scala)   F#
+					| 
+					 Obj-C & "what the @#$% was Jobs thinking?" just blame it all on Smalltalk    
+
+Paul Graham, OOP and The SmallTalk Murder Mystery? 
+		Help my procedure is toooo complicated 
+				oops!
+		Abstraction hierarchy 
+		the right idea is worth 80 IQ points. 
+The bloated middle   
+		Let me interpret that for you, in slow motion.         
+				Perl 
+				Php 
+						wordpress drupal 
+				JS (CSS - HTML) 
+				Web Frameworks ShootOut
+				NodeJs 
+				Ruby 
+						rails 
+				Python 
+						flask django
+				LAMP everywhere 
+				M V C
+					sixties? 
+				SQL my and others
+				mongoDB and others  
+-- Church of Lambda Calc (LISP) and friends  
+				Interpreting 
+				expressivity  
+				Idiosyncratic incomprehensibility
+						teams of 3 or smaller 
+				emacs 
+-- Prolog or couldn't I just ask? 
+				Haskell points the way
+				fully declarative 
+				F.R.P.? 
+
+VirtualBox DvD and CD? 
+  use one image for everyone. 
+
+Vim 1 hour   
+Git 1 hour 
+
+
+II. The Church of Lambda Calc and all the math you'll ever need
         assoc-dest-commut-etc.
-	    Haskell math
+			Haskell math
             ghci 2 + 2  
             let 
             && || 
@@ -78,7 +88,7 @@ The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs 
             fn007   = [1..101] 
             fn008   = [10,20..1000]
             fn009 = fn007 ++ fn008 
-            Cons    (:) '1':"2"
+{-          Cons    (:) '1':"2"
             empty = []
 --          !! 
 --          let
@@ -91,7 +101,7 @@ The 480 minute CS Degree, for Noobs, Boobs, PMs, and anyone else who just needs 
         Recursive 
         not your dad's LISP - Lists 
         Functions on Lists 
-{-          head tail init last 
+            head tail init last 
             length null reverse take drop 
             maximum minimum
             sum 
