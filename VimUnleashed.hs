@@ -1,34 +1,43 @@
-module VimFun where
--- :%s/#/_/ -- replaces at first occurance of # in a line  
--- :%s/#/_/g -- replaces at all occurances of # in a line  
--- -N  to use powerful extension VIM 
+-- http://www.fprintf.net/vimCheatSheet.html
+
+-------------------------------
+-- CTRL-w s split win hori 
+-- CTRL-w v split win virt
+-- CTRL-w j focus down
+-- CTRL-w k focus up 
+-- CTRL-w J buff up win
+-- CTRL-w K buff down win 
+-- CTRL-w c Close
+-- CTRL-w o Close all but 1 in 
+-- CTRL-w w cycle win 
+-- CTRL-w p previous win
+-- CTRL-w x catty corner swap win
+ 
+-------------------------------
+-- :ls list buffers
+-- :b3 goes to buffer 3  
+
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-- cntrl Q -- select block area j -- down  -- I -- Esc -- Gvim version 
+{- WHERE cntl-v isn't otherwise used. 
+ - cntrl V -- select block area -- I -- Esc -- vim -N version -}
+-- ~ -- in VISUAL for toggling case  
+-- -N  to use extension VIM 
+-------------------------------
 -- :set wrap
--- V -- for visual mode -- takes a whole line 
--- y -- yank - to copy
--- d -- deletes the visual contents 
--- v -- character Visual mode -- selecting characters.  
--- c -- deletes block and enters insert mode.
--- / -- for -- /searchterm -- for adding a search term to highlight
--- . -- would repete the action 
--- / -- addition seaching down a directory
--- r9 -- will replace the very next character with a 9.
--- n -- search foward again 
--- N -- search backward
--- :set hlsearch -- highlights what was searched for 
--- :set incsearch -- for hightlighting while you type.
--- :%s/2\.2\.8/2.2.9/gc
-	-- :%s/search/replace/gc  
-	-- : -- is the start of the command 
-	-- % -- is for searching the current buffer
-	-- g -- Search for all occurances 
-	-- c -- ask for comfirmation of each match 
-	-- . -- note that the . means all characters 
 -- :set linebreak
--- :set expandtab ts=4 ruler number spell
+-- : set expandtab ts=4 ruler number spell 
+-- :retab -- sets all tabs to current
+-- :set shiftwidth=4
 -- :syntax enable
 -- :set syntax=Haskell 
 -- :set hidden
 -- :set number
+-------------------------------
 -- 12G -- goes to line 12 
 -- gg -- goes to top of file 
 -- G  -- goes to end   
@@ -60,5 +69,31 @@ module VimFun where
 -- ! -- is for accessing the shell from within VIM 
 -- % -- expands to the current file name. 
 -- :e filename -- to open a named file 
+-- / -- addition seaching down a directory
+-- r9 -- will replace the very next character with a 9.
+-- n -- search foward again 
+-- N -- search backward
+-- :set hlsearch -- highlights what was searched for 
+-- :set incsearch -- for hightlighting while you type.
 
+-------------------------------
+
+-- :%s/2\.2\.8/2.2.9/gc
+	-- :%s/search/replace/gc  
+	-- : -- is the start of the command 
+	-- % -- is for searching the current buffer
+	-- g -- Search for all occurances 
+	-- c -- ask for comfirmation of each match 
+	-- . -- note that the . means all characters 
+
+-------------------------------
+-- V -- for visual mode -- takes a whole line 
+	-- which can then be 
+-- y -- yank - to copy
+-- d -- deletes the visual contents 
+-- v -- character Visual mode -- selecting characters.  
+-- c -- deletes block and enters insert mode.
+-- / -- for -- /searchterm -- for adding a search term to highlight
+
+-- . -- would repete the action 
 
