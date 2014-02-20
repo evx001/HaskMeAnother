@@ -1,71 +1,148 @@
-module Badco where 
-data Badco 
-[
-9. Fiserv
-> Rating: 2.5
-> Number of reviews: 440
-> CEO approval rating: 40% (Jeffery Yabuki)
-> Employees: 20,000
-]
-[
-8. NCR
-> Rating: 2.5
-> Number of reviews: 385
-> CEO approval rating: 39% (Bill Nuti)
-> Employees: 25,700
-]
-[
-7. Sears Holdings (Sears/ KMart)
-> Rating: 2.5
-> Number of reviews: 583
-> CEO approval rating: 19% (Eddie Lampert)
-> Employees: 274,000
-]
-[
-6. ADT
+module WpSec where 
+{- 
+wordpress.org 
+	job board 
+ 
+Tim 
+	Zemanta Mobile 2007 -- 
+		understanding content 
 
-> Rating: 2.4
-> Number of reviews: 309
-> CEO approval rating: 55% (Naren Gursahaney)
-> Employees: 16,000
-]
-[
-5. RadioShack
+	publishers and bloggers 
+		desktop -> mobile optimized 
+			promo content for the service 
 
-> Rating: 2.4
-> Number of reviews: 868
-> CEO approval rating: 38% (Joseph Magnacca)
-> Employees: 34,500
-]
-[
-4. Dollar General
+	Zemanta v. JetPack 
 
-> Rating: 2.4
-> Number of reviews: 375
-> CEO approval rating: 43% (Rick Dreiling)
-> Employees: 90,500
-]
-[
-3. Dillard’s
 
-> Rating: 2.3
-> Number of reviews: 560
-> CEO approval rating: 23% (Bill Dillard II)
-> Employees: 27,740
-]
-[
-2. Express Scripts
+DK
+2005 - (2007 hacked plus 9 clients)
+		
+security expert there after   
+Honey pots old sites 
+	intrusion detection 
 
-> Rating: 2.3
-> Number of reviews: 312
-> CEO approval rating: 36% (George Paz)
-> Employees: 30,215
-]
-[
-1. DISH
+1) backaway from keyboard
+	don't touch it 
+	think first 
 
-> Rating: 2.3
-> Number of reviews: 831
-> CEO approval rating: 40% (Joseph Clayton)
-> Employees: 35,000
-]
+emergency preparedness kit 
+
+ftp up a static html
+XHTML with no JS, no php, no css. 
+	index.htm -- apache pulls this first  
+		static 
+
+2) pry you can find login page 
+	that is something they will 
+	custom login protection 
+
+login C panel and export content. 
+	
+? version control 
+pulling form staging site -- Dev site 
+Users list -- users in wp that don't show in admin console  
+-- fraud Users in DB -- php my admin 
+ 
+screen capture, -- 
+	-- server file stamp 
+
+Scan all files for changes open each for dates out of sync, 
+	got to do it live on the site
+	it's tedious and time consuming 
+	
+index php -- 
+	
+
+eligant backdoors 
+	they have better control than you do. 
+
+wordpress for clients in FinServ. 
+	he tried to fix it 
+	they saw and went back 
+	the hackers came back and wiped the drive 
+
+zone-h.org
+
+HackStore 
+    hire a hacker for 
+
+cross site scripting which didn't hit the data base.
+    hack	
+
+packetStorm 
+   for pentests 
+zombie server 
+    
+
+recovery 
+creat a  new user 
+    add in some new numbers to the cookie 
+    re-up-load   
+
+roll the passwords 
+site might still be compromised 
+
+
+host might 
+
+backups might be infected 
+
+    sql-poison 
+    line by line read the sql. 
+    
+XML file 
+    backdoors 
+
+Security 
+    
+    
+    screen capture 
+
+wordpress.com 
+
+wild wordpress 
+
+plugins are not electrical appliances 
+    they are more like a stew 
+        
+no inactive themes  
+no inactive 
+clean the root of junk
+    other apps with wordpress
+    wordpress core hasn't been hacked 
+        default themes 
+        
+    ----------------------------------
+    servers  
+    themes 
+    plugins are a vector 
+   
+    free plugins maintained?  
+
+site is gonna crash more times than it's gonna get hacked 
+    so back
+
+kismit and recapture 
+ 
+---------------------------------------
+version control 
+    the site to compare content changes 
+ 
+---------------------------------
+1645 to 2 
+---------------------------------
+
+ssl on the admin 
+    flp is wide-open 
+
+
+
+
+
+dk@brooklyninovation.com
+
+15 layers 
+
+-} 
+	 
+
