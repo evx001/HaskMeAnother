@@ -1,5 +1,14 @@
 -- http://www.fprintf.net/vimCheatSheet.html
-
+-- CTRL-R -- for redo
+-------------------------------
+-- SEARCHING BY WORD OR PATTERN
+-------------------------------
+-- /wordPattern/ --> return 
+-------------------------------
+-- takes you to the first instance 
+-------------------------------
+-- n -- takes you to the next etc.
+-------------------------------
 -------------------------------
 -- CTRL-w s split win hori 
 -- CTRL-w v split win virt
@@ -18,13 +27,19 @@
 -- :b3 goes to buffer 3  
 
 -------------------------------
--------------------------------
--------------------------------
--------------------------------
--------------------------------
+
+{-- BLOCK ---------------------
 -- cntrl Q -- select block area j -- down  -- I -- Esc -- Gvim version 
-{- WHERE cntl-v isn't otherwise used. 
- - cntrl V -- select block area -- I -- Esc -- vim -N version -}
+-------------------------------------
+-------------------------------------
+{- WHERE cntl-v isn't otherwise taken. 
+NOTE! CNTR V !!!!!
+ - cntrl V -- select block area -- I -- Esc 
+--  in -- vim -N version -}
+-------------------------------------
+-}
+
+
 -- ~ -- in VISUAL for toggling case  
 -- -N  to use extension VIM 
 -------------------------------
