@@ -23,9 +23,40 @@ The short answer ...
         Multi-Core World 
 
 
-Learning Haskell will make you a good programmer, cause you aren't permitted to be sloppy.
+Learning Haskell will make you a good programmer, cause you aren't permitted to be sloppy. Crappy coders can't do Haskell, they get frustrated and stop. 
 
 Plus you will be coding at the highest level, with a language that was ten years in development rather than a weekend as in the case of php, or a week as in the case of JavaScript. 
+
+Other popular languages have issues to favs 
+	Ruby and Python suffer from being inturpreted which was fine some light duty programming but as we saw there is substantive performance hit. 
+
+C# is tied to MicroSoft so  unless you want to go MicroSoft all the way and pay and pay.
+
+Java works but it has issues with spagehtti code, that is code that is hard to follow. Python and Ruby were answers but they were slow. 
+
+C++ was worse in that capacity. 
+
+C makes you  shoulder too much typing to get to larger scale and it's too close to the metal for all but the tightest of spaces. 
+
+Go is a C rewrite that solves some concurrency issues but not others. 
+	Go code that works on 8 cores won't work on 64. 
+	Plus it too is really close to the metal. 
+
+And then there is the issue of Dynamic typing which is so forgiving at the beginning but really exasperating at the middle and end stages of a project. The last 30% is where all the pain lives. 
+
+If there is Dynamic Typing involved You best have TDD a.k.a. Test Driven Development, or you will be chasing down heisenbugs, heisenberg was the physicist that came up with uncertainty principle. In computer debugging world we don't want to chase bugs that only show up sometimes, without warning. You want to find them fast, and them consistant. 
+
+A Developer I know was in tremendous pain, spending 80% of his time bug hunting null pointers. Which is what you they do TDD to prevent. 
+
+Miss Match errors is a swarth of bugs that show up in JavaScript and Php because it is so forgiving, which sounds nice except for when you have to weird errors because it accepted a String where there sould have been a number. 
+
+NonExclusivity Errors 
+	are when the function you have written doesn't cover enough cases / conditions and as a result never terminate. 
+	Again tests must be thought up and written to do cover those possibilities.  
+
+
+
+Haskell doesn't have null pointers so you don't have to write tests for those. 
 
 Having explored all the other choices, I have to say, Haskell was harder in someways, but was always thoughtfully worked out, as opposed to thrown to together. That thrown togetherness, to me always felt broken. 
 
@@ -61,8 +92,54 @@ Unix went viral, and C along with it.
 
 Apple's IOS, and Mac both use a C variant, called Objective C. C with objects became C++. Java tamed the wilder parts of C++, and then MicroSoft took Java and polished it all shiny and we get C# which is meant to be two plus signs on top of each other. ++ being the simple for the next increment in a number line. 
 
+C-Engineering 
+java C# are entiprise 
+Haskell comes from Mathmatics 25-years
+	There are precious few Chuckle-heads using it, 
+		cause it's to hard for ChuckleHeads to get even if they want to. 
+	careful long term dev
+	Strong theory 
+	IO took eight years to come to Haskell.
+	Innovative
+	It is now Industrial Strength
+		Facebook
+		Google use
+	It has high grade libraries.
+
+	the trade off it is so different it appears harder than it is.
+		yes it is hard but even if you don't use it after 
+		being exposed to it makes you a better programmer automatically. 
+
+Tools 
+	Haskell Platform 
+		via Synaptic 
+
+Terminal 
+	Roxterm
+	
+	
+	GHCI in the terminal 
+		REPL
+		let binding
+	Text editting will be provided by by Vim
+		Vim because it is EVERYWHERE!!! 
+		even in places where there is nothing else
+		Hardcore Dev use it. 
+		Getting use to it means you have street cred. 
+	
 
 
+VIM and SourceCode
+src -- in the terminal. 
+	aka sourcefile
+	no let needed for bindings. 
+	:load 
+	:reload
+	:m 
+	:set
+	:set editor vim -N	
+	
+	
   
 ---------------------------------------------
 ON/OFF & a cyanide apple      
