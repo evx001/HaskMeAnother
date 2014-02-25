@@ -1,11 +1,12 @@
 
-{- 
+{----------------------------------------------- 
 What you get 
     a Linux OS
     vim 
     git 
-    Haskell -- a super strong programming language
+    Haskell -- a super strong and super-fast programming language that can build real stuff.
     
+
 Why Haskell 
 The short answer ... 
     Benchmark Game
@@ -20,8 +21,49 @@ The short answer ...
     The Yale paper 
         Moore's Law 2005 
         Multi-Core World 
-        
 
+
+Learning Haskell will make you a good programmer, cause you aren't permitted to be sloppy.
+
+Plus you will be coding at the highest level, with a language that was ten years in development rather than a weekend as in the case of php, or a week as in the case of JavaScript. 
+
+Having explored all the other choices, I have to say, Haskell was harder in someways, but was always thoughtfully worked out, as opposed to thrown to together. That thrown togetherness, to me always felt broken. 
+
+--------------------------------------
+Haskell is a purely functional programming language. 
+In imperative languages you get things done by giving the computer a sequence of tasks and then it executes them. While executing them, it changes state; 
+
+that is it writes and then writes over the same memory addresses over and over and over. On a small scale not a problem on a big scale it can be a disaster. Once upon a time it was the only way to get any work done.
+
+Part of the problem was the success of Alan Turing's model of how to compute math on a machine. This was in the mid 1930's, Just before World War Two. And before the war was over, Turing would save Brittan from defeat by cracking the German's Enigma Code. 
+
+How did his Country pay him back by prosecuting him for being gay, the punishment was so sever that he killed himself by eating a cyanide injected apple.
+
+Turing's Turing machine is a hypothetical device that manipulates symbols on a strip of tape according to a table of rules. Despite its simplicity, a Turing machine can be adapted to simulate the logic of any computer algorithm, and is particularly useful in explaining the functions of a CPU. 
+
+He is celibrated today and his model of computation is baked into most every programming language out there. Especially the C language, which direclty covers about 65% of programming, and if we chart all of C's influence it reaches about 95-98%. 
+
+Haskell comes from that small percentage that doesn't follow C and Turing. 
+
+Turning's Professor Alonzo Church, was also working on a model of computation, one that Turing thought was more eligant than his own, lambda calculus.    
+
+Another super brilliant guy John McCarthy took Lambda Calc and teaked it into LISP,  As one of the earliest programming languages, Lisp pioneered many ideas in computer science, including tree data structures, automatic storage management, dynamic typing, conditionals, higher-order functions, recursion, and the self-hosting compiler. 
+
+
+The name LISP derives from "LISt Processing". Linked lists are one of Lisp language's major data structures, and Lisp source code is itself made up of lists. As a result, Lisp programs can manipulate source code as a data structure, giving rise to the macro systems that allow programmers to create new syntax or even new domain-specific languages embedded in Lisp.
+
+
+McCarthy showed that with a few simple operators and a notation for functions, one can build a Turing-complete language for algorithms.
+
+LISP was a major breakthrough but it was to be eclipsed by another Language C. In 1972 after the A version and the B version didn't work, Denis Richie and Ken Thompson, produced the C programming language for the Unix operating system. 
+
+Unix went viral, and C along with it. 
+
+Apple's IOS, and Mac both use a C variant, called Objective C. C with objects became C++. Java tamed the wilder parts of C++, and then MicroSoft took Java and polished it all shiny and we get C# which is meant to be two plus signs on top of each other. ++ being the simple for the next increment in a number line. 
+
+
+
+  
 ---------------------------------------------
 ON/OFF & a cyanide apple      
 Turing Machine Heads 
