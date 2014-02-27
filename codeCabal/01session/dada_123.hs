@@ -1,16 +1,14 @@
 module Dada123 where 
---         dada1                :: (Int,Int) -> Int   
-
+           dada1                :: (Int,Int) -> Int   
            dada1 (x,y)          = x + y
 
            dada2                = \(x,y) -> x + y 
 
---         dada3                :: Int -> Int -> Int 
-
+           dada3                :: Int -> Int -> Int 
            dada3 x              = \y -> x + y 
 
            dada4                = \x -> \y -> x + y  
-
+	   dada5 :: 		Integer -> Integer -> Integer 
            dada5 x y            = x + y
 
 {- the rule is known as the "monomorphic restriction
