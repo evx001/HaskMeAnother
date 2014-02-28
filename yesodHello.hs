@@ -1,4 +1,4 @@
-module YesodHi where
+-- module YesodHi where
 -- !! to run this ---> runhaskell filename.hs
 {-# LANGUAGE TypeFamilies, QuasiQuotes, MultiParamTypeClasses, TemplateHaskell, OverloadedStrings #-} 
 
