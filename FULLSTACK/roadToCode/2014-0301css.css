@@ -1,0 +1,18 @@
+div { 
+width: 200px;
+height: 200px;
+background-color: red;
+}
+
+#redbox {
+    background-color: red;
+    padding: 10px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+}
+ 
+#inside_text {
+    text-align: right;
+}
+

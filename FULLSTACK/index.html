@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title> Biz Card </title> 
+<script> 
+/*var my_var  = 17 
+var another_var = my_var + 17 
+alert(another_var) 
+if(strangers_name === friends_name) {
+alert(strangers_name + " the stranger is a fiend") ;
+} else { 
+alert ("Stramger is not")
+
+// Dangling Else? 
+// different types allowed between then and else? 
+var getMessage = function(name){ 
+    if (name === "Nimit") {
+    return "hey teach";
+    }else{ 
+    return "Hi, who is this?"; 
+    }
+}; 
+var sayHello = function() { 
+    var person = "David"; 
+    alert (getMessage(person)); 
+};
+say Hello(); 
+*/
+
+var alertFriends = function(listOfFriends) { 
+    var i = 0
+    while (i < listOfFriends.length) { 
+        alert(listOfFriends[i]);
+            i = i + 1;  
+ }
+};
+
+var myFriends = ["David", "Nimit", "Joe", "Peter", "Steve"];
+alertFriends(myFreinds);    
+// how about some jQuery 
+/* Document Object Model 
+node types: element & text
+DOM bridges the gap to HTML
+jQuery -- a library for JS
+    smart selectors 
+    norms browser diffs
+    animations 
+    add-ons 
+    plug-ins 
+    
+  
+
+</script>
+</head> 
+
+<body>
+<div id='bizcard'>
+    <div id="name">Evie Eris</div>
+    <div id="address">400 Chambers st</br> Ny Ny 10007 </div>
+    <div id="mylinks">
+      <a href="mailto:nimit@fullstackacademy.com"></a>
+      <br>
+<a href="http://www.fullstackacademy.com">nimit@fullstackacademy.com</br>Fullstack Academy</a>
+
+    </div>
+</div>
+
+<style>
+        
+body {
+  background-color: green;
+  font-family: arial;
+}
+ 
+#bizcard {
+width: 300px;
+  padding: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 40px;
+  margin-top: 40px;
+  background-color: white;
+}
+ 
+#name {
+font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+ 
+#mylinks {
+text-align: right;
+}
+ 
+#address {
+  margin-bottom: 20px;
+}
+ 
+
+</style> 
+</body>
+</html>
