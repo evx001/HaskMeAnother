@@ -17,6 +17,9 @@ Afterwards, download, configure, and install GHC.
 
     $ make -j4          # replace with number of physical cores
 			## we are using single core confige 
+
+sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
+
 			
 			
     $ make install      # sudo might be necessary
