@@ -1,5 +1,8 @@
 -- burn notes 
 -- create a folder with the date-name-ext format 
--- From Virtual Box we will export the image into a .ova file 
+-- having shut down the image-appliance  
+-- From inside Virtual Box we will export the image into a .ova file 
 -- pushing it up on line is less efficient than burning to disk. 
+-- compress the .ova file to zip 
+-- burn the zip file. 
 --
