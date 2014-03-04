@@ -70,4 +70,21 @@ Cabal is included as part of Haskell Platform. Go ahead and update it:
 
 Some useful packages:
 
-    $ cabal install ghc-mod hoogle hlint pointfree
+    $ cabal install ghc-mod hoogle hlint pointfree 
+
+
+*******************************************************
+* Installation completed successfully.            
+*
+* Programs installed into:                        
+*   /usr/local/bin
+*
+* Now do "cabal update" to initialize the package list                          
+*
+* Additional packages may be found at http://hackage.haskell.org
+* or via "cabal list <pattern>"
+*
+* Use "cabal install <foo>" to install additional packages
+*
+*******************************************************
+
