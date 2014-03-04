@@ -1,0 +1,19 @@
+ 0303-0304 Monday into Tuesday 
+All day on Lubuntu config of HaskSnapUntu7.6.3 
+though the ubuntu derived ghc 7.4 and it's associated platform 
+might have worked okay for most things, in order to do 
+Snap or Yessod or ... 
+the most recent versions of GHC and Platform where required. 
+
+worst was the the config 
+having to use ghc 7.4 to load 7.6
+then getting the path right. 
+$HOME was what was screwing me up 
+I wish the shell had given a warning that the path was wrong 
+after $HOME was deleted from bashrc 
+I could get the it to see it. 
+
+Made a copy of freshly configured 
+cause if the image breaks I want a 
+fall back point 
+ 
