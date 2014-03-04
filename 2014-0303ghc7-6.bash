@@ -20,12 +20,27 @@ Afterwards, download, configure, and install GHC.
 
 sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
 
-			
-			
-    $ make install      # sudo might be necessary
+######################################################################################
+# Warning: Prelude: could not find link destinations for:
+#     GHC.ForeignPtr.Finalizers Text.ParserCombinators.ReadP.P GHC.IO.Handle.Types.HandleType
+# Warning: Control.Monad: could not find link destinations for:
+#     Text.ParserCombinators.ReadP.P
+# cd libraries && sh gen_contents_index --intree
+########################################################################################
 
+# we go and try to install anyway			
+			
+    $ sudo make install      # sudo might be necessary
+
+
+# even though we had the errors the make install worked.
 
 Add `/opt/ghc-7.6.3/bin` to `$PATH`.
+
+# where for path? 
+# ~/.profile or ~/.bashrc
+# .bash_login
+# .bash_profile 
 
 ## Haskell Platform 2013.2.0.0
 
@@ -39,6 +54,8 @@ Haskell Platform Ubuntu dependencies:
     $ tar xzvf haskell-platform-2013.2.0.0.tar.gz
     $ cd haskell-platform-2013.2.0.0
     $ ./configure --prefix=/opt/haskell-platform-2013.2.0.0
+
+# ghc 7.6.3 has to be in the path or make wont see it
     $ make -j4
     $ sudo make install
 
