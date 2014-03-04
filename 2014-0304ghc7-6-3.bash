@@ -18,9 +18,7 @@ Afterwards, download, configure, and install GHC.
     $ make -j4          # replace with number of physical cores
 			## we are using single core confige 
 
-
-
-	$ sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
+sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
 
 ######################################################################################
 # Warning: Prelude: could not find link destinations for:
@@ -43,7 +41,7 @@ Add `/opt/ghc-7.6.3/bin` to `$PATH`.
 # ~/.profile or ~/.bashrc
 # .bash_login
 # .bash_profile 
-# /etc/profile
+
 ## Haskell Platform 2013.2.0.0
 
 Install Ubuntu 12.04 depencies:
