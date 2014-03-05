@@ -19,11 +19,19 @@ pow2 n =
 
 factorial n = product [1..] 
 
+fib 0 = 1 
+fib 1 = 1 
+fib x = fib (x - 1) + fib (x - 2) 
 
-fibonacc3 0		= 0
+fibonacc3 0		= 1
 fibonacc3 1		= 1 
-fibonacc3 (n+2) 	= fibonacc3 n + fibonacc3 (n+1) 
-
+fibonacc3 n 	= fibonacc3 (n - 1) + fibonacc3 (n - 2) 
+----------------------------------
+{- 
+*Recursion> fibonacc3 7 == fib 7
+True
+-} 
+----------------------------------
 
 en5nFromTo m n  | m > n     = [] 
                 | m <= n    = m : en5nFromTo (m+1) n 
