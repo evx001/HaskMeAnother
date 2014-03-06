@@ -1,6 +1,0 @@
-module Lists where 
-
--- ASSIGNMENT -- 
-x = [1,2,3]
-y = [1..11] 
-
