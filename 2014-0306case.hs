@@ -3,6 +3,7 @@ module Case where
 import Guards001 -- for removeOdd function 
 -----------------------------------------------------
 -- CASE AND GUARDS CAN'T BE IN THE SAME EXPRESSION 
+-- if you want something like that use an IF expression
 ----------------------------------------------------
 
 
