@@ -35,5 +35,8 @@ fancySeven' = 2 * a +1
     where a = 3  
 -- *Jan17> fancySeven' 
 -- 7
--- WHERE is always asscociated with function def always.
+-- WHERE is always asscociated with function def always. 
+-- let is where ever functions are possible. 
+-- let pushes down into a function 
+-- where sucks up to the associated function.
 -------------------------------------------------
