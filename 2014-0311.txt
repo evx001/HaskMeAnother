@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Hi Ozgun, 
+I'm Evie and I run the Haskell_For_Cats meetup here in NYC. Your talk,  
+Practical Data Processing With Haskell, would be great fit for our group, would you be up for speaking at an our meetup? 
+
+Practical Data Processing With Haskell:
+ Ozgun Ataman will give an introductory talk on Haskell, diving right in with how you can start using Haskell for practical data manipulation tasks today. You'll be introduced to a typical setup for Haskell development and given a demonstration of how a common data format (CSV, JSON, etc.) can be parsed, processed and finally output using Haskell. The talk will include a small actual Haskell program to be modified live and some commentary around using Haskell in practical applications.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Hi Trevor, 
+	I'm Evie and I run the Haskell for Cats meetup here in NYC. I caught
+you talk on laziness last June and found it super informative and want to know
+if you would be up for giving this talk for our group?
+
+yours 
+
+
+7 p.m.: I Accidentally the Entire Heap 
+ How I Learned to Stop Worrying and Love the Profiler 
+ Trevor Caira
+
+Haskell programs are evaluated using non-strict semantics, implemented in GHC using laziness. While laziness has some very nice properties, it can also create some perplexing space leaks. And debugging these space leaks can require seemingly telepathic insight into runtime system. In this talk I'll walk you through the process of debugging a simple (but non-trivial) Haskell program with memory troubles.
+
+Trevor is a partner at Bitbase, your neighborhood Haskell consultancy.
+154 Grand St
+New York, NY 10013
+-------------------------------------------------------------------------------
+
+
+
+
+
