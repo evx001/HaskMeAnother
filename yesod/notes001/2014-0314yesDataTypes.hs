@@ -1,5 +1,7 @@
 module Dtypes where 
 import Data.Text 
+-- could use a good method for configuring yesod across machines. 
+-- Hand around the build????  
 
 
 type GearCount = Int -- type synonym 
@@ -15,10 +17,10 @@ data Vehicle = Bicycle GearCount | Car Make Model -- algebraic datatype.
 data Maybe a = Just a | Nothing -- "a" is a type variable of the anytype variety. 
 
 ---------------------------------------------------------
+-- cabal install happy
 -- cabal install alex 
 --  hjsmin version three is required for  the JavaScript minifier Yesod uses to avoid language-javascript package error messages. 
 
--- cabal install happy
 --
 -- On Debian-based install all of the required C libraries
 -- sudo apt-get install libedit-dev libbsd-dev libgmp3-dev zlib1g-dev freeglut3-dev
@@ -48,6 +50,15 @@ data Maybe a = Just a | Nothing -- "a" is a type variable of the anytype variety
 
 --      [hamlet|<p>This is quasi-quoted Hamlet.|] 
 
--- The syntax is set off using square brackets and pipes. The name of the quasi-quoter is 
--- given between the opening bracket and the first pipe, and the content is given between 
--- the pipes. 
+-- The syntax is set off using square brackets and pipes. The name of the quasi-quoter is  given between the opening bracket and the first pipe, and the content is given between  the pipes.
+
+-------------------
+-- TYPE FAMILIES -- 
+-------------------
+-- an association between two different types 
+-- an associated type is a method to add polymorphism to an existing 
+-- -------------------
+-- see assocType.hs --
+----------------------
+
+
