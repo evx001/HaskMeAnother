@@ -59,6 +59,8 @@ data Maybe a = Just a | Nothing -- "a" is a type variable of the anytype variety
 -- an associated type is a method to add polymorphism to an existing 
 -- -------------------
 -- see assocType.hs --
+-- thanks to "a" after Content and "()" after IO it now loads. Our error was within five lines of where the fix was.   
 ----------------------
 
-
+-- Template Haskell is code that generates an Abstract Syntax Tree (AST). That's it's primary use for us in yesod. T.H. isn’t very type safe. Yesod uses extensive unit testing for validation purposes. 
+$(hamletFile "myfile.hamlet") -- this line will be seen as a "runAs" Template-Haskell. TM can perform IO actions. Input can get parsed at compile time, so we get, compile-time checked HTML, CSS and JavaScript templates.  
