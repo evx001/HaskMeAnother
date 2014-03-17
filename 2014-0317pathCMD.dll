@@ -20,4 +20,15 @@ C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;
 C:\Program Files\nodejs\;C:\Program Files (x86)\Haskell Platform\2013.2.0.0\mingw\bin;
 C:\Go\bin;C:\HashiCorp\Vagrant\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby1.9.3\bin;
 C:\Users\----------\AppData\Roaming\cabal\bin;
-C:\Users\----------\AppData\Roaming\npm;
+C:\Users\----------\AppData\Roaming\npm; 
+
+----------------------------------------------------
+
+??????????????????????????? 
+
+C:\Users\----------\AppData\Roaming\cabal\bin> 
+C:\Users\---------------------------------------yesod-routes-1.2.0.6
+
+-- thinking that yesod wasn't installed ? 
+-- haskell platform is where I should be looking 
+
