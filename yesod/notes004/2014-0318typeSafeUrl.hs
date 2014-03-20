@@ -28,7 +28,7 @@ type Render url = url -> Query -> Text
         <i>italic 
         \ end.
 
--- interpolation 
+-- interpolation #{...} 
     
     <head> 
         <title>#{title} 
