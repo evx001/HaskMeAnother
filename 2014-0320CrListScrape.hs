@@ -11,4 +11,6 @@ type Rting   = (Char,Int)
 type Loc    = [Char]
 
 -- adt -- typeCon -- dataCon --   
-data Jb = MkJb   
+data Jb = MkJb LstRaw Rting Loc  
+
+ 
