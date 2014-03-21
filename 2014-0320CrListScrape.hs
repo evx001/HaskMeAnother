@@ -1,9 +1,9 @@
 module ClrLstScrp where 
-import Data.Test (Text)  
+import qualified Data.Text as T -- efficient 
 -- data Customer = MakeCustomer CustomerId String Int
 -- data DialogResponse = Yes|No|Help|Quit 
 --  Algebraic Data Types (ADTs), such as 
-type Model = Text 
+type Model = T.Text 
 type Make  = [Char] 
 type GearCount = Int 
 data Vehicle = Bicycle GearCount | Car Make Model
