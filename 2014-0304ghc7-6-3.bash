@@ -27,6 +27,13 @@ Afterwards, download, configure, and install GHC.
 # 
 # if make fails it could be a memory issue with 512mg-ram 
 # ======Rerun=make=and=get=diff=msg============
+
+# if memory is the issue then add in a 1gig worth of swapfile. 
+
+dd if=/dev/zero of=/swapfile bs=1M count=1024
+mkswap /swapfile
+swapon /swapfile
+
 sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
 
 ######################################################################################
