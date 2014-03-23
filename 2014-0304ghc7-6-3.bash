@@ -17,7 +17,16 @@ Afterwards, download, configure, and install GHC.
 
     $ make -j4          # replace with number of physical cores
 			## we are using single core confige 
+# if no make just do sudo apt-get install make 
 
+#====Error 2=during=make=on=remote=Ubuntu========
+# on [62 of 68] Compiling Distrobution.Simple.Configure ( libraries/Cabal/Cabal/Distrobution/Simple/Configure.hs bootstrapping/Distrobution/Simple/Configure.o ) 
+# killed 
+# make[1]: *** [utils/ghc-cabal/dist/build/tmp/ghc-cabal] Error 137 
+# make: *** [all] Error 2 
+# 
+# if make fails it could be a memory issue with 512mg-ram 
+# ======Rerun=make=and=get=diff=msg============
 sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
 
 ######################################################################################
@@ -27,6 +36,7 @@ sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing
 #     Text.ParserCombinators.ReadP.P
 # cd libraries && sh gen_contents_index --intree
 ########################################################################################
+
 
 # we go and try to install anyway			
 			
