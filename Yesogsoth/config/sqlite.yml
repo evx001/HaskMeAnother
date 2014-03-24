@@ -1,0 +1,20 @@
+Default: &defaults
+  database: Yesogsoth.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Test:
+  database: Yesogsoth_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: Yesogsoth_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: Yesogsoth_production.sqlite3
+  poolsize: 100
+  <<: *defaults
