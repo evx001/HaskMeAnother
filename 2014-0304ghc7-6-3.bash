@@ -1,7 +1,7 @@
 ## GHC 7.6.3
 
 ##############################
-## might need ghc 7.4 first ##
+## you'll need ghc 7.4 first ##
 ##############################
 
 Install Ubuntu 12.04 depencies:
@@ -39,13 +39,13 @@ mkswap /swapfile
 swapon /swapfile
 # to check swappiness 
 cat /proc/sys/vm/swappiness
-######################################################################################
+########################################################################
 # Warning: Prelude: could not find link destinations for:
 #     GHC.ForeignPtr.Finalizers Text.ParserCombinators.ReadP.P GHC.IO.Handle.Types.HandleType
 # Warning: Control.Monad: could not find link destinations for:
 #     Text.ParserCombinators.ReadP.P
 # cd libraries && sh gen_contents_index --intree
-########################################################################################
+#######################################################################
 
 
 # we go and try to install anyway			
@@ -66,11 +66,11 @@ source ~/.bashrc # for making changes take effect in this session.
 
 ## Haskell Platform 2013.2.0.0
 
-Install Ubuntu 12.04 depencies:
+# Install Ubuntu 12.04 depencies:
 
     $ sudo aptitude install -y libglc-dev freeglut3 freeglut3-dev
 
-Haskell Platform Ubuntu dependencies:
+# Haskell Platform Ubuntu dependencies:
 
     $ wget http://lambda.haskell.org/platform/download/2013.2.0.0/haskell-platform-2013.2.0.0.tar.gz
     $ tar xzvf haskell-platform-2013.2.0.0.tar.gz
@@ -81,32 +81,32 @@ Haskell Platform Ubuntu dependencies:
     $ make -j4
     $ sudo make install
 
-Add `/opt/haskell-platform-2013.2.0.0/` to `$PATH`.
+# Add `/opt/haskell-platform-2013.2.0.0/` to `$PATH`.
 
 ## Cabal
 
-Cabal is included as part of Haskell Platform. Go ahead and update it:
+# Cabal is included as part of Haskell Platform. Go ahead and update it:
 
     $ cabal update && cabal install cabal-install
     $ cabal-install --version
 
-Some useful packages:
+# Some useful packages:
 
     $ cabal install ghc-mod hoogle hlint pointfree 
 
 
-*******************************************************
-* Installation completed successfully.            
-*
-* Programs installed into:                        
-*   /usr/local/bin
-*
-* Now do "cabal update" to initialize the package list                          
-*
-* Additional packages may be found at http://hackage.haskell.org
-* or via "cabal list <pattern>"
-*
-* Use "cabal install <foo>" to install additional packages
-*
-*******************************************************
+#******************************************************
+# Installation completed successfully.            
+#
+# Programs installed into:                        
+#   /usr/local/bin
+#
+# Now do "cabal update" to initialize the package list                          
+#
+# Additional packages may be found at http://hackage.haskell.org
+# or via "cabal list <pattern>"
+#
+# Use "cabal install <foo>" to install additional packages
+#
+#******************************************************
 
