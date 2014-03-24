@@ -19,6 +19,11 @@ Afterwards, download, configure, and install GHC.
 			## we are using single core confige 
 # if no make just do sudo apt-get install make 
 
+sudo apt-get install make
+
+sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
+
+
 #====Error 2=during=make=on=remote=Ubuntu========
 # on [62 of 68] Compiling Distrobution.Simple.Configure ( libraries/Cabal/Cabal/Distrobution/Simple/Configure.hs bootstrapping/Distrobution/Simple/Configure.o ) 
 # killed 
@@ -29,13 +34,11 @@ Afterwards, download, configure, and install GHC.
 # ======Rerun=make=and=get=diff=msg============
 
 # if memory is the issue then add in a 1gig worth of swapfile. 
-
 dd if=/dev/zero of=/swapfile bs=1M count=1024
 mkswap /swapfile
 swapon /swapfile
-
-sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
-
+# to check swappiness 
+cat /proc/sys/vm/swappiness
 ######################################################################################
 # Warning: Prelude: could not find link destinations for:
 #     GHC.ForeignPtr.Finalizers Text.ParserCombinators.ReadP.P GHC.IO.Handle.Types.HandleType
@@ -48,16 +51,18 @@ sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing
 # we go and try to install anyway			
 			
     $ sudo make install      # sudo might be necessary
-
-
-# even though we had the errors the make install worked.
-
-Add `/opt/ghc-7.6.3/bin` to `$PATH`.
-
-# where for path? 
+# in 
 # ~/.profile or ~/.bashrc
-# .bash_login
-# .bash_profile 
+# add to path  
+# PATH="$HOME/bin:$PATH:/opt/ghc-7.6.3/bin" 
+# /etc/environment
+# you might have issue the reboot command  
+sudo reboot  
+# or 
+source ~/.bashrc # for making changes take effect in this session. 
+
+
+
 
 ## Haskell Platform 2013.2.0.0
 
