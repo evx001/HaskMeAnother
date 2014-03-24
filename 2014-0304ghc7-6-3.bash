@@ -109,4 +109,41 @@ source ~/.bashrc # for making changes take effect in this session.
 # Use "cabal install <foo>" to install additional packages
 #
 #******************************************************
+#------------------------------------------------------
+## ## ## ## ## YESOD INSTALL ## ## ## ## ## 
 
+https://github.com/yesodweb/yesod/wiki/Cookbook
+http://www.yesodweb.com/
+# after installing haskell-platform 
+sudo apt-get install haskell-platform
+
+cabal update 
+
+
+cabal install yesod-platform yesod-bin --max-backjumps=-1 --reorder-goals
+
+# encountered an error with Persistent 1.3.0.4 
+
+
+cabal install yesod-platform 
+
+# this is the force install 
+# cabal install yesod-platform  --force-reinstalls 
+
+ghc-pkg list 
+
+ghc-pkg unregister <packageName | packageName-version>
+# example  ghc-pkg  unregister  warp-2.1.2 
+
+ghc-pkg check
+
+yesod-core-1.2.9
+tls-1.2.6
+http-client-0.2.2.3
+wai-extra-2.1.1
+yaml-0.8.8
+warp-2.1.2
+conduit-1.0.17.1
+
+Deprecated: "Use setOnException instead"
+[18 of 20] Compiling Yesod.Core.Internal.LiteApp ( Yesod/Core/Internal/LiteApp.hs, dist/build/Yesod/Core/Internal/LiteApp.o )
