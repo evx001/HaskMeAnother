@@ -1,14 +1,35 @@
 ## GHC 7.6.3
 
+
+# if memory is the issue then add in a 1gig worth of swapfile. 
+dd if=/dev/zero of=/swapfile bs=1M count=1024
+mkswap /swapfile
+swapon /swapfile
+# to check swappiness 
+cat /proc/sys/vm/swappiness
+#--------------------------------------------------
+# root@yesogsothoth:/home/evxyz# dd if=/dev/zero of=/swapfile bs=1M count=1024
+# 1024+0 records in
+# 1024+0 records out
+# 1073741824 bytes (1.1 GB) copied, 29.1029 s, 36.9 MB/s
+# root@yesogsothoth:/home/evxyz# mkswap /swapfile
+# Setting up swapspace version 1, size = 1048572 KiB
+# no label, UUID=1f005af9-e22a-4653-927c-2990c15fe651
+# root@yesogsothoth:/home/evxyz# swapon /swapfile
+#-------------------------------------------------
+
 ##############################
 ## you'll need ghc 7.4 first ##
 ##############################
 
-Install Ubuntu 12.04 depencies:
+apt-get install ghc 
+
+
+# Install Ubuntu 12.04 depencies:
 
     $ sudo aptitude install -y libgmp3c2
 
-Afterwards, download, configure, and install GHC.
+# Afterwards, download, configure, and install GHC.
 
     $ wget http://www.haskell.org/ghc/dist/7.6.3/ghc-7.6.3-src.tar.bz2
     $ tar xjvf ghc-7.6.3-src.tar.bz2
@@ -31,14 +52,8 @@ sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing
 # make: *** [all] Error 2 
 # 
 # if make fails it could be a memory issue with 512mg-ram 
-# ======Rerun=make=and=get=diff=msg============
+# ======Reran=make=and=got=diff=msg============
 
-# if memory is the issue then add in a 1gig worth of swapfile. 
-dd if=/dev/zero of=/swapfile bs=1M count=1024
-mkswap /swapfile
-swapon /swapfile
-# to check swappiness 
-cat /proc/sys/vm/swappiness
 ########################################################################
 # Warning: Prelude: could not find link destinations for:
 #     GHC.ForeignPtr.Finalizers Text.ParserCombinators.ReadP.P GHC.IO.Handle.Types.HandleType
@@ -120,12 +135,13 @@ sudo apt-get install haskell-platform
 cabal update 
 
 
-cabal install yesod-platform yesod-bin --max-backjumps=-1 --reorder-goals
+# cabal install yesod-platform yesod-bin --max-backjumps=-1 --reorder-goals
+#---------------------------------------------
 
 # encountered an error with Persistent 1.3.0.4 
 
 
-cabal install yesod-platform 
+# cabal install yesod-platform 
 
 # this is the force install 
 # cabal install yesod-platform  --force-reinstalls 
@@ -144,6 +160,22 @@ wai-extra-2.1.1
 yaml-0.8.8
 warp-2.1.2
 conduit-1.0.17.1
+
+
+
+Start your project:
+
+   cd Yesogsoth && cabal install && yesod devel
+
+or if you use cabal-dev:
+
+   cd Yesogsoth && cabal-dev install && yesod --dev devel
+
+
+
+
+
+
 
 Deprecated: "Use setOnException instead"
 [18 of 20] Compiling Yesod.Core.Internal.LiteApp ( Yesod/Core/Internal/LiteApp.hs, dist/build/Yesod/Core/Internal/LiteApp.o )
