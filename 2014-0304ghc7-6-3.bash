@@ -1,35 +1,42 @@
 ## GHC 7.6.3
 
 
-# if memory is the issue then add in a 1gig worth of swapfile. 
-dd if=/dev/zero of=/swapfile bs=1M count=1024
+# if memory is the issue then add in a 4gig worth of temporary swapfile. NOTE: if you reboot this swapSpace will be gone.  
+dd if=/dev/zero of=/swapfile bs=1M count=4096
 mkswap /swapfile
 swapon /swapfile
+
+swapon -s   # reveals partition 
+
+free        # will show all partition availability
+
+df          # file sys usage 
+
 # to check swappiness 
 cat /proc/sys/vm/swappiness
+
 #--------------------------------------------------
-# root@yesogsothoth:/home/evxyz# dd if=/dev/zero of=/swapfile bs=1M count=1024
+# ----@------------:/home/-----# dd if=/dev/zero of=/swapfile bs=1M count=1024
 # 1024+0 records in
 # 1024+0 records out
 # 1073741824 bytes (1.1 GB) copied, 29.1029 s, 36.9 MB/s
-# root@yesogsothoth:/home/evxyz# mkswap /swapfile
+# ----@------------:/home/-----# mkswap /swapfile
 # Setting up swapspace version 1, size = 1048572 KiB
 # no label, UUID=1f005af9-e22a-4653-927c-2990c15fe651
-# root@yesogsothoth:/home/evxyz# swapon /swapfile
+# ----@------------:/home/-----# swapon /swapfile
 #-------------------------------------------------
 
 ##############################
 ## you'll need ghc 7.4 first ##
 ##############################
 
-apt-get install ghc 
-
-
+    apt-get install ghc 
 # Install Ubuntu 12.04 depencies:
-
+    $ sudo apt-get install make
     $ sudo aptitude install -y libgmp3c2
+    $ sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
 
-# Afterwards, download, configure, and install GHC.
+# AFTERWARDS, DOWNLOAD, CONFIGURE, AND INSTALL ghc-7.6.3
 
     $ wget http://www.haskell.org/ghc/dist/7.6.3/ghc-7.6.3-src.tar.bz2
     $ tar xjvf ghc-7.6.3-src.tar.bz2
@@ -37,12 +44,10 @@ apt-get install ghc
     $ ./configure --prefix=/opt/ghc-7.6.3  
 
     $ make -j4          # replace with number of physical cores
-			## we are using single core confige 
+            ## we are using single core confige 
 # if no make just do sudo apt-get install make 
 
-sudo apt-get install make
 
-sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
 
 
 #====Error 2=during=make=on=remote=Ubuntu========
@@ -63,20 +68,26 @@ sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing
 #######################################################################
 
 
-# we go and try to install anyway			
-			
+# we go and try to install anyway           
+            
     $ sudo make install      # sudo might be necessary
 # in 
 # ~/.profile or ~/.bashrc
 # add to path  
+  # /opt/ghc-7.6.3/bin" 
+# user path  
 # PATH="$HOME/bin:$PATH:/opt/ghc-7.6.3/bin" 
-# /etc/environment
+  # global
+# /etc/environment 
+    # added in ghc7.6.3 path 
+    # PATH="/opt/ghc-7.6.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
 # you might have issue the reboot command  
 sudo reboot  
 # or 
 source ~/.bashrc # for making changes take effect in this session. 
 
-
+# run ghci and you should get 7.6.3  
+GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
 
 
 ## Haskell Platform 2013.2.0.0
