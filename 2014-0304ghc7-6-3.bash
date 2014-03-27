@@ -2,7 +2,7 @@
 
 
 # if memory is the issue then add in a 4gig worth of temporary swapfile. NOTE: if you reboot this swapSpace will be gone.  
-dd if=/dev/zero of=/swapfile bs=1M count=4096
+dd if=/dev/zero of=/swapfile bs=1M count=2048
 mkswap /swapfile
 swapon /swapfile
 
@@ -141,12 +141,12 @@ GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
 https://github.com/yesodweb/yesod/wiki/Cookbook
 http://www.yesodweb.com/
 # after installing haskell-platform 
-sudo apt-get install haskell-platform
+
 
 cabal update 
 
 
-# cabal install yesod-platform yesod-bin --max-backjumps=-1 --reorder-goals
+cabal install yesod-platform yesod-bin --max-backjumps=-1 --reorder-goals
 #---------------------------------------------
 
 # encountered an error with Persistent 1.3.0.4 
