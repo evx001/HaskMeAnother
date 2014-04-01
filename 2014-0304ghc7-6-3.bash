@@ -36,6 +36,10 @@ cat /proc/sys/vm/swappiness
     $ sudo aptitude install -y libgmp3c2
     $ sudo apt-get install libncurses5-dev ## maybe necessary to for curses.h missing 
 
+# some usefuls 
+	apt-get install Htop 
+	apt-get install mc 
+
 # AFTERWARDS, DOWNLOAD, CONFIGURE, AND INSTALL ghc-7.6.3
 
     $ wget http://www.haskell.org/ghc/dist/7.6.3/ghc-7.6.3-src.tar.bz2
