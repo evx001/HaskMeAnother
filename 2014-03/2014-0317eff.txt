@@ -1,0 +1,71 @@
+return answers 
+
+effect other systems 
+
+types are about answers
+
+Algebriac 
+	properties like associative, etc,
+	formal reasoning 
+	and informal reasoning 
+
+Algebraic Effects 
+
+
+monads 
+	effects compose more cleanly 
+	wont have to use Monad transformer 
+
+
+types constrains the world inside  	effects in the world 
+		
+T 					E
+
+					
+
+continuation -> 
+
+(f (g x) (h y)) 
+	
+(f |_| (h y)) 
+
+goto of functional programming 
+
+JavaScript/NodeJS goto call-back-hell where humans behave like compilers 
+
+Delimited Continuations 	
+	composable continueations 
+		behave like a call NOT a jump 
+ 
+an argument angainst call/cc (Oleg)
+
+System Calls 
+	calling conventions 
+		caller and callie agreement 
+			data + return address 
+	kernel calls are mistrustful 
+		a flag is set 
+			making your entire process 
+
+	abort() never returns  
+	fork() function returns twice 
+
+OS Virtualize is mocking the system call interface 
+
+yeild 
+	generator 
+		side effecting iterators 
+			genericall:y 
+				is monadic 
+					a continuation 
+
+Eff 
+	
+	choice is a simple effect  
+	
+exceptions amd catches aren't values, as in they can't be passed around.
+
+effect handler 
+	 
+			
+
