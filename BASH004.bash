@@ -1,10 +1,12 @@
 
 # # adding base user 
 # useradd -d /home/evxyz    -m evxyz   
-# 
+ 
 # # set pw
-# passwd evxyz 
+# passwd evxyz
 
+# as root add to sudo 
+# sudo adduser <username> sudo
 
 # if memory is the issue then add in a 2gig worth of temporary swapfile. NOTE: if you reboot this swapSpace will be gone.
  dd if=/dev/zero of=/swapfile bs=1M count=2048 && mkswap /swapfile && swapon /swapfile && free
@@ -67,7 +69,7 @@
 #
 # # Some useful packages:
 #
- cabal install ghc-mod hoogle hlint snap 
+# cabal install ghc-mod hoogle hlint snap 
 #
 #
 #
