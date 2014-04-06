@@ -13,7 +13,7 @@ sudo dd if=/dev/zero of=/swapfile bs=1M count=2048 && mkswap /swapfile && swapon
 ################################################################
 # BASH001 # installs to get this file install git and:
 # git clone https://github.com/evx001/HaskMeAnother 
-  apt-get install ghc && apt-get install make && aptitude install -y libgmp3c2 && apt-get install libncurses5-dev && apt-get install htop && apt-get install mc
+  apt-get install ghc && apt-get install make && aptitude install -y libgmp3c2 && apt-get install libncurses5-dev # && apt-get install htop && apt-get install mc
 
 
 #************ SWAP will be need after every reboot *** 
