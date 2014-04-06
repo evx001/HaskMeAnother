@@ -1,3 +1,0 @@
--- yesod in path  
--- where is the hook 
--- put in the path for this window 
