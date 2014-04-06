@@ -1,10 +1,17 @@
 
+# # adding base user 
+# useradd -d /home/evxyz    -m evxyz   
+# 
+# # set pw
+# passwd evxyz 
+
+
 # if memory is the issue then add in a 2gig worth of temporary swapfile. NOTE: if you reboot this swapSpace will be gone.
-# dd if=/dev/zero of=/swapfile bs=1M count=2048 && mkswap /swapfile && swapon /swapfile && free
+ dd if=/dev/zero of=/swapfile bs=1M count=2048 && mkswap /swapfile && swapon /swapfile && free
 ################################################################
 # BASH001 # installs to get this file install git and:
 # git clone https://github.com/evx001/HaskMeAnother 
-#  apt-get install ghc && apt-get install make && aptitude install -y libgmp3c2 && apt-get install libncurses5-dev && apt-get install htop && apt-get install mc
+  apt-get install ghc && apt-get install make && aptitude install -y libgmp3c2 && apt-get install libncurses5-dev && apt-get install htop && apt-get install mc
 
 
 #************ SWAP will be need after every reboot *** 
