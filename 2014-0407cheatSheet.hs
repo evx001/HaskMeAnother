@@ -19,4 +19,12 @@ Prelude> :cd HaskMeAnother\\
 -- first letter CAP numbers may follow.  
 import qualified Data.ByteString.Lazy.Char8 as L1
 
+--------------------------------
+-- DEF NEW OPERATORS 
+(a,b) .+ (c,d) = (a + c, b + d) -- .+
+-- *Jan17> (3,4) .+ (5,9)
+-- (8,13)
+-------------------------------
+
+
 
