@@ -11,4 +11,11 @@
 #      apt-get -t squeeze install libgmp3c2
 #      sed -i '$d' /etc/apt/sources.list
 #      apt-get update
+	
+apt-get install ghc 
+# wget http://www.haskell.org/ghc/dist/7.6.3/ghc-7.6.3-src.tar.bz2 && tar xjvf ghc-7.6.3-src.tar.bz2 && cd ghc-7.6.3
+
+ 
+
+
 
