@@ -1,12 +1,23 @@
-# apt-get update && 
-# apt-get install mc && apt-get install htop  
-# apt-get install build-essential 
-# apt-get install libgmp3-dev libffi-dev zlib1g-dev 
-# apt-get install libgl1-mesa-dev libglu1-mesa-dev 
-# apt-get install libglew-dev freeglut3-dev
+# swap 
+	dd if=/dev/zero of=/swapfile bs=1M count=2048 && 
+		mkswap /swapfile && 	
+		swapon /swapfile && 
+
+# some tools 
+	apt-get update && 
+		apt-get install mc && 
+		apt-get install htop && 
+		apt-get install git  && 
+
+# deb setup files 
+	# apt-get install build-essential &&  
+	# apt-get install libgmp3-dev libffi-dev zlib1g-dev &&  
+	# apt-get install libgl1-mesa-dev libglu1-mesa-dev &&  
+	# apt-get install libglew-dev freeglut3-dev && 
+
 # -----------------------------------------
-  echo "deb http://ftp.debian.org/debian/ squeeze main" \
-  | sudo tee -a /etc/apt/sources.list
+# echo "deb http://ftp.debian.org/debian/ squeeze main" \
+# | sudo tee -a /etc/apt/sources.list
 #      apt-get update
 #      apt-get -t squeeze install libgmp3c2
 #      sed -i '$d' /etc/apt/sources.list
@@ -26,11 +37,10 @@
 # sudo adduser <username> sudo
 
 # if memory is the issue then add in a 2gig worth of temporary swapfile. NOTE: if you reboot this swapSpace will be gone.
-sudo dd if=/dev/zero of=/swapfile bs=1M count=2048 && mkswap /swapfile && swapon /swapfile && free
 ################################################################
 # BASH001 # installs to get this file install git and:
 # git clone https://github.com/evx001/HaskMeAnother 
-  apt-get install ghc && apt-get install make && aptitude install -y libgmp3c2 && apt-get install libncurses5-dev && apt-get install htop && apt-get install mc
+# apt-get install ghc && apt-get install make && aptitude install -y libgmp3c2 && apt-get install libncurses5-dev && apt-get install htop && apt-get install mc
 
 
 #************ SWAP will be need after every reboot *** 
@@ -104,6 +114,3 @@ sudo dd if=/dev/zero of=/swapfile bs=1M count=2048 && mkswap /swapfile && swapon
 # vim -N /etc/fstab
 # -------------------> add in this to fstab 
 #  /swapfile       none    swap    sw      0       0 
-
-
-
