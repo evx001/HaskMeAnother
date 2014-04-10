@@ -1,13 +1,13 @@
 # swap 
 	dd if=/dev/zero of=/swapfile bs=1M count=2048 && 
 		mkswap /swapfile && 	
-		swapon /swapfile && 
+		swapon /swapfile  
 
 # some tools 
 	apt-get update && 
 		apt-get install mc && 
 		apt-get install htop && 
-		apt-get install git  && 
+		apt-get install git   
 
 # deb setup files 
 	# apt-get install build-essential &&  
