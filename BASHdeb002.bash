@@ -45,7 +45,6 @@
 # ./configure --prefix=/opt/ghc-7.6.3
 # make
 
-x# you are here
 # make install      # sudo might be necessary
 
 # ---------------------------------------------
@@ -60,14 +59,13 @@ x# you are here
 # # YOU MIGHT HAVE ISSUE THE REBOOT COMMAND to get Bash to see it.
 
 
-# ---------- adding user ----------
-# useradd -d /home/evxyz    -m evxyz  &&
 
-# # set pw
-# passwd evxyz
+# nano is the default debian editor 
+# etc/profile has PATH 
+# broken shell try path + command 
+# 	//bin/ls 
+# 
 
-# as root add to sudo
-# sudo adduser <username> sudo
 
 #-------------------------------------
 # # run ghci and you should get 7.6.3
@@ -81,7 +79,9 @@ x# you are here
 
 #--------------- haskell-platform --------------------------
 
-# cd  //home/ghc-7.6.3 &&   wget http://lambda.haskell.org/platform/download/2013.2.0.0/haskell-platform-2013.2.0.0.tar.gz  &&   tar xzvf haskell-platform-2013.2.0.0.tar.gz  &&   cd haskell-platform-2013.2.0.0  &&   ./configure --prefix=/opt/haskell-platform-2013.2.0.0
+# cd  //home/ghc-7.6.3  &&  
+# wget http://lambda.haskell.org/platform/download/2013.2.0.0/haskell-platform-2013.2.0.0.tar.gz # &&   
+# tar xzvf haskell-platform-2013.2.0.0.tar.gz  &&   cd haskell-platform-2013.2.0.0  &&   ./configure --prefix=/opt/haskell-platform-2013.2.0.0
 #//home/ghc-7.6.3/haskell-platform-2013.2.0.0# make
 # ghc 7.6.3 has to be in the path or make wont see it
 #     $ make -j4
@@ -90,12 +90,21 @@ x# you are here
 # # Add `/opt/haskell-platform-2013.2.0.0/` to `$PATH`.
 # PATH="/opt/ghc-7.6.3/bin:/opt/haskell-platform-2013.2.0.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
 
+# ---------- adding user ----------
+# useradd -d /home/evxyz    -m evxyz  
+
+# # set pw
+# passwd evxyz
+
+# as root add to sudo
+# sudo adduser evxyz sudo
+
 # #-------------------- Cabal 18 is needed ----------------
 #
 # # Cabal is included as part of Haskell Platform. Go ahead and update it:
-#
-#     $ cabal update && cabal install cabal-install
-#     $ cabal-install --version
+  su evxyz 
+# sudo    cabal update && cabal install cabal-install
+# sudo    cabal-install --version
 #
 # # Some useful packages:
 #
@@ -119,13 +128,3 @@ x# you are here
 # vim -N /etc/fstab
 # -------------------> add in this to fstab
 #  /swapfile       none    swap    sw      0       0
-# ^[[A  : not found
-# : 26:
-#
-# //bin/cat BASHDEB001.bash | more
-sh: 29: more: not found
-# //bin/cat BASHDEB001.bash | less
-sh: 30: less: not found
-# clear
-sh: 31: clear: not found
-#
