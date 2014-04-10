@@ -4,3 +4,9 @@
 # broken shell try path + command 
 # 	//bin/ls 
 # try editting profile with 763 path  
+
+# got as far as yesod installed, 
+# Debian's handling of swap space was better. 
+# no breakage of packages so far. 
+# next is yesod init 
+# if we get init then we are there.  
