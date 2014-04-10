@@ -3,4 +3,4 @@
 # etc/profile has PATH 
 # broken shell try path + command 
 # 	//bin/ls 
-# 
+# try editting profile with 763 path  
