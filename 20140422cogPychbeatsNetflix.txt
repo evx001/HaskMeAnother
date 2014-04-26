@@ -1,0 +1,196 @@
+cog pysch beats netfilx CineMatch at data mining 
+
+maggie Xiong / Dr. X 
+
+prototype 
+exempler 
+Decision Boundrary 
+theory based categ
+Semantic Space 
+
+participants are more confident in recognizing fuller sentenses 
+
+"ants in the kitchen ate the sweet Jelly which was on the table." (this was the sentense that they thought they had seen even though they had only seen fragments of the sentense interspersed.  
+
+
+Full pattern recognition of prototypes were assembled from mere fargments. 
+
+
+Economy of organization 
+	participants take longer to respond to statements across category levels 
+		going up the tree 
+
+Exempler 
+
+	when we categ we compare new instances against familiars rather than against a prototype. 
+
+Categ for prediction 
+	Decision Boundary (Ashby & Gott, 1988) 
+
+Subjects bisect plane diagonally before they attempt to creat quadrents 
+
+	first bifercate / clean v unclean 
+		apple and shoe box share 
+			size ? 
+			
+		apples and prime numbers? 
+
+theory base categ v natural categ 
+	
+
+
+Semantic Space 
+	Latent Semantic Analysis 
+
+shepard 1987 
+	probability of generalize decays expo with distance 
+
+osgood 1957 
+	Factor anal 
+	Evauate 
+	potency
+	actiivity 
+	
+demiad et al 1988 
+	SVD cosine similarity 
+	Landauer & Dumais 1997 
+
+ 
+
+
+strong 	<--> 	weak 
+good 	<-->	bad 
+fast 	<-->	slow 
+
+
+given what people are exposed to doesn't expalin the extent of knowledge aquired. We know to much to have merely been exposed. 
+
+Selfridge 1958 
+	Pandemonium 
+
+Prototype 		Kmeans -- finding centroid -- prototype 
+Exempler 		K-nearest neighbor -- 
+Theory based Cat 	Collab filter, decision tree 
+Decsion Boundries 	Support Vector MAchine 
+Semantic space / LSA    Connectionism - artificial neural net 
+
+computation power influences 
+
+main effects 
+	two sets of six
+
+main effect time of day 	
+	two sets of six
+
+interaction -- difference between difference  
+	four sets of three  (least stable) 
+
+Training Set 
+	1777- movie 	500K 100M ratings 
+	user_id  movie_id  rating  date_of_rate
+	movie_id  title  year  
+
+Qualifying set (2.8M ratings) 
+	user_id  movie_id date_of_Rate
+	
+RMSE 
+	sqrt(sum(x -X.pred)2 / N) 
+	
+CineMach 0.9514
+	ten percent better than trival approach 
+	
+Standard Dev And RMSE 
+
+Overall StanDev 1.0822*
+	trivial 1.0540
+
+main effects of movie and user 0.9889*
+	R.pred = M.avg + U.dev
+
+CineMach 0.9514
+
+more data trumps better algol
+	 
+
+prize -- 0.8563 
+
+
+50k teams 
+	
+
+R= M.avg + U.dev + Interaction 
+interaction = R - (M.avg + U.dev) 
+R.pred = M,avg + U.dev + w.avg(interaction * sim(M.p, M)) 
+
+Alex 			R  	M.avg.dev interaction 
+MI 			4 	4.3 	-0.3 	
+
+
+Similarity Measures 
+Romesburg 1984 
+Shape diff 
+vs 
+Size displacement 
+
+Euclidian distance 
+Cosine similarity 
+Correlation coefficient 
+
+Sim measures 
+	Co-occurrence count 
+		subj rents both movies 
+	Correlatioon 
+		a function of the diff in reatings when a person rented both movies 
+	
+Correlated weighted by probability (signif) 
+Mean Euclidian distance of movie x user interactions 
+	interaction = R - (M.avg + U.dev) 
+
+Weighted by similarity in 
+	movie release times, rent freg, mean rating 
+
+User Clusters 
+	Diff movie means rating and simularity 
+	R.pred = Mcluster_avg + U.cluster_dev 
+	+ w.avg(interaction  * sim_cluster(M,M.p)) 
+
+By experinec (num of movies rated) 
+
+by gender 
+	infered form pref for diff movie clusters 
+
+by cluster analysis 
+	PCA, Kmeans 
+
+slapstick cluster 
+qaction movie cluster 
+chickFlick 
+
+Blend it 
+Gen diff sets of predict using diff movie similarity and user cluster strategies 
+
+Use linear regress to combine the sets of predictions into one final prediction 
+
+weak learner are good too as long as they provide unigue info 
+
+
+a single prediction set doesn't give much but combining it with others creates 
+
+
+overall standdev 1.0822* 
+
+Trivial approach (main effect of movie) 
+1.0540 
+
+CineMatch 0.9514 
+
+Naga FX: 0.9063 
+
+prize 0.8563 
+
+Abstraction and generalization 
+	it's all about similarity 
+	Tversy,1977
+	Nurphy and Medin, 1985  
+
+

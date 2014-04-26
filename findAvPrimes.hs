@@ -3,7 +3,7 @@ module FindTruPrimes where
 {- taking a list of primes and then finding the average of that list that is itself a prime 
 -} 
 
-    factors         n     = [x| x  <- [1..n], n `mod` x == 0]
+    factors         n     = _ [x| x  <- [1..n], n `mod` x == 0]
     prime           n     = factors n == [1,n]
     primes          n     = [x | x <- [2..n], prime x]
     average         ns    = sum ns `div`  length ns
