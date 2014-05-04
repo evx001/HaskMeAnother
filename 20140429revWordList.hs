@@ -4,13 +4,17 @@ import Text.Parsec.Char
 -- "Reverse this list" 
 --
 
-lst1 	= "Reverse this list word by word"  
+lst1 	= "Reverse each word but not the word order only"  
 
-fn001 	= head $ reverse lst1 
+fn001 	= reverse lst1 
 fn002   = tail $ reverse lst1
  
-fn003 :: Int
+fn003 	:: Int
 fn003   = length $ reverse lst1  
--- *RevWordList> [x|x<-fn002,x/=' ']
--- "rowybdrowtsilsihtesreveR"
+
+-- pulls out all the spaces 
+fn004 =  [x:[]|x<-fn001, x == ' '[y:[]| y<-fn001, y == ' ']]
+
+
+-- [" "," "," "," "," "," "," "," "]
 
