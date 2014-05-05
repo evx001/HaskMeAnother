@@ -13,7 +13,8 @@ fn003 	:: Int
 fn003   = length $ reverse lst1  
 
 -- pulls out all the spaces 
-fn004 =  [x:[]|x<-fn001, x == ' '[y:[]| y<-fn001, y == ' ']]
+-- fn004 =  [x:[]|x<-fn001, x == ' ']
+fn004 =  [x:xs[]|x<-fn001, if x == ' 'then x:[] else x:xs ]
 
 
 -- [" "," "," "," "," "," "," "," "]
