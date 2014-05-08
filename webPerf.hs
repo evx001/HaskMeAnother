@@ -12,6 +12,7 @@ bgcm001 = [76,86,82,92]
 bgcm002 = sum bgcm001  
 bgcm003 = genericLength bgcm001 
 bgcm004 = bgcm002 / bgcm003 
+-- 84.0
 
 volu001 = [29,76,83, 80,75]
 volu002 = sum volu001  
