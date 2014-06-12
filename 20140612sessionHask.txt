@@ -1,0 +1,3158 @@
+Last login: Thu May 22 16:32:29 on ttys002
+➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ls
+000                AttendanceChecker  ChatServe002       X-ChatSend         cardStanf          chatServ000        fn001              standCard002
+21040416xcode.txt  Ch1tSend           Progs              __ChatSend.zip     chAtsEnd           fN000              stanCard001
+➜  _Xcode git:(master) open .
+➜  _Xcode git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend/Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/Ch1tSend/EVXMasterTableViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  _Xcode git:(master) ✗ git add -A 
+➜  _Xcode git:(master) ✗ git commit -m "an Identifier"
+[master 1753f4f] an Identifier
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+➜  _Xcode git:(master) git push 
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 621 bytes | 0 bytes/s, done.
+Total 7 (delta 4), reused 0 (delta 0)
+To git@github.com:evx001/Xcode001.git
+   c569d93..1753f4f  master -> master
+➜  _Xcode git:(master) git branch 
+  NSInternalInconsistencyException
+  ReNameEVX
+  broken
+  deleteCam
+  drapDrop
+* master
+  playingCard
+➜  _Xcode git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   Ch1tSend/Ch1tSend/Images.xcassets/food already.imageset/Contents.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend/Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/Ch1tSend/EVXViewController.h
+
+➜  _Xcode git:(master) ✗ git add . 
+➜  _Xcode git:(master) ✗ git commit -m"myEVXViewController.imageName"
+[master 071f2ee] myEVXViewController.imageName
+ 3 files changed, 13 insertions(+), 6 deletions(-)
+➜  _Xcode git:(master) git add .                                   
+➜  _Xcode git:(master) ✗ git commit -m "dragged IBOutlet UITextField *myTextField; over to Round style cell in storyboard" 
+[master e64f672] dragged IBOutlet UITextField *myTextField; over to Round style cell in storyboard
+ 3 files changed, 19 insertions(+), 1 deletion(-)
+➜  _Xcode git:(master) ✗ git push  
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 41, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (21/21), 2.93 KiB | 0 bytes/s, done.
+Total 21 (delta 11), reused 0 (delta 0)
+To git@github.com:evx001/Xcode001.git
+   1753f4f..e64f672  master -> master
+➜  _Xcode git:(master) ✗ git status                                                                                        
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend/Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Ch1tSend/Base.lproj/Main.storyboard
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  _Xcode git:(master) ✗ git commit -m "dragged viewCell to textBar on main image"                                         
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+	modified:   Ch1tSend/Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Ch1tSend/Base.lproj/Main.storyboard
+
+no changes added to commit
+➜  _Xcode git:(master) ✗ git add .                                                                                         
+➜  _Xcode git:(master) ✗ git commit -m "dragged viewCell to textBar on main image" 
+[master 723a276] dragged viewCell to textBar on main image
+ 2 files changed, 10 insertions(+), 7 deletions(-)
+➜  _Xcode git:(master) git push                                                  
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 26, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 953 bytes | 0 bytes/s, done.
+Total 11 (delta 5), reused 0 (delta 0)
+To git@github.com:evx001/Xcode001.git
+   e64f672..723a276  master -> master
+➜  _Xcode git:(master) git commit -m "dragged viewCell to textBar on main image" 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+	modified:   Ch1tSend/Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Ch1tSend/EVXViewController.m
+
+no changes added to commit
+➜  _Xcode git:(master) ✗ git add .                                                 
+➜  _Xcode git:(master) ✗ git commit -m ".." 
+[master ee02f41] ..
+ 2 files changed, 13 insertions(+), 40 deletions(-)
+ rewrite Ch1tSend/Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist (93%)
+➜  _Xcode git:(master) 
+  [Restored]
+Last login: Thu May 22 18:32:56 on ttys000
+➜  ~ git:(master) ✗ open .
+➜  ~ git:(master) ✗ git status 
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both added:         README.md
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    Gemfile
+	deleted:    Gemfile.lock
+	deleted:    Rakefile
+	deleted:    config.ru
+	deleted:    headius/RSVP4headius
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	--Booksee/
+	.CFUserTextEncoding
+	.Trash/
+	.Xauthority
+	.android/
+	.bash_history
+	.bash_login
+	.bash_profile
+	.bashrc
+	.bin/
+	.bluefish/
+	.bundler/
+	.cabal/
+	.cache/
+	.config/
+	.cups/
+	.dbshell
+	.dropbox-master/
+	.dropbox/
+	.emacs-places
+	.emacs.d/
+	.filezilla/
+	.fontconfig/
+	.gem/
+	.ghc/
+	.gitconfig
+	.gitk
+	.gtk-bookmarks
+	.irb-history
+	.irb_history
+	.jline-clojure.main.history
+	.lein/
+	.lighttable/
+	.local/
+	.m2/
+	.mongorc.js
+	.mysql_history
+	.nbprofiler/
+	.netbeans/
+	.netrc
+	.npm/
+	.oh-my-zsh/
+	.profile
+	.pry_history
+	.psql_history
+	.putty/
+	.ri/
+	.rvm/
+	.sqlite_history
+	.ssh/
+	.sshterm/
+	.swt/
+	.terminator/
+	.terminfo/
+	.vagrant.d/
+	.vagrant/
+	.vim/
+	.viminfo
+	.zcompdump
+	".zcompdump-eviexeris\342\200\231s MacBook Pro-4.3.11"
+	".zcompdump-eviexeris\342\200\231s MacBook Pro-5.0.2"
+	.zlogin
+	.zsh-update
+	.zsh_history
+	.zshrc
+	.zshrc.pre-oh-my-zsh
+	2014-0301css.css
+	2014notes001/
+	Applications/
+	Archive.zip
+	Desktop/
+	Documents/
+	Downloads/
+	Dropbox/
+	FarewellMyLovely.txt
+	HaskMeAnother/
+	HaskellForCats/
+	JaneDoa12820.txt
+	Library/
+	MoonFall/
+	Movies/
+	Music/
+	Pictures/
+	Public/.com.apple.timemachine.supported
+	Public/.localized
+	Public/Drop Box/
+	Public/The Girl with the Blackened Eye.txt
+	Sites/
+	Steam/
+	Vagrantfile
+	VirtualBox VMs/
+	VoluntariAPI/
+	Voluntarily/
+	VoluntarilyJS/
+	WebEric/
+	_Config/
+	_HaskellForCats.zip
+	_Xcode/
+	_ghc78/
+	_music/
+	app001/
+	iMacros/
+	jsFunc/
+	main(SettersAndGetters).m
+	ourgoods-ee/
+	ourgoods/
+	voluntarily_launch/
+	x_Haskell_For_Cats/
+	x__X__x/
+	z_HaskMeAnother.zip
+	z_haskellForCats.zip
+	zz_HaskellForCats.zip
+
+
+It took 2.35 seconds to enumerate untracked files. 'status -uno'
+may speed it up, but you have to be careful not to forget to add
+new files yourself (see 'git help status').
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ✗ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend/Ch1tSend/EVXViewController.m
+	modified:   chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   chatServ000/chatServ000/EVXViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  _Xcode git:(master) ✗ ls                          
+000                AttendanceChecker  ChatServe002       X-ChatSend         cardStanf          chatServ000        fn001              standCard002
+21040416xcode.txt  Ch1tSend           Progs              __ChatSend.zip     chAtsEnd           fN000              stanCard001
+➜  _Xcode git:(master) ✗ cd  chatServ000 
+➜  chatServ000 git:(master) ✗ ls
+20140515notes001.txt  chatServ000           chatServ000.xcodeproj chatServ000Tests
+➜  chatServ000 git:(master) ✗ git branch 
+  NSInternalInconsistencyException
+  ReNameEVX
+  broken
+  deleteCam
+  drapDrop
+* master
+  playingCard
+➜  chatServ000 git:(master) ✗ git branch idToChar 
+➜  chatServ000 git:(master) ✗ git checkout idToChar 
+M	Ch1tSend/Ch1tSend/EVXViewController.m
+M	chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+M	chatServ000/chatServ000/EVXViewController.m
+Switched to branch 'idToChar'
+➜  chatServ000 git:(idToChar) ✗ git add chatServ000chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+fatal: pathspec 'chatServ000chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist' did not match any files
+➜  chatServ000 git:(idToChar) ✗ cd ..                                                                                                                  
+➜  _Xcode git:(idToChar) ✗ git add chatServ000chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+fatal: pathspec 'chatServ000chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist' did not match any files
+➜  _Xcode git:(idToChar) ✗ git add chatServ000/chatServ000/EVXViewController.m
+➜  _Xcode git:(idToChar) ✗ git status 
+On branch idToChar
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   chatServ000/chatServ000/EVXViewController.m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend/Ch1tSend/EVXViewController.m
+	modified:   chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+
+➜  _Xcode git:(idToChar) ✗ git commit -m "Id to Char?" 
+[idToChar ae675f2] Id to Char?
+ 1 file changed, 13 insertions(+), 3 deletions(-)
+➜  _Xcode git:(idToChar) ✗ git status 
+On branch idToChar
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend/Ch1tSend/EVXViewController.m
+	modified:   chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  _Xcode git:(idToChar) ✗ git status 
+On branch idToChar
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend/Ch1tSend/EVXViewController.m
+	modified:   chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  _Xcode git:(idToChar) ✗ git checkout master 
+M	Ch1tSend/Ch1tSend/EVXViewController.m
+M	chatServ000/chatServ000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+➜  _Xcode git:(master) ✗ git add Ch1tSend/Ch1tSend/EVXViewController.m 
+➜  _Xcode git:(master) ✗ git commit -m "was shared NSLog" 
+[master ebd1b9c] was shared NSLog
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+➜  _Xcode git:(master) ✗ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+Request timeout for icmp_seq 3
+Request timeout for icmp_seq 4
+Request timeout for icmp_seq 5
+Request timeout for icmp_seq 6
+ping: sendto: No route to host
+Request timeout for icmp_seq 7
+ping: sendto: No route to host
+Request timeout for icmp_seq 8
+ping: sendto: No route to host
+Request timeout for icmp_seq 9
+ping: sendto: No route to host
+Request timeout for icmp_seq 10
+ping: sendto: No route to host
+Request timeout for icmp_seq 11
+ping: sendto: No route to host
+Request timeout for icmp_seq 12
+ping: sendto: No route to host
+Request timeout for icmp_seq 13
+ping: sendto: Network is down
+Request timeout for icmp_seq 14
+ping: sendto: Network is down
+Request timeout for icmp_seq 15
+ping: sendto: No route to host
+Request timeout for icmp_seq 16
+ping: sendto: No route to host
+Request timeout for icmp_seq 17
+ping: sendto: No route to host
+Request timeout for icmp_seq 18
+ping: sendto: No route to host
+Request timeout for icmp_seq 19
+^C
+--- 8.8.8.8 ping statistics ---
+21 packets transmitted, 0 packets received, 100.0% packet loss
+➜  _Xcode git:(master) ✗ 
+  [Restored]
+Last login: Thu May 22 23:57:17 on ttys000
+cd %                                                                                                               ➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ls
+000                Ch1tSend           X-ChatSend         chAtsEnd           fn001
+21040416xcode.txt  ChatServe002       __ChatSend.zip     chatServ000        stanCard001
+AttendanceChecker  Progs              cardStanf          fN000              standCard002
+➜  _Xcode git:(master) cd Ch1tSend 
+➜  Ch1tSend git:(master) git init
+Initialized empty Git repository in /Users/evx001/_Xcode/Ch1tSend/.git/
+➜  Ch1tSend git:(master) ✗ cd ..
+➜  _Xcode git:(master) cd cardStanf 
+➜  cardStanf git:(master) git init
+Initialized empty Git repository in /Users/evx001/_Xcode/cardStanf/.git/
+➜  cardStanf git:(master) ✗ cd ..
+➜  _Xcode git:(master) cd Ch1tSend 
+➜  Ch1tSend git:(master) ✗ git status 
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Ch1tSend.xcodeproj/
+	Ch1tSend/
+	Ch1tSendTests/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  Ch1tSend git:(master) ✗ git add -A 
+➜  Ch1tSend git:(master) ✗ git commit -m "new localized repo" 
+[master (root-commit) 4bd297b] new localized repo
+ 25 files changed, 1278 insertions(+)
+ create mode 100644 Ch1tSend.xcodeproj/project.pbxproj
+ create mode 100644 Ch1tSend.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 Ch1tSend.xcodeproj/project.xcworkspace/xcshareddata/Ch1tSend.xccheckout
+ create mode 100644 Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+ create mode 100644 Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/Ch1tSend.xcscheme
+ create mode 100644 Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 Ch1tSend/Base.lproj/Main.storyboard
+ create mode 100644 Ch1tSend/Ch1tSend-Info.plist
+ create mode 100644 Ch1tSend/Ch1tSend-Prefix.pch
+ create mode 100644 Ch1tSend/EVXAppDelegate.h
+ create mode 100644 Ch1tSend/EVXAppDelegate.m
+ create mode 100644 Ch1tSend/EVXMasterTableViewController.h
+ create mode 100644 Ch1tSend/EVXMasterTableViewController.m
+ create mode 100644 Ch1tSend/EVXViewController.h
+ create mode 100644 Ch1tSend/EVXViewController.m
+ create mode 100644 Ch1tSend/Images.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 Ch1tSend/Images.xcassets/LaunchImage.launchimage/Contents.json
+ create mode 100644 Ch1tSend/Images.xcassets/food already.imageset/Contents.json
+ create mode 100644 Ch1tSend/Images.xcassets/food already.imageset/food already.png
+ create mode 100644 Ch1tSend/en.lproj/InfoPlist.strings
+ create mode 100644 Ch1tSend/main.m
+ create mode 100644 Ch1tSendTests/Ch1tSendTests-Info.plist
+ create mode 100644 Ch1tSendTests/Ch1tSendTests.m
+ create mode 100644 Ch1tSendTests/en.lproj/InfoPlist.strings
+➜  Ch1tSend git:(master) git status 
+On branch master
+nothing to commit, working directory clean
+➜  Ch1tSend git:(master) 
+  [Restored]
+Last login: Sat May 24 04:22:32 on ttys000
+➜  ~ git:(master) ✗ ifconfig 
+lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
+	options=3<RXCSUM,TXCSUM>
+	inet6 ::1 prefixlen 128 
+	inet 127.0.0.1 netmask 0xff000000 
+	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1 
+	nd6 options=1<PERFORMNUD>
+gif0: flags=8010<POINTOPOINT,MULTICAST> mtu 1280
+stf0: flags=0<> mtu 1280
+en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=10b<RXCSUM,TXCSUM,VLAN_HWTAGGING,AV>
+	ether 40:6c:8f:2f:d7:82 
+	nd6 options=1<PERFORMNUD>
+	media: autoselect (none)
+	status: inactive
+en1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	ether 00:23:12:11:4c:6a 
+	inet6 fe80::223:12ff:fe11:4c6a%en1 prefixlen 64 scopeid 0x5 
+	inet 10.81.106.49 netmask 0xff000000 broadcast 10.255.255.255
+	nd6 options=1<PERFORMNUD>
+	media: autoselect
+	status: active
+en4: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+	options=60<TSO4,TSO6>
+	ether d2:00:18:9f:86:40 
+	media: autoselect <full-duplex>
+	status: inactive
+fw0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 4078
+	lladdr 40:6c:8f:ff:fe:89:f8:64 
+	nd6 options=1<PERFORMNUD>
+	media: autoselect <full-duplex>
+	status: inactive
+p2p0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 2304
+	ether 02:23:12:11:4c:6a 
+	media: autoselect
+	status: inactive
+bridge0: flags=8822<BROADCAST,SMART,SIMPLEX,MULTICAST> mtu 1500
+	options=63<RXCSUM,TXCSUM,TSO4,TSO6>
+	ether 42:6c:8f:f2:ff:00 
+	Configuration:
+		id 0:0:0:0:0:0 priority 0 hellotime 0 fwddelay 0
+		maxage 0 holdcnt 0 proto stp maxaddr 100 timeout 1200
+		root id 0:0:0:0:0:0 priority 0 ifcost 0 port 0
+		ipfilter disabled flags 0x2
+	member: en4 flags=3<LEARNING,DISCOVER>
+	        ifmaxaddr 0 port 6 priority 0 path cost 0
+	nd6 options=1<PERFORMNUD>
+	media: <unknown type>
+	status: inactive
+➜  ~ git:(master) ✗ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: icmp_seq=0 ttl=46 time=20.494 ms
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=46 time=30.083 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=46 time=24.311 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=46 time=21.807 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 20.494/24.174/30.083/3.677 ms
+➜  ~ git:(master) ✗ cd _Xcode/Ch1tSend 
+➜  Ch1tSend git:(master) ✗ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXAppDelegate.h
+	modified:   Ch1tSend/EVXMasterTableViewController.h
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/EVXViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git reset HEAD -hard 
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] <tree-ish> [--] <paths>...
+   or: git reset --patch [<tree-ish>] [--] [<paths>...]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    -p, --patch           select hunks interactively
+
+➜  Ch1tSend git:(master) ✗ git reset HEAD --hard 
+HEAD is now at 259f94b uncommented as it has no bearing on issue
+➜  Ch1tSend git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git add .gitignore
+➜  Ch1tSend git:(master) ✗ git commit -m "adding ignore" 
+[master 9df0407] adding ignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+➜  Ch1tSend git:(master) ✗ git checkout Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+➜  Ch1tSend git:(master) ✗ git checkout Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+➜  Ch1tSend git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  Ch1tSend git:(master) 
+  [Restored]
+Last login: Sun May 25 15:44:46 on console
+➜  ~ git:(master) ✗ cd HaskMeAnother 
+➜  HaskMeAnother git:(master) ghci78
+GHCi, version 7.8.2: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> let f :: Int -> String -> Int;  
+
+<interactive>:2:5:
+    The type signature for ‘f’ lacks an accompanying binding
+Prelude> let f :: Int -> String -> Int;  
+
+<interactive>:3:5:
+    The type signature for ‘f’ lacks an accompanying binding
+Prelude> let f :: Int -> String -> Int;  f x = x 
+
+<interactive>:4:39:
+    Couldn't match expected type ‘String -> Int’ with actual type ‘Int’
+    In the expression: x
+    In an equation for ‘f’: f x = x
+Prelude> let f :: Int -> String -> Int;  f x = x; 
+
+<interactive>:5:39:
+    Couldn't match expected type ‘String -> Int’ with actual type ‘Int’
+    In the expression: x
+    In an equation for ‘f’: f x = x
+Prelude> let f :: Int -> String -> Int;  f x y = x; 
+Prelude> :t 
+
+<no location info>: not an expression: ‘’
+Prelude> :t f
+f :: Int -> String -> Int
+Prelude> :t f 1 
+f 1 :: String -> Int
+Prelude> let f :: a -> b -> a ; f x y = x 
+Prelude> let f :: a -> b -> a ; f x y = x 
+Prelude> let f :: [a] -> (a -> b) -> [b]; 
+
+<interactive>:12:5:
+    The type signature for ‘f’ lacks an accompanying binding
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs (x -> y) -> ys;
+
+<interactive>:13:48: parse error on input ‘->’
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs (x y) =  ys;
+
+<interactive>:14:40: Parse error in pattern: x
+Prelude> let f :: [a] -> (a -> b) -> [b]; f [x] (x y) =  [y];
+
+<interactive>:15:41: Parse error in pattern: x
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs (x y) = ys;
+
+<interactive>:16:40: Parse error in pattern: x
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs (x -> y) = ys;
+
+<interactive>:17:40: Not in scope: ‘x’
+
+<interactive>:17:40:
+    Illegal view pattern:  x -> y
+    Use ViewPatterns to enable view patterns
+
+<interactive>:17:50:
+    Not in scope: ‘ys’
+    Perhaps you meant one of these: ‘y’ (line 17), ‘xs’ (line 17)
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs (\x -> y) = ys;
+
+<interactive>:18:40: Parse error in pattern: \ x -> y
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs (\x -> \y) = ys;
+
+<interactive>:19:48: parse error on input ‘)’
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs \x -> \y = ys;
+
+<interactive>:20:39: parse error on input ‘\’
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs \x -> y = ys;
+
+<interactive>:21:39: parse error on input ‘\’
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs x -> y = ys;
+
+<interactive>:22:41: parse error on input ‘->’
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs x y = ys;
+
+<interactive>:23:45:
+    Not in scope: ‘ys’
+    Perhaps you meant one of these: ‘y’ (line 23), ‘xs’ (line 23)
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = ys;
+
+<interactive>:24:43:
+    Not in scope: ‘ys’
+    Perhaps you meant ‘xs’ (line 24)
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = y
+
+<interactive>:25:43: Not in scope: ‘y’
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = ys
+
+<interactive>:26:43:
+    Not in scope: ‘ys’
+    Perhaps you meant ‘xs’ (line 26)
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = xs
+
+<interactive>:27:43:
+    Couldn't match type ‘a’ with ‘b’
+      ‘a’ is a rigid type variable bound by
+          the type signature for f :: [a] -> (a -> b) -> [b]
+          at <interactive>:27:10
+      ‘b’ is a rigid type variable bound by
+          the type signature for f :: [a] -> (a -> b) -> [b]
+          at <interactive>:27:10
+    Expected type: [b]
+      Actual type: [a]
+    Relevant bindings include
+      g :: a -> b (bound at <interactive>:27:39)
+      xs :: [a] (bound at <interactive>:27:36)
+      f :: [a] -> (a -> b) -> [b] (bound at <interactive>:27:34)
+    In the expression: xs
+    In an equation for ‘f’: f xs g = xs
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = ys
+
+<interactive>:28:43:
+    Not in scope: ‘ys’
+    Perhaps you meant ‘xs’ (line 28)
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = [x]
+
+<interactive>:29:44: Not in scope: ‘x’
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = [g]
+
+<interactive>:30:44:
+    Couldn't match expected type ‘b’ with actual type ‘a -> b’
+      ‘b’ is a rigid type variable bound by
+          the type signature for f :: [a] -> (a -> b) -> [b]
+          at <interactive>:30:10
+    Relevant bindings include
+      g :: a -> b (bound at <interactive>:30:39)
+      xs :: [a] (bound at <interactive>:30:36)
+      f :: [a] -> (a -> b) -> [b] (bound at <interactive>:30:34)
+    In the expression: g
+    In the expression: [g]
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = xs
+
+<interactive>:31:43:
+    Couldn't match type ‘a’ with ‘b’
+      ‘a’ is a rigid type variable bound by
+          the type signature for f :: [a] -> (a -> b) -> [b]
+          at <interactive>:31:10
+      ‘b’ is a rigid type variable bound by
+          the type signature for f :: [a] -> (a -> b) -> [b]
+          at <interactive>:31:10
+    Expected type: [b]
+      Actual type: [a]
+    Relevant bindings include
+      g :: a -> b (bound at <interactive>:31:39)
+      xs :: [a] (bound at <interactive>:31:36)
+      f :: [a] -> (a -> b) -> [b] (bound at <interactive>:31:34)
+    In the expression: xs
+    In an equation for ‘f’: f xs g = xs
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = [xs]
+
+<interactive>:32:44:
+    Couldn't match expected type ‘b’ with actual type ‘[a]’
+      ‘b’ is a rigid type variable bound by
+          the type signature for f :: [a] -> (a -> b) -> [b]
+          at <interactive>:32:10
+    Relevant bindings include
+      g :: a -> b (bound at <interactive>:32:39)
+      xs :: [a] (bound at <interactive>:32:36)
+      f :: [a] -> (a -> b) -> [b] (bound at <interactive>:32:34)
+    In the expression: xs
+    In the expression: [xs]
+Prelude> let q :: a -> (a -> b) -> b; q x g = b 
+
+<interactive>:33:38: Not in scope: ‘b’
+Prelude> let q :: a -> (a -> b) -> b; q x g = a
+
+<interactive>:34:38: Not in scope: ‘a’
+Prelude> let q :: a -> (a -> b) -> b; q x g = q
+
+<interactive>:35:38:
+    Couldn't match expected type ‘b’
+                with actual type ‘a0 -> (a0 -> b0) -> b0’
+      ‘b’ is a rigid type variable bound by
+          the type signature for q :: a -> (a -> b) -> b
+          at <interactive>:35:10
+    Relevant bindings include
+      g :: a -> b (bound at <interactive>:35:34)
+      q :: a -> (a -> b) -> b (bound at <interactive>:35:30)
+    In the expression: q
+    In an equation for ‘q’: q x g = q
+Prelude> let q :: a -> (a -> b) -> b; q x g = g
+
+<interactive>:36:38:
+    Couldn't match expected type ‘b’ with actual type ‘a -> b’
+      ‘b’ is a rigid type variable bound by
+          the type signature for q :: a -> (a -> b) -> b
+          at <interactive>:36:10
+    Relevant bindings include
+      g :: a -> b (bound at <interactive>:36:34)
+      x :: a (bound at <interactive>:36:32)
+      q :: a -> (a -> b) -> b (bound at <interactive>:36:30)
+    In the expression: g
+    In an equation for ‘q’: q x g = g
+Prelude> let q :: a -> (a -> b) -> b; q x g = xg
+
+<interactive>:37:38:
+    Not in scope: ‘xg’
+    Perhaps you meant one of these: ‘x’ (line 37), ‘g’ (line 37)
+Prelude> let q :: a -> (a -> b) -> b; q x g = x g
+
+<interactive>:38:38:
+    Couldn't match expected type ‘(a -> b) -> b’ with actual type ‘a’
+      ‘a’ is a rigid type variable bound by
+          the type signature for q :: a -> (a -> b) -> b
+          at <interactive>:38:10
+    Relevant bindings include
+      g :: a -> b (bound at <interactive>:38:34)
+      x :: a (bound at <interactive>:38:32)
+      q :: a -> (a -> b) -> b (bound at <interactive>:38:30)
+    The function ‘x’ is applied to one argument,
+    but its type ‘a’ has none
+    In the expression: x g
+    In an equation for ‘q’: q x g = x g
+Prelude> let q :: a -> (a -> b) -> b; q x g = g x
+Prelude> let f :: [a] -> (a -> b) -> [b]; f xs g = [g $ head xs] 
+Prelude> f "Hello" $ head "Hello" 
+
+<interactive>:41:18:
+    Couldn't match type ‘Char’ with ‘Char -> b’
+    Expected type: [Char -> b]
+      Actual type: [Char]
+    Relevant bindings include it :: [b] (bound at <interactive>:41:1)
+    In the first argument of ‘head’, namely ‘"Hello"’
+    In the second argument of ‘($)’, namely ‘head "Hello"’
+    In the expression: f "Hello" $ head "Hello"
+Prelude> f "Hello" 
+
+<interactive>:42:1:
+    No instance for (Show ((Char -> b0) -> [b0]))
+      arising from a use of ‘print’
+    In a stmt of an interactive GHCi command: print it
+Prelude> f [1,2,3]  
+
+<interactive>:43:1:
+    No instance for (Show ((a0 -> b0) -> [b0]))
+      arising from a use of ‘print’
+    In a stmt of an interactive GHCi command: print it
+Prelude> :t f "hello" 
+f "hello" :: (Char -> b) -> [b]
+Prelude> :t f "hello" head
+
+<interactive>:1:11:
+    Couldn't match type ‘[b]’ with ‘Char’
+    Expected type: Char -> b
+      Actual type: [b] -> b
+    In the second argument of ‘f’, namely ‘head’
+    In the expression: f "hello" head
+Prelude> :t f "hello" ++ "world" 
+
+<interactive>:1:1:
+    Couldn't match expected type ‘[Char]’
+                with actual type ‘(Char -> b0) -> [b0]’
+    Probable cause: ‘f’ is applied to too few arguments
+    In the first argument of ‘(++)’, namely ‘f "hello"’
+    In the expression: f "hello" ++ "world"
+Prelude> :t f "hello" 
+f "hello" :: (Char -> b) -> [b]
+Prelude> :t f "hello" :[]
+f "hello" :[] :: [(Char -> b) -> [b]]
+Prelude> :t f 
+f :: [a] -> (a -> b) -> [b]
+Prelude> :t f [1,2,3] 
+f [1,2,3] :: Num a => (a -> b) -> [b]
+Prelude> :t f [1,2,3] (1,2)
+
+<interactive>:1:11:
+    Couldn't match expected type ‘a0 -> b’ with actual type ‘(t0, t1)’
+    In the second argument of ‘f’, namely ‘(1, 2)’
+    In the expression: f [1, 2, 3] (1, 2)
+Prelude> :t f [1,2,3] 
+f [1,2,3] :: Num a => (a -> b) -> [b]
+Prelude> :t f [1,2,3] head 
+f [1,2,3] head :: Num [b] => [b]
+Prelude> :t f [1,2,3] head 
+f [1,2,3] head :: Num [b] => [b]
+Prelude> :t f [1,2,3] head 
+f [1,2,3] head :: Num [b] => [b]
+Prelude>  f [1,2,3] head 
+
+<interactive>:56:2:
+    No instance for (Num [b0]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+Prelude> :t f [1,2,3] head 
+f [1,2,3] head :: Num [b] => [b]
+Prelude> :t f [1,2,3] head [1,2]
+
+<interactive>:1:1:
+    Couldn't match expected type ‘[t0] -> t’ with actual type ‘[b0]’
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head [1, 2]
+Prelude> :t f [1,2,3] h
+
+<interactive>:1:11: Not in scope: ‘h’
+Prelude> :t f [1,2,3] head 
+f [1,2,3] head :: Num [b] => [b]
+Prelude> :t f [1,2,3] head []
+
+<interactive>:1:1:
+    Couldn't match expected type ‘[t0] -> t’ with actual type ‘[b0]’
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head []
+Prelude> f [1,2,3] head []  
+
+<interactive>:62:1:
+    Couldn't match expected type ‘[t0] -> t’ with actual type ‘[b0]’
+    Relevant bindings include it :: t (bound at <interactive>:62:1)
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head []
+    In an equation for ‘it’: it = f [1, 2, 3] head []
+Prelude> f [1,2,3] head = []  
+
+<interactive>:63:16: parse error on input ‘=’
+Prelude> f [1,2,3] head == []  
+
+<interactive>:64:4:
+    No instance for (Num [b0]) arising from the literal ‘1’
+    In the expression: 1
+    In the first argument of ‘f’, namely ‘[1, 2, 3]’
+    In the first argument of ‘(==)’, namely ‘f [1, 2, 3] head’
+
+<interactive>:64:16:
+    No instance for (Eq b0) arising from a use of ‘==’
+    The type variable ‘b0’ is ambiguous
+    Note: there are several potential instances:
+      instance Eq a => Eq (GHC.Real.Ratio a) -- Defined in ‘GHC.Real’
+      instance Eq Integer -- Defined in ‘integer-gmp:GHC.Integer.Type’
+      instance Eq a => Eq (Maybe a) -- Defined in ‘Data.Maybe’
+      ...plus 23 others
+    In the expression: f [1, 2, 3] head == []
+    In an equation for ‘it’: it = f [1, 2, 3] head == []
+Prelude> f [1,2,3] head 
+
+<interactive>:65:1:
+    No instance for (Num [b0]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+Prelude> f [1,2,3] head [1]
+
+<interactive>:66:1:
+    Couldn't match expected type ‘[t0] -> t’ with actual type ‘[b0]’
+    Relevant bindings include it :: t (bound at <interactive>:66:1)
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head [1]
+    In an equation for ‘it’: it = f [1, 2, 3] head [1]
+Prelude> f [1,2,3] head 
+
+<interactive>:67:1:
+    No instance for (Num [b0]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+Prelude> f [1,2,3] last 
+
+<interactive>:68:1:
+    No instance for (Num [b0]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+Prelude> :t f [1,2,3] last 
+f [1,2,3] last :: Num [b] => [b]
+Prelude> :t f [1,2,3] head 1
+
+<interactive>:1:1:
+    Couldn't match expected type ‘a0 -> t’ with actual type ‘[b0]’
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head 1
+Prelude> :t f [1,2,3] head = 1
+
+<interactive>:1:16: parse error on input ‘=’
+Prelude> :t f [1,2,3] head 
+f [1,2,3] head :: Num [b] => [b]
+Prelude> :t f [1,2,3] head [1]
+
+<interactive>:1:1:
+    Couldn't match expected type ‘[t0] -> t’ with actual type ‘[b0]’
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head [1]
+Prelude> f [1,2,3] head [1]
+
+<interactive>:74:1:
+    Couldn't match expected type ‘[t0] -> t’ with actual type ‘[b0]’
+    Relevant bindings include it :: t (bound at <interactive>:74:1)
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head [1]
+    In an equation for ‘it’: it = f [1, 2, 3] head [1]
+Prelude> f [1,2,3] head 1:[]
+
+<interactive>:75:1:
+    Couldn't match expected type ‘a0 -> a’ with actual type ‘[b0]’
+    Relevant bindings include it :: [a] (bound at <interactive>:75:1)
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the first argument of ‘(:)’, namely ‘f [1, 2, 3] head 1’
+    In the expression: f [1, 2, 3] head 1 : []
+Prelude> f [1,2,3] head []:1
+
+<interactive>:76:1:
+    Couldn't match expected type ‘[t0] -> a’ with actual type ‘[b0]’
+    Relevant bindings include it :: [a] (bound at <interactive>:76:1)
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the first argument of ‘(:)’, namely ‘f [1, 2, 3] head []’
+    In the expression: f [1, 2, 3] head [] : 1
+Prelude> f [1,2,3] head []
+
+<interactive>:77:1:
+    Couldn't match expected type ‘[t0] -> t’ with actual type ‘[b0]’
+    Relevant bindings include it :: t (bound at <interactive>:77:1)
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head []
+    In an equation for ‘it’: it = f [1, 2, 3] head []
+Prelude> :t f [1,2,3] head []
+
+<interactive>:1:1:
+    Couldn't match expected type ‘[t0] -> t’ with actual type ‘[b0]’
+    The function ‘f’ is applied to three arguments,
+    but its type ‘[[b0]] -> ([b0] -> b0) -> [b0]’ has only two
+    In the expression: f [1, 2, 3] head []
+Prelude> :t f [1,2,3] head 
+f [1,2,3] head :: Num [b] => [b]
+Prelude> :t f [[1],2,3] head 
+f [[1],2,3] head :: (Num [b], Num b) => [b]
+Prelude> f [[1],2,3] head 
+
+<interactive>:81:1:
+    No instance for (Num [b0]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+Prelude> f [[1],2,3] head 
+
+<interactive>:82:1:
+    No instance for (Num [b0]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+Prelude> f [[1],2,3] head 
+
+<interactive>:83:1:
+    No instance for (Num [b0]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+Prelude> :t f 
+f :: [a] -> (a -> b) -> [b]
+Prelude> :t f [2,3] last  
+f [2,3] last :: Num [b] => [b]
+Prelude> :set editor vim -N 
+Prelude> :e 
+No files to edit.
+Prelude> :e enew
+Ok, modules loaded: none.
+Prelude> :l xyz.hs 
+[1 of 1] Compiling XYZ              ( xyz.hs, interpreted )
+Ok, modules loaded: XYZ.
+*XYZ> f
+
+<interactive>:90:1: Not in scope: ‘f’
+*XYZ> :t f
+
+<interactive>:1:1: Not in scope: ‘f’
+*XYZ> :e
+[1 of 1] Compiling XYZ              ( xyz.hs, interpreted )
+
+xyz.hs:3:9: parse error on input ‘::’
+Failed, modules loaded: none.
+Prelude> :e
+[1 of 1] Compiling XYZ              ( xyz.hs, interpreted )
+
+xyz.hs:3:1:
+    The type signature for ‘fn001’ lacks an accompanying binding
+Failed, modules loaded: none.
+Prelude> :e
+[1 of 1] Compiling XYZ              ( xyz.hs, interpreted )
+Ok, modules loaded: XYZ.
+*XYZ> :e 
+[1 of 1] Compiling XYZ              ( xyz.hs, interpreted )
+Ok, modules loaded: XYZ.
+*XYZ> :t fn002
+fn002 :: Show a => a -> String
+*XYZ> e: 
+
+<interactive>:97:4:
+    parse error (possibly incorrect indentation or mismatched brackets)
+*XYZ> :e 
+[1 of 1] Compiling XYZ              ( xyz.hs, interpreted )
+Ok, modules loaded: XYZ.
+*XYZ> :q
+Leaving GHCi.
+➜  HaskMeAnother git:(master) ✗ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	enew
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  HaskMeAnother git:(master) ✗ rm enew
+➜  HaskMeAnother git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+➜  HaskMeAnother git:(master) exit 
+
+[Process completed]
+
+  [Restored]
+Last login: Mon May 26 02:33:10 on console
+➜  ~ git:(master) ✗ cd x_
+cd:cd:13: no such file or directory: x_
+➜  ~ git:(master) ✗ cd ~ 
+➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ✗ cd Ch1tSend 
+➜  Ch1tSend git:(master) ✗ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/main.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git reset HEAD --hard 
+HEAD is now at 0a74c47 adding ignore
+➜  Ch1tSend git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git branch alex001
+➜  Ch1tSend git:(master) ✗ git checkout alex001 
+M	Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+M	Ch1tSend/Base.lproj/Main.storyboard
+M	Ch1tSend/EVXMasterTableViewController.h
+M	Ch1tSend/EVXMasterTableViewController.m
+M	Ch1tSend/EVXViewController.m
+M	Ch1tSend/main.m
+Switched to branch 'alex001'
+➜  Ch1tSend git:(alex001) ✗ git status 
+On branch alex001
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.h
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/EVXViewController.m
+	modified:   Ch1tSend/main.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(alex001) ✗ git add . 
+➜  Ch1tSend git:(alex001) ✗ git commit -m "Alex exploration" 
+[alex001 622d97d] Alex exploration
+ 6 files changed, 19 insertions(+), 5 deletions(-)
+ rewrite Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (91%)
+➜  Ch1tSend git:(alex001) git checkout master 
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+➜  Ch1tSend git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git staus 
+git: 'staus' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+➜  Ch1tSend git:(master) ✗ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend/EVXViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git add Ch1tSend/EVXViewController.m
+➜  Ch1tSend git:(master) ✗ git branch 
+  alex001
+* master
+➜  Ch1tSend git:(master) ✗ git branch beta001 
+➜  Ch1tSend git:(master) ✗ git checkout beta001 
+M	Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+M	Ch1tSend/EVXViewController.m
+Switched to branch 'beta001'
+➜  Ch1tSend git:(beta001) ✗ git commit -m "NSLogging" 
+[beta001 dabb75b] NSLogging
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  Ch1tSend git:(beta001) ✗ git status 
+On branch beta001
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(beta001) ✗ 
+  [Restored]
+Last login: Tue May 27 17:34:45 on ttys000
+➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ✗ ls
+000                ChatServe002       __ChatSend.zip     fN000
+21040416xcode.txt  Progs              cardStanf          fn001
+AttendanceChecker  Quiz               chAtsEnd           stanCard001
+Ch1tSend           X-ChatSend         chatServ000        standCard002
+➜  _Xcode git:(master) ✗ cd Quiz 
+➜  Quiz git:(master) ✗ ls
+EVXQuizViewController.h   EVXQuizViewController.xib Quiz.xcodeproj
+EVXQuizViewController.m   Quiz                      QuizTests
+➜  Quiz git:(master) ✗ git init 
+Initialized empty Git repository in /Users/evx001/_Xcode/Quiz/.git/
+➜  Quiz git:(master) ✗ git status 
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	EVXQuizViewController.h
+	EVXQuizViewController.m
+	EVXQuizViewController.xib
+	Quiz.xcodeproj/
+	Quiz/
+	QuizTests/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  Quiz git:(master) ✗ git add -A 
+➜  Quiz git:(master) ✗ git commit -m "first Commit w/ Controllers and .xib" 
+[master (root-commit) 70863f6] first Commit w/ Controllers and .xib
+ 19 files changed, 907 insertions(+)
+ create mode 100644 EVXQuizViewController.h
+ create mode 100644 EVXQuizViewController.m
+ create mode 100644 EVXQuizViewController.xib
+ create mode 100644 Quiz.xcodeproj/project.pbxproj
+ create mode 100644 Quiz.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/Quiz.xcscheme
+ create mode 100644 Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 Quiz/EVXAppDelegate.h
+ create mode 100644 Quiz/EVXAppDelegate.m
+ create mode 100644 Quiz/Images.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 Quiz/Images.xcassets/LaunchImage.launchimage/Contents.json
+ create mode 100644 Quiz/Quiz-Info.plist
+ create mode 100644 Quiz/Quiz-Prefix.pch
+ create mode 100644 Quiz/en.lproj/InfoPlist.strings
+ create mode 100644 Quiz/main.m
+ create mode 100644 QuizTests/QuizTests-Info.plist
+ create mode 100644 QuizTests/QuizTests.m
+ create mode 100644 QuizTests/en.lproj/InfoPlist.strings
+➜  Quiz git:(master) git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   EVXQuizViewController.xib
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Quiz git:(master) ✗ git add . 
+➜  Quiz git:(master) ✗ git commit -m "Changes when adding labels" 
+[master 45458e3] Changes when adding labels
+ 1 file changed, 14 insertions(+)
+➜  Quiz git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   EVXQuizViewController.xib
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Quiz git:(master) ✗ git add .
+➜  Quiz git:(master) ✗ git commit -m "Changes after button added" 
+[master b6992d0] Changes after button added
+ 1 file changed, 14 insertions(+)
+➜  Quiz git:(master) git status                                 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   EVXQuizViewController.xib
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Quiz git:(master) ✗ git add .                                  
+➜  Quiz git:(master) ✗ git commit -m "Changes from button and label moves" 
+[master 117e489] Changes from button and label moves
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+➜  Quiz git:(master) git add .                                           
+➜  Quiz git:(master) ✗ git status                                          
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   EVXQuizViewController.xib
+	modified:   Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+➜  Quiz git:(master) ✗ git commit -m "Changes from centering label"        
+[master 60cceff] Changes from centering label
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+ rewrite Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (61%)
+➜  Quiz git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  Quiz git:(master) git status                                         
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   EVXQuizViewController.xib
+	modified:   Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Quiz git:(master) ✗ git add .                                    
+➜  Quiz git:(master) ✗ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   EVXQuizViewController.xib
+	modified:   Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+➜  Quiz git:(master) ✗ git commit -m "Changes from adding a button title" 
+[master f5f7d21] Changes from adding a button title
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+➜  Quiz git:(master) git add .                                          
+➜  Quiz git:(master) ✗ git status                                         
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   EVXQuizViewController.xib
+
+➜  Quiz git:(master) ✗ git commit -m "Label Changes" 
+[master e9a294a] Label Changes
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+➜  Quiz git:(master) git add .                     
+➜  Quiz git:(master) ✗ git status                    
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   EVXQuizViewController.xib
+
+➜  Quiz git:(master) ✗ git commit -m "Button title change" 
+[master 4b092dd] Button title change
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  Quiz git:(master) git status                          
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   EVXQuizViewController.m
+	modified:   Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Quiz git:(master) ✗ git add .                           
+➜  Quiz git:(master) ✗ git commit -m "added properties weak IBOutlet UILabel *instanceVars" 
+[master c76af27] added properties weak IBOutlet UILabel *instanceVars
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ rewrite Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (77%)
+➜  Quiz git:(master) git status                                                           
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   EVXQuizViewController.xib
+	modified:   Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Quiz git:(master) ✗ git add .                                                            
+➜  Quiz git:(master) ✗ ls         
+EVXQuizViewController.h   EVXQuizViewController.xib Quiz.xcodeproj
+EVXQuizViewController.m   Quiz                      QuizTests
+➜  Quiz git:(master) ✗ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/
+
+➜  Quiz git:(master) ✗ git add .
+➜  Quiz git:(master) ✗  git commit -m "prelim save for move" 
+[master 8ca276d] prelim save for move
+ 2 files changed, 23 insertions(+)
+ rewrite Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (79%)
+ create mode 100644 Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+➜  Quiz git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Quiz.xcodeproj/project.pbxproj
+	modified:   Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Quiz git:(master) ✗ git add . 
+➜  Quiz git:(master) ✗ git commit -m "moving ViewController into Quiz foldr" 
+[master 5b81ab1] moving ViewController into Quiz foldr
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+ rewrite Quiz.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (81%)
+➜  Quiz git:(master) 
+  [Restored]
+Last login: Tue May 27 17:58:05 on ttys000
+➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ✗ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Quiz/EVXQuizViewController.h
+	new file:   Quiz/EVXQuizViewController.m
+	new file:   Quiz/EVXQuizViewController.xib
+	new file:   Quiz/Quiz.xcodeproj/project.pbxproj
+	new file:   Quiz/Quiz.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	new file:   Quiz/Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/Quiz.xcscheme
+	new file:   Quiz/Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/xcschememanagement.plist
+	new file:   Quiz/Quiz/EVXAppDelegate.h
+	new file:   Quiz/Quiz/EVXAppDelegate.m
+	new file:   Quiz/Quiz/EVXViewController.h
+	new file:   Quiz/Quiz/EVXViewController.m
+	new file:   Quiz/Quiz/EVXViewController.xib
+	new file:   Quiz/Quiz/Images.xcassets/AppIcon.appiconset/Contents.json
+	new file:   Quiz/Quiz/Images.xcassets/LaunchImage.launchimage/Contents.json
+	new file:   Quiz/Quiz/Quiz-Info.plist
+	new file:   Quiz/Quiz/Quiz-Prefix.pch
+	new file:   Quiz/Quiz/en.lproj/InfoPlist.strings
+	new file:   Quiz/Quiz/main.m
+	new file:   Quiz/QuizTests/QuizTests-Info.plist
+	new file:   Quiz/QuizTests/QuizTests.m
+	new file:   Quiz/QuizTests/en.lproj/InfoPlist.strings
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   000/000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   000/000/Base.lproj/Main.storyboard
+	modified:   000/000/main.m
+	modified:   Ch1tSend/Ch1tSend.xcodeproj/project.pbxproj
+	modified:   Ch1tSend/Ch1tSend.xcodeproj/project.xcworkspace/xcshareddata/Ch1tSend.xccheckout
+	modified:   Ch1tSend/Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/Ch1tSend/EVXViewController.m
+	modified:   Ch1tSend/Ch1tSend/main.m
+	deleted:    Progs/EVXViewController(properties).m
+	deleted:    Progs/EVXViewController(property).h
+	deleted:    Progs/EVXViewController(settersAndGetters).h
+	deleted:    Progs/EVXViewController.m
+	deleted:    Progs/_main.m
+	deleted:    Quiz/EVXQuizViewController.h
+	deleted:    Quiz/EVXQuizViewController.m
+	deleted:    Quiz/EVXQuizViewController.xib
+	modified:   Quiz/Quiz.xcodeproj/project.pbxproj
+	modified:   Quiz/Quiz/EVXViewController.m
+	modified:   Quiz/Quiz/EVXViewController.xib
+	modified:   fn000/fn000.xcodeproj/project.pbxproj
+	deleted:    fn000/myClass.m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Ch1tSend/.gitignore
+	Progs/SourceCode/
+	Progs/evxviewcontroller.zip
+	Quiz/Quiz.xcodeproj/project.xcworkspace/xcshareddata/
+	Quiz/Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/
+	fN000/main.m
+	x-Quiz.zip
+
+➜  _Xcode git:(master) ✗ cd Ch1tSend 
+➜  Ch1tSend git:(beta001) ✗ ls
+Ch1tSend           Ch1tSend.xcodeproj Ch1tSendTests
+➜  Ch1tSend git:(beta001) ✗ git status 
+On branch beta001
+Your branch is up-to-date with 'origin/beta001'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/main.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(beta001) ✗ vim -N . 
+➜  Ch1tSend git:(beta001) ✗ git status 
+On branch beta001
+Your branch is up-to-date with 'origin/beta001'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/main.m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	20140529debuggingCh1tSend.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(beta001) ✗ git branch
+  alex001
+* beta001
+  master
+➜  Ch1tSend git:(beta001) ✗ git branch charl001
+➜  Ch1tSend git:(beta001) ✗ git checkout charl001 
+M	Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+M	Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+M	Ch1tSend/Base.lproj/Main.storyboard
+M	Ch1tSend/EVXMasterTableViewController.m
+M	Ch1tSend/main.m
+Switched to branch 'charl001'
+➜  Ch1tSend git:(charl001) ✗ git add -A 
+➜  Ch1tSend git:(charl001) ✗ git checkout beta001 
+A	20140529debuggingCh1tSend.txt
+M	Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+M	Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+M	Ch1tSend/Base.lproj/Main.storyboard
+M	Ch1tSend/EVXMasterTableViewController.m
+M	Ch1tSend/main.m
+Switched to branch 'beta001'
+Your branch is up-to-date with 'origin/beta001'.
+➜  Ch1tSend git:(beta001) ✗ git status 
+On branch beta001
+Your branch is up-to-date with 'origin/beta001'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   20140529debuggingCh1tSend.txt
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/main.m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+➜  Ch1tSend git:(beta001) ✗ git checkout charl001 
+A	20140529debuggingCh1tSend.txt
+M	Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+M	Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+M	Ch1tSend/Base.lproj/Main.storyboard
+M	Ch1tSend/EVXMasterTableViewController.m
+M	Ch1tSend/main.m
+Switched to branch 'charl001'
+Your branch is up-to-date with 'origin/charl001'.
+➜  Ch1tSend git:(charl001) ✗ git status 
+On branch charl001
+Your branch is up-to-date with 'origin/charl001'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   20140529debuggingCh1tSend.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+	modified:   Ch1tSend/main.m
+
+➜  Ch1tSend git:(charl001) ✗ git add -A 
+➜  Ch1tSend git:(charl001) ✗ git commit "debugging session" 
+error: pathspec 'debugging session' did not match any file(s) known to git.
+➜  Ch1tSend git:(charl001) ✗ git commit -m "debugging session" 
+[charl001 8ee86b0] debugging session
+ 6 files changed, 95 insertions(+), 2 deletions(-)
+ create mode 100644 20140529debuggingCh1tSend.txt
+ rewrite Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (94%)
+➜  Ch1tSend git:(charl001)     
+  [Restored]
+Last login: Thu May 29 15:45:37 on ttys002
+➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ✗ cd Ch1tSend 
+➜  Ch1tSend git:(beta001) ✗ ls           
+Ch1tSend           Ch1tSend.xcodeproj Ch1tSendTests
+➜  Ch1tSend git:(beta001) ✗ git checkout charl001 
+error: Your local changes to the following files would be overwritten by checkout:
+	Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+➜  Ch1tSend git:(beta001) ✗ git status 
+On branch beta001
+Your branch is up-to-date with 'origin/beta001'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(beta001) ✗ git add . 
+➜  Ch1tSend git:(beta001) ✗ git commit -m "xcuserstate" 
+[beta001 94c034e] xcuserstate
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rewrite Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (94%)
+➜  Ch1tSend git:(beta001) gi tstatus 
+zsh: command not found: gi
+➜  Ch1tSend git:(beta001) git status 
+On branch beta001
+Your branch is ahead of 'origin/beta001' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  Ch1tSend git:(beta001) git checkout charl001 
+Switched to branch 'charl001'
+Your branch is ahead of 'origin/charl001' by 1 commit.
+  (use "git push" to publish your local commits)
+➜  Ch1tSend git:(charl001) git push 
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 53, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (22/22), 34.17 KiB | 0 bytes/s, done.
+Total 22 (delta 6), reused 0 (delta 0)
+To https://github.com/evx001/Ch1tSend.git
+   23bb2d1..94c034e  beta001 -> beta001
+   23bb2d1..8ee86b0  charl001 -> charl001
+   0a74c47..7991432  master -> master
+➜  Ch1tSend git:(charl001) ls
+20140529debuggingCh1tSend.txt Ch1tSend.xcodeproj
+Ch1tSend                      Ch1tSendTests
+➜  Ch1tSend git:(charl001) ✗ cd Ch1tSend
+➜  Ch1tSend git:(charl001) ✗ ls
+Base.lproj                     EVXAppDelegate.m               EVXViewController.m
+Ch1tSend-Info.plist            EVXMasterTableViewController.h Images.xcassets
+Ch1tSend-Prefix.pch            EVXMasterTableViewController.m en.lproj
+EVXAppDelegate.h               EVXViewController.h            main.m
+➜  Ch1tSend git:(charl001) ✗ vim -N . 
+➜  Ch1tSend git:(charl001) ✗ ls
+Base.lproj                     EVXAppDelegate.m               EVXViewController.m
+Ch1tSend-Info.plist            EVXMasterTableViewController.h Images.xcassets
+Ch1tSend-Prefix.pch            EVXMasterTableViewController.m en.lproj
+EVXAppDelegate.h               EVXViewController.h            main.m
+➜  Ch1tSend git:(charl001) ✗ cd en.lproj 
+➜  en.lproj git:(charl001) ✗ ls
+InfoPlist.strings
+➜  en.lproj git:(charl001) ✗ cd ..
+➜  Ch1tSend git:(charl001) ✗ ls
+Base.lproj                     EVXAppDelegate.m               EVXViewController.m
+Ch1tSend-Info.plist            EVXMasterTableViewController.h Images.xcassets
+Ch1tSend-Prefix.pch            EVXMasterTableViewController.m en.lproj
+EVXAppDelegate.h               EVXViewController.h            main.m
+➜  Ch1tSend git:(charl001) ✗ cd ..
+➜  Ch1tSend git:(charl001) ✗ sl
+20140529debuggingCh1tSend.txt Ch1tSend.xcodeproj
+Ch1tSend                      Ch1tSendTests
+➜  Ch1tSend git:(charl001) ✗ vim -N 20140529debuggingCh1tSend.txt 
+➜  Ch1tSend git:(charl001) ✗ git grep .xib
+➜  Ch1tSend git:(charl001) ✗ vim -N . 
+➜  Ch1tSend git:(master) ✗ cd..
+➜  _Xcode git:(master) ✗ ls
+000                Ch1tSend           Quiz               cardStanf          fN000              standCard002
+21040416xcode.txt  ChatServe002       X-ChatSend         chAtsEnd           fn001              worldShutYourMouth
+AttendanceChecker  Progs              __ChatSend.zip     chatServ000        stanCard001        x-Quiz.zip
+➜  _Xcode git:(master) ✗ cd worldShutYourMouth 
+➜  worldShutYourMouth git:(master) ✗ git init
+Initialized empty Git repository in /Users/evx001/_Xcode/worldShutYourMouth/.git/
+➜  worldShutYourMouth git:(master) ✗ git status 
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	worldShutYourMouth.xcodeproj/
+	worldShutYourMouth/
+	worldShutYourMouthTests/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  worldShutYourMouth git:(master) ✗ git add -A "init commit" 
+fatal: pathspec 'init commit' did not match any files
+➜  worldShutYourMouth git:(master) ✗ git add -A               
+➜  worldShutYourMouth git:(master) ✗ git commit -m "init commit" 
+[master (root-commit) 7adad6d] init commit
+ 19 files changed, 915 insertions(+)
+ create mode 100644 worldShutYourMouth.xcodeproj/project.pbxproj
+ create mode 100644 worldShutYourMouth.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 worldShutYourMouth.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/worldShutYourMouth.xcscheme
+ create mode 100644 worldShutYourMouth.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 worldShutYourMouth/Base.lproj/Main.storyboard
+ create mode 100644 worldShutYourMouth/EVXAppDelegate.h
+ create mode 100644 worldShutYourMouth/EVXAppDelegate.m
+ create mode 100644 worldShutYourMouth/EVXViewController.h
+ create mode 100644 worldShutYourMouth/EVXViewController.m
+ create mode 100644 worldShutYourMouth/Images.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 worldShutYourMouth/Images.xcassets/LaunchImage.launchimage/Contents.json
+ create mode 100644 worldShutYourMouth/en.lproj/InfoPlist.strings
+ create mode 100644 worldShutYourMouth/main.m
+ create mode 100644 worldShutYourMouth/worldShutYourMouth-Info.plist
+ create mode 100644 worldShutYourMouth/worldShutYourMouth-Prefix.pch
+ create mode 100644 worldShutYourMouthTests/en.lproj/InfoPlist.strings
+ create mode 100644 worldShutYourMouthTests/worldShutYourMouthTests-Info.plist
+ create mode 100644 worldShutYourMouthTests/worldShutYourMouthTests.m
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   worldShutYourMouth/Base.lproj/Main.storyboard
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git add .
+➜  worldShutYourMouth git:(master) ✗ git commit -m "first storyboard elements"
+[master 1ca8f25] first storyboard elements
+ 2 files changed, 36 insertions(+), 2 deletions(-)
+ rewrite worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (72%)
+➜  worldShutYourMouth git:(master) 
+  [Restored]
+Last login: Fri May 30 09:21:27 on console
+➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ✗ cd worldShutYourMouth 
+➜  worldShutYourMouth git:(master) ✗ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   worldShutYourMouth/Base.lproj/Main.storyboard
+	modified:   worldShutYourMouth/EVXViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git add . 
+➜  worldShutYourMouth git:(master) ✗ git commit -m "added property to view controller" 
+[master 7f68439] added property to view controller
+ 3 files changed, 4 insertions(+)
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   worldShutYourMouth/Base.lproj/Main.storyboard
+	modified:   worldShutYourMouth/EVXViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git add . 
+➜  worldShutYourMouth git:(master) ✗ git commit -m "added label connection and Button Action" 
+[master 8fc4420] added label connection and Button Action
+ 3 files changed, 8 insertions(+)
+➜  worldShutYourMouth git:(master) git reset HEAD --hard 
+HEAD is now at 7f68439 added property to view controller
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   worldShutYourMouth/EVXViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git add . 
+➜  worldShutYourMouth git:(master) ✗ git commit -m "added in a NSlog for buttonPress" 
+[master ea08e8f] added in a NSlog for buttonPress
+ 2 files changed, 1 insertion(+)
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  worldShutYourMouth git:(master) git push 
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 61, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (41/41), done.
+Writing objects: 100% (50/50), 22.48 KiB | 0 bytes/s, done.
+Total 50 (delta 19), reused 0 (delta 0)
+To https://github.com/evx001/worldShutYourMouth.git
+   1ca8f25..ea08e8f  master -> master
+➜  worldShutYourMouth git:(master) ✗ cd ..
+➜  _Xcode git:(master) ✗ cd Ch1tSend 
+➜  Ch1tSend git:(master) ✗ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git reset HEAD --hard  
+HEAD is now at 7991432 NSLog ViewDidLoadInMaterTableController!
+➜  Ch1tSend git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+➜  Ch1tSend git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(master) ✗ git branch delta001
+➜  Ch1tSend git:(master) ✗ git checkout delta001 
+M	Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+M	Ch1tSend/Base.lproj/Main.storyboard
+M	Ch1tSend/EVXMasterTableViewController.m
+Switched to branch 'delta001'
+➜  Ch1tSend git:(delta001) ✗ git status 
+On branch delta001
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(delta001) ✗ git add . 
+➜  Ch1tSend git:(delta001) ✗ git commit -m "redid IBOutlet myImageView" 
+[delta001 2e7e253] redid IBOutlet myImageView
+ 3 files changed, 6 insertions(+), 2 deletions(-)
+ rewrite Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (86%)
+➜  Ch1tSend git:(delta001) git status
+On branch delta001
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend/Base.lproj/Main.storyboard
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(delta001) ✗ git reset HEAD --hard 
+HEAD is now at 2e7e253 redid IBOutlet myImageView
+➜  Ch1tSend git:(delta001) git status 
+On branch delta001
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   Ch1tSend/EVXMasterTableViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Ch1tSend git:(delta001) ✗ git add .
+➜  Ch1tSend git:(delta001) ✗ git commit -m "removed commentted out IBOutlet after having done the reconnect"  
+[delta001 e0e1824] removed commentted out IBOutlet after having done the reconnect
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ rewrite Ch1tSend.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (83%)
+➜  Ch1tSend git:(delta001) git reset HEAD --hard 
+HEAD is now at e0e1824 removed commentted out IBOutlet after having done the reconnect
+➜  Ch1tSend git:(delta001) git status 
+On branch delta001
+nothing to commit, working directory clean
+➜  Ch1tSend git:(delta001) cd ../worldShutYourMouth 
+➜  worldShutYourMouth git:(master) ✗ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	worldShutYourMouth.xcodeproj/project.xcworkspace/xcshareddata/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git add . 
+➜  worldShutYourMouth git:(master) ✗ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcshareddata/worldShutYourMouth.xccheckout
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+➜  worldShutYourMouth git:(master) ✗ git commit -m "xccheckout and xcuserstate" 
+[master 9288804] xccheckout and xcuserstate
+ 2 files changed, 41 insertions(+)
+ create mode 100644 worldShutYourMouth.xcodeproj/project.xcworkspace/xcshareddata/worldShutYourMouth.xccheckout
+ rewrite worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (81%)
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   worldShutYourMouth/EVXViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git add . 
+➜  worldShutYourMouth git:(master) ✗ git commit -m "NSLog self.inputTextField.text"
+[master 4a946d9] NSLog self.inputTextField.text
+ 2 files changed, 1 insertion(+)
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   worldShutYourMouth/Base.lproj/Main.storyboard
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git add .                                     
+➜  worldShutYourMouth git:(master) ✗ git commit -m "Changed title to SHoutOut"     
+[master f2f2e24] Changed title to SHoutOut
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+➜  worldShutYourMouth git:(master) git push 
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 29, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (19/19), 12.27 KiB | 0 bytes/s, done.
+Total 19 (delta 10), reused 0 (delta 0)
+To https://github.com/evx001/worldShutYourMouth.git
+   9288804..f2f2e24  master -> master
+➜  worldShutYourMouth git:(master) git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   worldShutYourMouth.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   worldShutYourMouth/EVXViewController.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  worldShutYourMouth git:(master) ✗ git add . 
+➜  worldShutYourMouth git:(master) ✗ git commit -m "self.labelOutput.text = s;" 
+[master b8a704b] self.labelOutput.text = s;
+ 2 files changed, 3 insertions(+)
+➜  worldShutYourMouth git:(master) ✗ git push 
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 17, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 2.49 KiB | 0 bytes/s, done.
+Total 9 (delta 5), reused 0 (delta 0)
+To https://github.com/evx001/worldShutYourMouth.git
+   f2f2e24..b8a704b  master -> master
+➜  worldShutYourMouth git:(master) ✗ cd ..
+ls
+➜  _Xcode git:(master) ✗ ls
+000                ChatServe002       X-ChatSend         chatServ000        stanCard001
+21040416xcode.txt  Progs              __ChatSend.zip     fN000              standCard002
+AttendanceChecker  Quiz               cardStanf          fn001              worldShutYourMouth
+Ch1tSend           Utility001         chAtsEnd           objC-Notes.txt     x-Quiz.zip
+➜  _Xcode git:(master) ✗ cd Utility001 
+➜  Utility001 git:(master) ✗ git status 
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ../Quiz/EVXQuizViewController.h
+	new file:   ../Quiz/EVXQuizViewController.m
+	new file:   ../Quiz/EVXQuizViewController.xib
+	new file:   ../Quiz/Quiz.xcodeproj/project.pbxproj
+	new file:   ../Quiz/Quiz.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	new file:   ../Quiz/Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/Quiz.xcscheme
+	new file:   ../Quiz/Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/xcschememanagement.plist
+	new file:   ../Quiz/Quiz/EVXAppDelegate.h
+	new file:   ../Quiz/Quiz/EVXAppDelegate.m
+	new file:   ../Quiz/Quiz/EVXViewController.h
+	new file:   ../Quiz/Quiz/EVXViewController.m
+	new file:   ../Quiz/Quiz/EVXViewController.xib
+	new file:   ../Quiz/Quiz/Images.xcassets/AppIcon.appiconset/Contents.json
+	new file:   ../Quiz/Quiz/Images.xcassets/LaunchImage.launchimage/Contents.json
+	new file:   ../Quiz/Quiz/Quiz-Info.plist
+	new file:   ../Quiz/Quiz/Quiz-Prefix.pch
+	new file:   ../Quiz/Quiz/en.lproj/InfoPlist.strings
+	new file:   ../Quiz/Quiz/main.m
+	new file:   ../Quiz/QuizTests/QuizTests-Info.plist
+	new file:   ../Quiz/QuizTests/QuizTests.m
+	new file:   ../Quiz/QuizTests/en.lproj/InfoPlist.strings
+	new file:   Utility001.xcodeproj/project.pbxproj
+	new file:   Utility001.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	new file:   Utility001/Base.lproj/Main.storyboard
+	new file:   Utility001/EVXAppDelegate.h
+	new file:   Utility001/EVXAppDelegate.m
+	new file:   Utility001/EVXFlipsideViewController.h
+	new file:   Utility001/EVXFlipsideViewController.m
+	new file:   Utility001/EVXMainViewController.h
+	new file:   Utility001/EVXMainViewController.m
+	new file:   Utility001/Images.xcassets/AppIcon.appiconset/Contents.json
+	new file:   Utility001/Images.xcassets/LaunchImage.launchimage/Contents.json
+	new file:   Utility001/Utility001-Info.plist
+	new file:   Utility001/Utility001-Prefix.pch
+	new file:   Utility001/en.lproj/InfoPlist.strings
+	new file:   Utility001/main.m
+	new file:   Utility001Tests/Utility001Tests-Info.plist
+	new file:   Utility001Tests/Utility001Tests.m
+	new file:   Utility001Tests/en.lproj/InfoPlist.strings
+	new file:   ../worldShutYourMouth/worldShutYourMouth.xcodeproj/project.pbxproj
+	new file:   ../worldShutYourMouth/worldShutYourMouth.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	new file:   ../worldShutYourMouth/worldShutYourMouth/Base.lproj/Main.storyboard
+	new file:   ../worldShutYourMouth/worldShutYourMouth/EVXAppDelegate.h
+	new file:   ../worldShutYourMouth/worldShutYourMouth/EVXAppDelegate.m
+	new file:   ../worldShutYourMouth/worldShutYourMouth/EVXViewController.h
+	new file:   ../worldShutYourMouth/worldShutYourMouth/EVXViewController.m
+	new file:   ../worldShutYourMouth/worldShutYourMouth/Images.xcassets/AppIcon.appiconset/Contents.json
+	new file:   ../worldShutYourMouth/worldShutYourMouth/Images.xcassets/LaunchImage.launchimage/Contents.json
+	new file:   ../worldShutYourMouth/worldShutYourMouth/en.lproj/InfoPlist.strings
+	new file:   ../worldShutYourMouth/worldShutYourMouth/main.m
+	new file:   ../worldShutYourMouth/worldShutYourMouth/worldShutYourMouth-Info.plist
+	new file:   ../worldShutYourMouth/worldShutYourMouth/worldShutYourMouth-Prefix.pch
+	new file:   ../worldShutYourMouth/worldShutYourMouthTests/en.lproj/InfoPlist.strings
+	new file:   ../worldShutYourMouth/worldShutYourMouthTests/worldShutYourMouthTests-Info.plist
+	new file:   ../worldShutYourMouth/worldShutYourMouthTests/worldShutYourMouthTests.m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../000/000.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   ../000/000/Base.lproj/Main.storyboard
+	modified:   ../000/000/main.m
+	modified:   ../Ch1tSend/Ch1tSend.xcodeproj/project.pbxproj
+	modified:   ../Ch1tSend/Ch1tSend.xcodeproj/project.xcworkspace/xcshareddata/Ch1tSend.xccheckout
+	modified:   ../Ch1tSend/Ch1tSend/Base.lproj/Main.storyboard
+	modified:   ../Ch1tSend/Ch1tSend/EVXMasterTableViewController.m
+	modified:   ../Ch1tSend/Ch1tSend/EVXViewController.m
+	deleted:    ../Progs/EVXViewController(properties).m
+	deleted:    ../Progs/EVXViewController(property).h
+	deleted:    ../Progs/EVXViewController(settersAndGetters).h
+	deleted:    ../Progs/EVXViewController.m
+	deleted:    ../Progs/_main.m
+	deleted:    ../Quiz/EVXQuizViewController.h
+	deleted:    ../Quiz/EVXQuizViewController.m
+	deleted:    ../Quiz/EVXQuizViewController.xib
+	modified:   ../Quiz/Quiz.xcodeproj/project.pbxproj
+	modified:   ../Quiz/Quiz/EVXViewController.m
+	modified:   ../Quiz/Quiz/EVXViewController.xib
+	modified:   ../fn000/fn000.xcodeproj/project.pbxproj
+	deleted:    ../fn000/myClass.m
+	modified:   ../worldShutYourMouth/worldShutYourMouth/Base.lproj/Main.storyboard
+	modified:   ../worldShutYourMouth/worldShutYourMouth/EVXViewController.m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../.objC-Notes.txt .swp
+	../Ch1tSend/.gitignore
+	../Progs/SourceCode/
+	../Progs/evxviewcontroller.zip
+	../Quiz/Quiz.xcodeproj/project.xcworkspace/xcshareddata/
+	../Quiz/Quiz.xcodeproj/xcuserdata/evx001.xcuserdatad/xcdebugger/
+	Utility001.xcodeproj/xcuserdata/
+	../fN000/main.m
+	../objC-Notes.txt 
+	../worldShutYourMouth/.gitignore
+	../worldShutYourMouth/worldShutYourMouth.xcodeproj/project.xcworkspace/xcshareddata/
+	../worldShutYourMouth/worldShutYourMouth.xcodeproj/xcuserdata/
+	../x-Quiz.zip
+
+➜  Utility001 git:(master) ✗ git init
+Initialized empty Git repository in /Users/evx001/_Xcode/Utility001/.git/
+➜  Utility001 git:(master) ✗ git status 
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Utility001.xcodeproj/
+	Utility001/
+	Utility001Tests/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  Utility001 git:(master) ✗ git add -A 
+➜  Utility001 git:(master) ✗ git commit -m "init commit" 
+[master (root-commit) a21ac39] init commit
+ 21 files changed, 1062 insertions(+)
+ create mode 100644 Utility001.xcodeproj/project.pbxproj
+ create mode 100644 Utility001.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 Utility001.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 Utility001.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/Utility001.xcscheme
+ create mode 100644 Utility001.xcodeproj/xcuserdata/evx001.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 Utility001/Base.lproj/Main.storyboard
+ create mode 100644 Utility001/EVXAppDelegate.h
+ create mode 100644 Utility001/EVXAppDelegate.m
+ create mode 100644 Utility001/EVXFlipsideViewController.h
+ create mode 100644 Utility001/EVXFlipsideViewController.m
+ create mode 100644 Utility001/EVXMainViewController.h
+ create mode 100644 Utility001/EVXMainViewController.m
+ create mode 100644 Utility001/Images.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 Utility001/Images.xcassets/LaunchImage.launchimage/Contents.json
+ create mode 100644 Utility001/Utility001-Info.plist
+ create mode 100644 Utility001/Utility001-Prefix.pch
+ create mode 100644 Utility001/en.lproj/InfoPlist.strings
+ create mode 100644 Utility001/main.m
+ create mode 100644 Utility001Tests/Utility001Tests-Info.plist
+ create mode 100644 Utility001Tests/Utility001Tests.m
+ create mode 100644 Utility001Tests/en.lproj/InfoPlist.strings
+➜  Utility001 git:(master) 
+  [Restored]
+Last login: Mon Jun  2 22:55:43 on ttys000
+cd _%                                                                                                             ➜  ~ git:(master) ✗ cd _Xcode/ExploreUIButton 
+➜  ExploreUIButton git:(master) ✗ git status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ExploreUIButton/cloud 1.jpg
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ExploreUIButton.xcodeproj/project.pbxproj
+	modified:   ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   ExploreUIButton/Base.lproj/Main.storyboard
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+➜  ExploreUIButton git:(master) ✗ git add .
+^C
+➜  ExploreUIButton git:(master) ✗ git add ExploreUIButton/ExploreUIButton/
+^C
+➜  ExploreUIButton git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ExploreUIButton/cloud 1.jpg
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ExploreUIButton.xcodeproj/project.pbxproj
+	modified:   ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   ExploreUIButton/Base.lproj/Main.storyboard
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+➜  ExploreUIButton git:(master) ✗ git add ExploreUIButton/Base.lproj/Main.storyboard
+➜  ExploreUIButton git:(master) ✗ git status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   ExploreUIButton/Base.lproj/Main.storyboard
+	new file:   ExploreUIButton/cloud 1.jpg
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ExploreUIButton.xcodeproj/project.pbxproj
+	modified:   ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+➜  ExploreUIButton git:(master) ✗ git commit -m "cloud Background"    
+[master 4ec6a46] cloud Background
+ 2 files changed, 15 insertions(+), 2 deletions(-)
+ create mode 100755 ExploreUIButton/cloud 1.jpg
+➜  ExploreUIButton git:(master) ✗ git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ExploreUIButton.xcodeproj/project.pbxproj
+	modified:   ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  ExploreUIButton git:(master) ✗ git checkout ExploreUIButton/BkgrdPix/
+error: pathspec 'ExploreUIButton/BkgrdPix/' did not match any file(s) known to git.
+➜  ExploreUIButton git:(master) ✗ git add ExploreUIButton.xcodeproj/project.pbxproj 
+➜  ExploreUIButton git:(master) ✗ git status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   ExploreUIButton.xcodeproj/project.pbxproj
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+➜  ExploreUIButton git:(master) ✗ git commit -m "pbxproj" 
+[master 39ac796] pbxproj
+ 1 file changed, 6 insertions(+)
+➜  ExploreUIButton git:(master) ✗ git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  ExploreUIButton git:(master) ✗ git add  ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+➜  ExploreUIButton git:(master) ✗ git status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+➜  ExploreUIButton git:(master) ✗ git commmit -m "Xcuserstate" 
+git: 'commmit' is not a git command. See 'git --help'.
+
+Did you mean this?
+	commit
+➜  ExploreUIButton git:(master) ✗ git commit -m "Xcuserstate"  
+[master f65fb6a] Xcuserstate
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rewrite ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate (88%)
+➜  ExploreUIButton git:(master) ✗ git reset HEAD --hard 
+HEAD is now at f65fb6a Xcuserstate
+➜  ExploreUIButton git:(master) ✗ git status 
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  ExploreUIButton git:(master) ✗ git rm ExploreUIButtonExploreUIButton/BkgrdPix/
+fatal: pathspec 'ExploreUIButtonExploreUIButton/BkgrdPix/' did not match any files
+➜  ExploreUIButton git:(master) ✗ git  
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+➜  ExploreUIButton git:(master) ✗ ls
+ExploreUIButton           ExploreUIButton.xcodeproj ExploreUIButtonTests
+➜  ExploreUIButton git:(master) ✗ git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ExploreUIButton.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   ExploreUIButton/Base.lproj/Main.storyboard
+	modified:   ExploreUIButton/EVXViewController.m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ExploreUIButton/BkgrdPix/
+	ExploreUIButton/ExploreUIButton/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  ExploreUIButton git:(master) ✗ git ad 
+  [Restored]
+➜  ~ git:(master) ✗ lua 
+Lua 5.2.1  Copyright (C) 1994-2012 Lua.org, PUC-Rio
+> ^C
+➜  ~ git:(master) ✗ brew install lua 
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/lua-5.1.5.mavericks.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring lua-5.1.5.mavericks.bottle.tar.gz
+^C
+➜  ~ git:(master) ✗ lua 
+Lua 5.2.1  Copyright (C) 1994-2012 Lua.org, PUC-Rio
+> ^C
+
+ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: icmp_seq=0 ttl=43 time=16.564 ms
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=43 time=18.611 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=43 time=18.639 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=43 time=16.907 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=43 time=27.845 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=43 time=18.860 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=43 time=18.981 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=43 time=16.244 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=43 time=16.159 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=43 time=16.306 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=43 time=18.948 ms
+64 bytes from 8.8.8.8: icmp_seq=11 ttl=43 time=18.919 ms
+64 bytes from 8.8.8.8: icmp_seq=12 ttl=43 time=16.383 ms
+64 bytes from 8.8.8.8: icmp_seq=13 ttl=43 time=16.486 ms
+64 bytes from 8.8.8.8: icmp_seq=14 ttl=43 time=16.361 ms
+64 bytes from 8.8.8.8: icmp_seq=15 ttl=43 time=18.719 ms
+64 bytes from 8.8.8.8: icmp_seq=16 ttl=43 time=18.707 ms
+64 bytes from 8.8.8.8: icmp_seq=17 ttl=43 time=22.772 ms
+64 bytes from 8.8.8.8: icmp_seq=18 ttl=43 time=18.872 ms
+64 bytes from 8.8.8.8: icmp_seq=19 ttl=43 time=16.472 ms
+64 bytes from 8.8.8.8: icmp_seq=20 ttl=43 time=16.260 ms
+64 bytes from 8.8.8.8: icmp_seq=21 ttl=43 time=16.445 ms
+64 bytes from 8.8.8.8: icmp_seq=22 ttl=43 time=18.730 ms
+64 bytes from 8.8.8.8: icmp_seq=23 ttl=43 time=16.204 ms
+64 bytes from 8.8.8.8: icmp_seq=24 ttl=43 time=16.332 ms
+64 bytes from 8.8.8.8: icmp_seq=25 ttl=43 time=16.061 ms
+64 bytes from 8.8.8.8: icmp_seq=26 ttl=43 time=16.266 ms
+64 bytes from 8.8.8.8: icmp_seq=27 ttl=43 time=16.399 ms
+64 bytes from 8.8.8.8: icmp_seq=28 ttl=43 time=16.365 ms
+64 bytes from 8.8.8.8: icmp_seq=29 ttl=43 time=16.410 ms
+64 bytes from 8.8.8.8: icmp_seq=30 ttl=43 time=16.335 ms
+64 bytes from 8.8.8.8: icmp_seq=31 ttl=43 time=16.312 ms
+64 bytes from 8.8.8.8: icmp_seq=32 ttl=43 time=18.852 ms
+^C^C
+--- 8.8.8.8 ping statistics ---
+33 packets transmitted, 33 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 16.061/17.719/27.845/2.326 ms
+➜  ~ git:(master) ✗ traceroute 8.8.8.8
+traceroute to 8.8.8.8 (8.8.8.8), 64 hops max, 52 byte packets
+ 1  10.9.96.2 (10.9.96.2)  1.152 ms  0.808 ms  0.742 ms
+ 2  199.47.74.65 (199.47.74.65)  48.418 ms  1.850 ms  1.734 ms
+ 3  border1.te7-3.welinknet-2.nym008.pnap.net (64.94.177.185)  2.126 ms  2.480 ms  2.337 ms
+ 4  core2.te6-1-bbnet1.nym007.pnap.net (216.52.95.25)  3.509 ms
+    core2.te6-2-bbnet2.nym007.pnap.net (216.52.95.89)  2.851 ms
+    core2.te6-1-bbnet1.nym007.pnap.net (216.52.95.25)  2.729 ms
+ 5  0.te7-4.tsr1.lga5.us.voxel.net (173.231.161.69)  2.060 ms  3.896 ms  2.411 ms
+ 6  * * *
+ 7  google.tienyc.telxgroup.net (206.126.115.20)  4.879 ms  2.160 ms  2.093 ms
+ 8  209.85.247.7 (209.85.247.7)  8.689 ms  2.300 ms  2.176 ms
+ 9  72.14.236.206 (72.14.236.206)  2.271 ms
+    209.85.252.242 (209.85.252.242)  2.351 ms  18.777 ms
+10  209.85.249.11 (209.85.249.11)  8.404 ms  8.245 ms  8.269 ms
+11  72.14.235.10 (72.14.235.10)  15.597 ms
+    66.249.95.229 (66.249.95.229)  16.055 ms
+    72.14.235.10 (72.14.235.10)  15.991 ms
+12  72.14.234.65 (72.14.234.65)  15.785 ms  16.027 ms
+    72.14.234.55 (72.14.234.55)  20.637 ms
+13  *  * *
+14  google-public-dns-a.google.com (8.8.8.8)  18.597 ms  16.546 ms  16.741 ms
+➜  ~ git:(master) ✗  
+  [Restored]
+Last login: Wed Jun 11 16:45:58 on ttys000
+➜  ~ git:(master) ✗ cd _Xcode 
+➜  _Xcode git:(master) ✗ mkdir anatomyOfA_C_file
+➜  _Xcode git:(master) ✗ cd anatomyOfA_C_file 
+➜  anatomyOfA_C_file git:(master) ✗ git init 
+Initialized empty Git repository in /Users/evx001/_Xcode/anatomyOfA_C_file/.git/
+➜  anatomyOfA_C_file git:(master) /Users/evx001/Downloads/Project-Templates/MyFirstCProgram /Users/evx001/Downloads/Project-Templates/MyFirstObjectiveCProgram git status 
+zsh: permission denied: /Users/evx001/Downloads/Project-Templates/MyFirstCProgram
+➜  anatomyOfA_C_file git:(master) mkdir hiVar
+➜  anatomyOfA_C_file git:(master) ✗ cd hiVar 
+➜  hiVar git:(master) ✗ git init 
+Initialized empty Git repository in /Users/evx001/_Xcode/anatomyOfA_C_file/hiVar/.git/
+➜  hiVar git:(master) cd ..
+➜  anatomyOfA_C_file git:(master) ✗ mkdir hiArrays
+➜  anatomyOfA_C_file git:(master) ✗ cd hiArrays 
+➜  hiArrays git:(master) ✗ git init 
+Initialized empty Git repository in /Users/evx001/_Xcode/anatomyOfA_C_file/hiArrays/.git/
+➜  hiArrays git:(master) /Users/evx001/Downloads/Project-Templates/MyFirstCProgram /Users/evx001/Downloads/Project-Templates/MyFirstObjectiveCProgram ls
+zsh: permission denied: /Users/evx001/Downloads/Project-Templates/MyFirstCProgram
+➜  hiArrays git:(master) ls
+➜  hiArrays git:(master) /Users/evx001/Downloads/Project-Templates/MyFirstCProgram /Users/evx001/Downloads/Project-Templates/MyFirstObjectiveCProgram 
+zsh: permission denied: /Users/evx001/Downloads/Project-Templates/MyFirstCProgram
+➜  hiArrays git:(master) s
+zsh: command not found: s
+➜  hiArrays git:(master) ls
+➜  hiArrays git:(master) open .
+➜  hiArrays git:(master) git status 
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	MyFirstCProgram/
+	MyFirstObjectiveCProgram/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  hiArrays git:(master) ✗ git add -A 
+➜  hiArrays git:(master) ✗ git commit -m "init" 
+[master (root-commit) 9a7b79b] init
+ 15 files changed, 986 insertions(+)
+ create mode 100644 MyFirstCProgram/MyFirstCProgram.xcodeproj/project.pbxproj
+ create mode 100644 MyFirstCProgram/MyFirstCProgram.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 MyFirstCProgram/MyFirstCProgram.xcodeproj/project.xcworkspace/xcuserdata/turner.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 MyFirstCProgram/MyFirstCProgram.xcodeproj/xcuserdata/turner.xcuserdatad/xcschemes/MyFirstCProgram.xcscheme
+ create mode 100644 MyFirstCProgram/MyFirstCProgram.xcodeproj/xcuserdata/turner.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 MyFirstCProgram/MyFirstCProgram/main.c
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram.xcodeproj/project.pbxproj
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram.xcodeproj/project.xcworkspace/xcshareddata/MyFirstObjectiveCProgram.xccheckout
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram.xcodeproj/project.xcworkspace/xcuserdata/turner.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram.xcodeproj/xcuserdata/turner.xcuserdatad/xcschemes/MyFirstObjectiveCProgram.xcscheme
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram.xcodeproj/xcuserdata/turner.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram/MyFirstObjectiveCProgram-Info.plist
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram/MyFirstObjectiveCProgram-Prefix.pch
+ create mode 100644 MyFirstObjectiveCProgram/MyFirstObjectiveCProgram/main.m
+➜  hiArrays git:(master) git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   MyFirstCProgram/MyFirstCProgram/main.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	MyFirstCProgram/MyFirstCProgram.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/
+	MyFirstCProgram/MyFirstCProgram.xcodeproj/xcuserdata/evx001.xcuserdatad/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  hiArrays git:(master) ✗ git commit -m "arrays done" 
+On branch master
+Changes not staged for commit:
+	modified:   MyFirstCProgram/MyFirstCProgram/main.c
+
+Untracked files:
+	MyFirstCProgram/MyFirstCProgram.xcodeproj/project.xcworkspace/xcuserdata/evx001.xcuserdatad/
+	MyFirstCProgram/MyFirstCProgram.xcodeproj/xcuserdata/evx001.xcuserdatad/
+
+no changes added to commit
+➜  hiArrays git:(master) ✗ cd ..
+➜  anatomyOfA_C_file git:(master) ✗ mkdir hiExpressions
+➜  anatomyOfA_C_file git:(master) ✗ 
+  [Restored]
+Last login: Thu Jun 12 03:11:18 on ttys000
+➜  ~ git:(master) ✗ cd HaskMeAnother 
+➜  HaskMeAnother git:(master) ✗ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	20140607brianFunc.hs 
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  HaskMeAnother git:(master) ✗ git add . 
+➜  HaskMeAnother git:(master) ✗ git commit -m "..." 
+[master 4d7c54a] ...
+ 1 file changed, 42 insertions(+)
+ create mode 100644 20140607brianFunc.hs 
+➜  HaskMeAnother git:(master) ghci78
+GHCi, version 7.8.2: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> :set editor vim -N 
+Prelude> :e enew 
+Ok, modules loaded: none.
+Prelude> :e enew 
+Ok, modules loaded: none.
+Prelude> :e
+No files to edit.
+Prelude> :e .
+Ok, modules loaded: none.
+Prelude> :l yyz.hs 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:3:7:
+    No instance for (Num float) arising from the literal ‘20’
+    Possible fix:
+      add (Num float) to the context of
+        the type signature for dvd :: float
+    In the first argument of ‘(/)’, namely ‘20’
+    In the expression: 20 / 3
+    In an equation for ‘dvd’: dvd = 20 / 3
+
+yyz.hs:3:10:
+    No instance for (Fractional float) arising from a use of ‘/’
+    Possible fix:
+      add (Fractional float) to the context of
+        the type signature for dvd :: float
+    In the expression: 20 / 3
+    In an equation for ‘dvd’: dvd = 20 / 3
+Failed, modules loaded: none.
+Prelude> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:3:10:
+    No instance for (Fractional Int) arising from a use of ‘/’
+    In the expression: 20 / 3
+    In an equation for ‘dvd’: dvd = 20 / 3
+Failed, modules loaded: none.
+Prelude> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+Ok, modules loaded: C_x_comp.
+*C_x_comp> :t dvd
+dvd :: Double
+*C_x_comp> dvd
+6.666666666666667
+*C_x_comp> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+Ok, modules loaded: C_x_comp.
+*C_x_comp> dvd
+6.666666666666667
+*C_x_comp> d
+decodeFloat  divMod       dropWhile
+div          drop         dvd
+*C_x_comp> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:12:
+    No instance for (Fractional float) arising from a use of ‘/’
+    Possible fix:
+      add (Fractional float) to the context of
+        the type signature for dvd :: float
+    In the expression: 20.0 / 3.0
+    In an equation for ‘dvd’: dvd = 20.0 / 3.0
+Failed, modules loaded: none.
+Prelude> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:12:
+    No instance for (Fractional float) arising from a use of ‘/’
+    Possible fix:
+      add (Fractional float) to the context of
+        the type signature for dvd :: float
+    In the expression: 20.0 / 3
+    In an equation for ‘dvd’: dvd = 20.0 / 3
+
+yyz.hs:4:14:
+    No instance for (Num float) arising from the literal ‘3’
+    Possible fix:
+      add (Num float) to the context of
+        the type signature for dvd :: float
+    In the second argument of ‘(/)’, namely ‘3’
+    In the expression: 20.0 / 3
+    In an equation for ‘dvd’: dvd = 20.0 / 3
+Failed, modules loaded: none.
+Prelude> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+Ok, modules loaded: C_x_comp.
+*C_x_comp> dvd
+6.666666666666667
+*C_x_comp> :t dvd
+dvd :: Double
+*C_x_comp> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:12:
+    Syntax error on 'div'
+    Perhaps you intended to use TemplateHaskell
+    In the Template Haskell quotation 'div'
+Failed, modules loaded: none.
+Prelude> :t dvd
+
+<interactive>:1:1: Not in scope: ‘dvd’
+Prelude> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:7:
+    No instance for (Fractional ((a0 -> a0 -> a0) -> a1 -> t0))
+      arising from the literal ‘20.0’
+    In the expression: 20.0
+    In the expression: 20.0 div 3
+    In an equation for ‘dvd’: dvd = 20.0 div 3
+
+yyz.hs:4:12:
+    No instance for (Integral a0) arising from a use of ‘div’
+    The type variable ‘a0’ is ambiguous
+    Note: there are several potential instances:
+      instance Integral Int -- Defined in ‘GHC.Real’
+      instance Integral Integer -- Defined in ‘GHC.Real’
+      instance Integral GHC.Types.Word -- Defined in ‘GHC.Real’
+    In the first argument of ‘20.0’, namely ‘div’
+    In the expression: 20.0 div 3
+    In an equation for ‘dvd’: dvd = 20.0 div 3
+
+yyz.hs:4:16:
+    No instance for (Num a1) arising from the literal ‘3’
+    The type variable ‘a1’ is ambiguous
+    Note: there are several potential instances:
+      instance Num Double -- Defined in ‘GHC.Float’
+      instance Num Float -- Defined in ‘GHC.Float’
+      instance Integral a => Num (GHC.Real.Ratio a)
+        -- Defined in ‘GHC.Real’
+      ...plus three others
+    In the second argument of ‘20.0’, namely ‘3’
+    In the expression: 20.0 div 3
+    In an equation for ‘dvd’: dvd = 20.0 div 3
+Failed, modules loaded: none.
+Prelude> :e 
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:10:
+    Syntax error on 'div'
+    Perhaps you intended to use TemplateHaskell
+    In the Template Haskell quotation 'div'
+Failed, modules loaded: none.
+Prelude> d
+decodeFloat  divMod       dropWhile
+div          drop
+Prelude> :t div 
+div :: Integral a => a -> a -> a
+Prelude> :q
+Leaving GHCi.
+➜  HaskMeAnother git:(master) ✗ open .
+➜  HaskMeAnother git:(master) ✗ ghci78 yyz.hs       
+GHCi, version 7.8.2: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+Ok, modules loaded: C_x_comp.
+*C_x_comp> dvd
+23
+*C_x_comp> :t dvd 
+dvd :: Integer
+*C_x_comp> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+Ok, modules loaded: C_x_comp.
+*C_x_comp> :t dvd 
+dvd :: Int
+*C_x_comp> :r
+Ok, modules loaded: C_x_comp.
+*C_x_comp> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:14:
+    Couldn't match expected type ‘a’ with actual type ‘Integer’
+      ‘a’ is a rigid type variable bound by
+          the type signature for dvd :: Integer -> a at yyz.hs:2:8
+    Relevant bindings include dvd :: Integer -> a (bound at yyz.hs:4:1)
+    In the second argument of ‘(+)’, namely ‘n’
+    In the expression: 20 + n
+Failed, modules loaded: none.
+Prelude> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:14:
+    Couldn't match expected type ‘a’ with actual type ‘Integer’
+      ‘a’ is a rigid type variable bound by
+          the type signature for dvd :: Integer -> a at yyz.hs:2:8
+    Relevant bindings include dvd :: Integer -> a (bound at yyz.hs:4:1)
+    In the second argument of ‘(+)’, namely ‘n’
+    In the expression: 20 + n
+Failed, modules loaded: none.
+Prelude> :t dvd 
+
+<interactive>:1:1: Not in scope: ‘dvd’
+Prelude> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:14:
+    Couldn't match expected type ‘a -> a’ with actual type ‘Integer’
+    Relevant bindings include
+      dvd :: Integer -> a -> a (bound at yyz.hs:4:1)
+    In the second argument of ‘(+)’, namely ‘n’
+    In the expression: 20 + n
+Failed, modules loaded: none.
+Prelude> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+Ok, modules loaded: C_x_comp.
+*C_x_comp> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:14:
+    Couldn't match expected type ‘Integer’ with actual type ‘Int’
+    In the second argument of ‘(+)’, namely ‘n’
+    In the expression: 20 + n
+Failed, modules loaded: none.
+Prelude> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:4:14:
+    Couldn't match expected type ‘Int’ with actual type ‘Integer’
+    In the second argument of ‘(+)’, namely ‘n’
+    In the expression: 20 + n
+Failed, modules loaded: none.
+Prelude> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+Ok, modules loaded: C_x_comp.
+*C_x_comp> let fn001 x = map x [2, 4, 8]   
+*C_x_comp> :t fn001
+fn001 :: Num a => (a -> b) -> [b]
+*C_x_comp> :t fn001
+fn001 :: Num a => (a -> b) -> [b]
+*C_x_comp>  fn001 3
+
+<interactive>:18:2:
+    Could not deduce (Num (a0 -> b))
+      arising from the ambiguity check for ‘it’
+    from the context (Num (a -> b), Num a)
+      bound by the inferred type for ‘it’: (Num (a -> b), Num a) => [b]
+      at <interactive>:18:2-8
+    The type variable ‘a0’ is ambiguous
+    When checking that ‘it’
+      has the inferred type ‘forall a b. (Num (a -> b), Num a) => [b]’
+    Probable cause: the inferred type is ambiguous
+*C_x_comp>  fn001 
+
+<interactive>:19:2:
+    No instance for (Show ((a0 -> b0) -> [b0]))
+      arising from a use of ‘print’
+    In a stmt of an interactive GHCi command: print it
+*C_x_comp> :t fn001 3
+fn001 3 :: (Num (a -> b), Num a) => [b]
+*C_x_comp> :t fn001 x 
+
+<interactive>:1:7: Not in scope: ‘x’
+*C_x_comp> :t fn001 a
+
+<interactive>:1:7: Not in scope: ‘a’
+*C_x_comp> :t fn001 []
+
+<interactive>:1:7:
+    Couldn't match expected type ‘a0 -> b’ with actual type ‘[t0]’
+    In the first argument of ‘fn001’, namely ‘[]’
+    In the expression: fn001 []
+*C_x_comp> :t fn001 [1]
+
+<interactive>:1:7:
+    Couldn't match expected type ‘a0 -> b’ with actual type ‘[t0]’
+    In the first argument of ‘fn001’, namely ‘[1]’
+    In the expression: fn001 [1]
+*C_x_comp> :t fn001 [1]
+
+<interactive>:1:7:
+    Couldn't match expected type ‘a0 -> b’ with actual type ‘[t0]’
+    In the first argument of ‘fn001’, namely ‘[1]’
+    In the expression: fn001 [1]
+*C_x_comp> :t fn001
+fn001 :: Num a => (a -> b) -> [b]
+*C_x_comp>  map x [2, 4, 8]
+
+<interactive>:27:6: Not in scope: ‘x’
+*C_x_comp>  map x [2, 4, 8]
+
+<interactive>:28:6: Not in scope: ‘x’
+*C_x_comp>  map 3 [2, 4, 8]
+
+<interactive>:29:2:
+    Could not deduce (Num (a0 -> b))
+      arising from the ambiguity check for ‘it’
+    from the context (Num (a -> b), Num a)
+      bound by the inferred type for ‘it’: (Num (a -> b), Num a) => [b]
+      at <interactive>:29:2-16
+    The type variable ‘a0’ is ambiguous
+    When checking that ‘it’
+      has the inferred type ‘forall a b. (Num (a -> b), Num a) => [b]’
+    Probable cause: the inferred type is ambiguous
+*C_x_comp>  sum  [2, 4, 8]
+14
+*C_x_comp>  sum  [2, 4, 8]
+14
+*C_x_comp> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+Ok, modules loaded: C_x_comp.
+*C_x_comp> s
+scaleFloat   seq          showList     significand  span
+scanl        sequence     showParen    signum       splitAt
+scanl1       sequence_    showString   sin          sqrt
+scanr        show         shows        sinh         subtract
+scanr1       showChar     showsPrec    snd          succ
+*C_x_comp> let sUM = (\_ [2,4,8]) 
+
+<interactive>:33:22: parse error on input ‘)’
+*C_x_comp> let sUM = \[2,4,8] 
+
+<interactive>:34:20:
+    parse error (possibly incorrect indentation or mismatched brackets)
+*C_x_comp> let sUM = \_ -> [2,4,8] 
+*C_x_comp> :t sUM
+sUM :: Num t1 => t -> [t1]
+*C_x_comp> let sUM = []  
+*C_x_comp> :t sUM
+sUM :: [t]
+*C_x_comp> let sUM = 2:[]  
+*C_x_comp> :t sUM
+sUM :: Num a => [a]
+*C_x_comp> sUM
+[2]
+*C_x_comp> let sUM = 4:2:[]  
+*C_x_comp> sUM
+[4,2]
+*C_x_comp> let sUM = []:2   
+*C_x_comp> sUM
+
+<interactive>:45:1:
+    No instance for (Num [[t0]]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+*C_x_comp> let sUM = ([]:2)   
+*C_x_comp> sUM
+
+<interactive>:47:1:
+    No instance for (Num [[t0]]) arising from a use of ‘it’
+    In a stmt of an interactive GHCi command: print it
+*C_x_comp> let sUM = []    
+*C_x_comp> let sUM = 2:[]    
+*C_x_comp> let sUM = 8:[]    
+*C_x_comp> let sUM = 2:4:8:[]    
+*C_x_comp> sUM
+[2,4,8]
+*C_x_comp> :t sUM
+sUM :: Num a => [a]
+*C_x_comp> let sUM = [x|x<-2:4:8:[]]    
+*C_x_comp> :t sUM
+sUM :: Num t => [t]
+*C_x_comp> let sUM = [x|(x+x)<-2:4:8:[]]    
+
+<interactive>:56:15:
+    Parse error in pattern: x + x
+    Possibly caused by a missing 'do'?
+*C_x_comp> let sUM = [x+x|x<-2:4:8:[]]    
+*C_x_comp> :t sUM
+sUM :: Num t => [t]
+*C_x_comp> sUM
+[4,8,16]
+*C_x_comp> let sUM = [x+3|x<-2:4:8:[]]    
+*C_x_comp> sUM
+[5,7,11]
+*C_x_comp> let sUM = [x+3|x<-(2:4:8:[])]    
+*C_x_comp> sUM
+[5,7,11]
+*C_x_comp> let sUM = [(+1)x|x<-(2:4:8:[])]    
+*C_x_comp> sUM
+[3,5,9]
+*C_x_comp> let sUM = [(+x)x|x<-(2:4:8:[])]    
+*C_x_comp> sUM
+[4,8,16]
+*C_x_comp> :r
+[1 of 1] Compiling C_x_comp         ( yyz.hs, interpreted )
+
+yyz.hs:3:16: parse error on input ‘qualified’
+Failed, modules loaded: none.
+Prelude> 
