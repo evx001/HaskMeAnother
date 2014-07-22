@@ -1,0 +1,39 @@
+Getting Into Haskell: 
+
+	I see two routes into Haskell each representing the seeker's starting point. 
+	Two reasons for a Haskell exploration. 
+		pain
+		curiosity
+		or both
+
+	It's just Scheme + Type-Classes and Monads 
+
+	Materials: 
+		Learn You A Haskell for Greater Good (sophmoric in style [complete with fat jokes in the examples])
+			examples are in ACII and can be typed directly into the repl
+
+		Graham Hutton "Programming Haskell" 2006, under 200 pages. 
+			Eric Miejer Functional Programng with Haskell (which uses Hutton's) book other examples are in C#
+			Math Symbols can be obscure to the uninitiated.
+			uses the hugs compiler which has been depricated.  
+						
+		Phil Waldler 2012 @ Endenburrough University 
+			20+ videos. 
+			Videos are an hour but 1/4 to a 1/3 of the time is eaten up by class logistics 
+		
+		Beginning Haskell (a project book, not really for beginners) 
+			2014 
+
+
+		Functional Programming with Haskell 
+			3rd edition 2011
+			2nd is from 1999 
+
+	Really helpful things to know but arn't obvious.  
+		left justify all bindings in a single column. 
+		All tabs should converted to spaces. 
+		Monomorphic restriction confusion
+		what's on the right of the = must always stay on the right of the =.
+		What's on the left of the = must always stay on the left of the =. 
+		Type system can feel excessively restrictive until ....
+		 
